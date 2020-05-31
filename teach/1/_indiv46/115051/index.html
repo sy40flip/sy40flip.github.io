@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title> YSL Kiss & Blush is now launched!</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+body{
+	height: 5400px;
+}
+
+
+#bg1 {
+	background-image: url(bg1.jpg);
+	height: 1080px;
+	width: 1920px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+#bg2 {
+	background-image: url(bg2.jpg);
+	height: 1080px;
+	width: 1920px;
+	position: fixed;
+	left: 0px;
+	top: -100px;
+	opacity: 0;
+}
+
+#bg3 {
+	background-image: url(bg3.jpg);
+	height: 1080px;
+	width: 1920px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+}
+
+#hand {
+	background-image: url(hand.png);
+	height: 518px;
+	width: 838px;
+	position: fixed;
+	left: 560px;
+	top: 200px;
+	margin-top: -259px;
+	margin-left: -419px;
+}
+
+#lipbottle {
+	background-image: url(lipbottle.png);
+	height: 228px;
+	width: 182px;
+	position: fixed;
+	left: 542px;
+	top: 655px;
+	margin-top: -114px;
+	margin-left: -91px;
+}
+
+#lipstick {
+	background-image: url(lipstick.png);
+	height: 437px;
+	width: 121px;
+	left: 542px;
+	top: 555px;
+	position: fixed;
+	margin-top: -218.5px;
+	margin-left: -60.5px;
+}
+
+#word1 {
+	background-image: url(word1.png);
+	height: 406px;
+	width: 673px;
+	left: 1300px;
+	top: 450px;
+	position: fixed;
+	margin-top: -203px;
+	margin-left: -336.5px;
+}
+
+#word2 {
+	background-image: url(word2.png);
+	height: 259px;
+	width: 979px;
+	left: -600px;
+	top: 400px;
+	position: fixed;
+	margin-top: -129.5px;
+	margin-left: -489.5px;
+}
+
+#word3 {
+	background-image: url(word3.png);
+	height: 185px;
+	width: 437px;
+	left: -500px;
+	top: 400px;
+	position: fixed;
+	margin-top: -92.5px;
+	margin-left: -218.5px;
+}
+
+#word4 {
+	background-image: url(word4.png);
+	height: 182px;
+	width: 419px;
+	left: 2500px;
+	top: 500px;
+	position: fixed;
+	margin-top: -91px;
+	margin-left: -209.5px;
+	opacity: 0;
+}
+
+#word5 {
+	background-image: url(word5.png);
+	height: 178px;
+	width: 796px;
+	left: 1000px;
+	top: 800px;
+	position: fixed;
+	margin-top: -89px;
+	margin-left: -398px;
+	opacity: 0;
+}
+
+#cheek {
+	background-image: url(cheek.png);
+	height: 421px;
+	width: 445px;
+	left: 1250px;
+	top: 470px;
+	position: fixed;
+	margin-top: -210.5px;
+	margin-left: -222.5px;
+	opacity: 0;
+}
+
+#lip {
+	background-image: url(lip.png);
+	height: 216px;
+	width: 445px;
+	left: 1020px;
+	top: 760px;
+	position: fixed;
+	margin-top: -108px;
+	margin-left: -222.5px;
+	opacity: 0;
+}
+
+#endlipbottle {
+	background-image: url(endlipbottle.png);
+	height: 228px;
+	width: 182px;
+	position: fixed;
+	left: 480px;
+	top: 480px;
+	margin-top: -114px;
+	margin-left: -91px;
+	opacity: 0;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+
+	init = function() {
+    var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#hand', 
+	[{progress:'0%',left:'560px',top:'200px'}, 
+	{progress:'10%',left:'560px',top:'-400px'},
+	{progress:'20%',left:'560px',top:'-600px'},
+	{progress:'100%',left:'560px',top:'-1000px'}]);
+	
+	jarallax.addAnimation('#bg1', 
+	[{progress:'0%', opacity:'1'}, 
+	{progress:'14%', opacity:'1'}, 
+	{progress:'18%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#bg2', 
+	[{progress:'0%', opacity:'0'}, 
+	{progress:'14%', opacity:'0'}, 
+	{progress:'18%', opacity:'1'},
+	{progress:'50%', opacity:'1'}]);
+	
+	jarallax.addAnimation('#bg3', 
+	[{progress:'0%', opacity:'0'}, 
+	{progress:'60%', opacity:'0'}, 
+	{progress:'65%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	jarallax.addAnimation('#lipbottle', 
+	[{progress:'0%',left:'542px',top:'655px'}, 
+	{progress:'10%',left:'1500px',top:'560px'},
+	{progress:'13%',left:'1500px',top:'470px',opacity:'1'},
+	{progress:'15%',left:'1500px',top:'650px',opacity:'0'},
+	{progress:'100%',left:'1500px',top:'600px',opacity:'0'}]);
+	
+	
+	jarallax.addAnimation('#lipstick', 
+	[{progress:'0%',left:'542px',top:'555px'}, 
+	{progress:'10%',left:'1500px',top:'460px'}, 
+	{progress:'13%',left:'1500px',top:'350px'},
+	{progress:'15%',left:'1500px',top:'280px',rotate:'0'},
+	{progress:'18%',left:'1500px',top:'350px',rotate:'50'},
+	{progress:'20%',left:'1500px',top:'460px',rotate:'90'},
+	{progress:'25%',left:'1450px',top:'550px',rotate:'110'},
+	{progress:'30%',left:'1400px',top:'600px',rotate:'120'},
+	{progress:'33%',left:'1380px',top:'650px',rotate:'140'},
+	{progress:'35%',left:'1350px',top:'680px',rotate:'150'},
+	{progress:'40%',left:'1200px',top:'900px',rotate:'160'},
+	{progress:'50%',left:'1100px',top:'1000px',rotate:'160'},
+	{progress:'55%',left:'1060px',top:'990px',rotate:'160'},
+	{progress:'100%',left:'480px',top:'345px',rotate:'0'}]);
+	
+
+	jarallax.addAnimation('#word1', 
+	[{progress:'0%',left:'1400px',top:'450px',opacity:'1'}, 
+	{progress:'10%',left:'2500px',top:'450px',opacity:'0'},
+	{progress:'100%',left:'4000px',top:'450px',opacity:'0'}]);
+	
+	
+	jarallax.addAnimation('#word2', 
+	[{progress:'0%',left:'-600px',top:'400px',opacity:'0'}, 
+	{progress:'10%',left:'800px',top:'400px',opacity:'1'},
+	{progress:'15%',left:'400px',top:'400px',opacity:'0.5'},
+	{progress:'18%',left:'0px',top:'400px',opacity:'0'},
+	{progress:'25%',left:'-300px',top:'400px',opacity:'0'},
+	{progress:'100%',left:'-600px',top:'400px',opacity:'0'}]);
+	
+	jarallax.addAnimation('#word3', 
+	[{progress:'0%',left:'-500px',top:'450px'}, 
+	{progress:'17%',left:'-500px',top:'450px'}, 
+	{progress:'18%',left:'-200px',top:'450px',opacity:'0'}, 
+	{progress:'22%',left:'300px',top:'450px',opacity:'1'},
+	{progress:'25%',left:'450px',top:'450px',opacity:'1'},
+	{progress:'30%',left:'600px',top:'450px',opacity:'1'},
+	{progress:'35%',left:'200px',top:'450px',opacity:'0.5'},
+	{progress:'40%',left:'0px',top:'450px',opacity:'0'},
+	{progress:'55%',left:'-500px',top:'450px',opacity:'0'}]);
+	
+	jarallax.addAnimation('#cheek', 
+	[{progress:'0%',left:'1250px',top:'470px',opacity:'0'}, 
+	{progress:'19%',left:'1250px',top:'470px',opacity:'0'}, 
+	{progress:'25%',left:'1250px',top:'470px',opacity:'1'},
+	{progress:'45%',left:'1250px',top:'470px',opacity:'1'},
+	{progress:'100%',left:'1250px',top:'470px',opacity:'1'}]);
+	
+	jarallax.addAnimation('#lip', 
+	[{progress:'0%',left:'1020px',top:'760px',opacity:'0'}, 
+	{progress:'40%',left:'1020px',top:'760px',opacity:'0'},
+	{progress:'45%',left:'1020px',top:'760px',opacity:'1'},
+	{progress:'100%',left:'1020px',top:'760px',opacity:'1'}]);
+	
+	jarallax.addAnimation('#word4', 
+	[{progress:'0%',left:'2500px',top:'700px'}, 
+	{progress:'38%',left:'2500px',top:'700px',opacity:'0'},
+	{progress:'42%',left:'1500px',top:'700px',opacity:'1'},
+	{progress:'50%',left:'1600px',top:'700px',opacity:'1'},
+	{progress:'60%',left:'1800px',top:'700px',opacity:'0.5'},
+	{progress:'65%',left:'2500px',top:'700px',opacity:'0'},
+	{progress:'100%',left:'3000px',top:'700px',opacity:'0'}]);
+	
+	jarallax.addAnimation('#word5', 
+	[{progress:'0%',left:'950px',top:'800px',opacity:'0'}, 
+	{progress:'90%',left:'950px',top:'800px',opacity:'0'}, 
+	{progress:'95%',left:'950px',top:'700px',opacity:'1'},
+	{progress:'97%',left:'950px',top:'730px',opacity:'1'},
+	{progress:'100%',left:'950px',top:'750px',opacity:'1'}]);
+	
+	jarallax.addAnimation('#endlipbottle', 
+	[{progress:'0%',left:'480px',top:'480px',opacity:'0'}, 
+	{progress:'96%',left:'480px',top:'480px',opacity:'0'}, 
+	{progress:'98%',left:'480px',top:'480px',opacity:'1'},
+	{progress:'100%',left:'480px',top:'480px',opacity:'1'}]);
+	
+}
+
+</script>
+</head>
+
+
+<body onload="init()">
+   <div id="bg1"></div>
+   <div id="bg2"></div>
+   <div id="cheek"></div>
+   <div id="lip"></div>
+   <div id="bg3"></div>
+   <div id="hand"></div>
+   <div id="lipstick"></div>
+   <div id="lipbottle"></div>
+   <div id="word1"></div>
+   <div id="word2"></div>
+   <div id="word3"></div>
+   <div id="word4"></div>
+   <div id="word5"></div>
+   <div id="endlipbottle"></div>
+
+</body>
+
+</html>

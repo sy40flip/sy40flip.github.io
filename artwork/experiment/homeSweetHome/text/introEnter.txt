@@ -1,0 +1,1 @@
+var1=ain't it great staying here ?

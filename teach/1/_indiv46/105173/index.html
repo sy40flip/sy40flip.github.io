@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<div id="storybehind">
+  <html>
+  <head>
+      
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title> Yellow Submarine </title>
+      
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="jarallax-0.2.4.js"></script>
+      
+  <style type="text/css">
+#text1 {
+	background-image: url(text/text1.gif);
+	width: 1000px;
+	height: 600px;
+	position: fixed;
+	left: 40%;
+	top: 120%;
+    margin-left: -500px;
+	margin-top: -300px;
+	
+}
+
+#text2 {
+	background-image: url(text/text2.gif);
+	width: 1000px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 120%;
+    margin-left: -500px;
+	margin-top: -300px;
+	
+}
+
+
+#text3 {
+	background-image: url(text/text3.gif);
+	width: 1000px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 120%;
+    margin-left: -500px;
+	margin-top: -300px;
+}
+#bandname {
+	background-image: url(graphic/logo.gif);
+	width: 150px;
+	height: 80px;
+	position: fixed;
+	left: 85%;
+	top: 17.5%;
+}
+
+
+#text4 {
+	background-image: url(text/text4.gif);
+	width: 1000px;
+	height: 600px;
+	position: fixed;
+	left: 45%;
+	top: 120%;
+    margin-left: -500px;
+	margin-top: -300px;
+}
+
+#beatles {
+	background-image: url(graphic/tumblr_static_asdf.gif);
+	width: 400px;
+	height: 300px;
+	position: fixed;
+	left: 85%;
+	top: 40%;
+    margin-left: -200px;
+	margin-top: -150px;
+	
+}
+
+
+#leftbar {
+	background-image: url(graphic/beatles2.gif);
+	width: 500px;
+	height: 685px;
+	position: fixed;
+	left: 0%;
+	bottom: 0%;
+	margin-left: 0px;
+	margin-top: 0x;
+	z-index: 1;
+}
+
+
+  #icon {
+	background-image: url(graphic/icon.gif);
+	width: 173px;
+	height: 173px;
+	position: fixed;
+	left: 0%;
+	top: -35%;
+	margin-left: -85px;
+	margin-top: -85x;
+	z-index: 1;
+}
+
+  #storybehind {
+	background-image: url(graphic/storybedind.gif);
+	width: 375px;
+	height: 105px;
+	position: fixed;
+	left: 85%;
+	top: 5%;
+	margin-left: -185px;
+	margin-top: -55x;
+	z-index: 1;
+}
+
+body {
+	height: 8375px;
+	background-image: url(graphic/bottom-water.jpg);
+	background-repeat: no-repeat;
+	background-color: #009;
+}
+  </style>
+      
+  <script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#text1', 
+	[{progress:'0%', left:'40%', top:'120%'}, 
+	{progress:'15%', left:'40%', top:'50%'}, 
+	{progress:'25%', left:'40%', top:'50%'},
+	{progress:'30%', left:'40%', top:'-35%'},
+	{progress:'100%', left:'40%', top:'-35%'}
+	
+	
+	]);
+	
+	jarallax.addAnimation('#text2', 
+	[{progress:'0%', left:'50%', top:'120%'},
+	{progress:'30%', left:'50%', top:'120%'},
+	{progress:'40%', left:'50%', top:'50%'},
+	{progress:'50%', left:'50%', top:'50%'},
+	{progress:'55%', left:'50%', top:'-35%'},
+	{progress:'100%', left:'50%', top:'-35%'}
+	
+	]);	
+	
+    jarallax.addAnimation('#text3', 
+	[{progress:'0%', left:'50%', top:'120%'},
+	{progress:'55%', left:'50%', top:'120%'},
+	{progress:'65%', left:'50%', top:'50%'},
+	{progress:'75%', left:'50%', top:'50%'},
+	{progress:'80%', left:'50%', top:'-35%'},
+	{progress:'100%', left:'50%', top:'-35%'}
+	
+	]); 
+	
+	jarallax.addAnimation('#text4', [
+	{progress:'0%', left:'45%', top:'120%'},
+	{progress:'80%', left:'45%', top:'120%'},
+	{progress:'90%', left:'45%', top:'50%'},
+	{progress:'100%', left:'45%', top:'50%'}
+	
+	]);
+	
+	
+	jarallax.addAnimation('#icon', [
+	{progress:'0%', left:'0%', top:'-35%', rotate: '-20'}, 
+	{progress:'10%', left:'30%', top:'15%', rotate: '15'},
+	{progress:'25%', left:'65%', top:'35%', rotate: '35'},
+	{progress:'50%', left:'25%', top:'55%', rotate: '145'},
+	{progress:'75%', left:'55%', top:'75%', rotate: '270'},
+	{progress:'95%', left:'40%', top:'80%', rotate: '230'},
+	{progress:'100%', left:'45%', top:'120%', rotate: '0'}
+	
+	]);
+	}
+	
+	
+</script>
+      
+  </head>
+    
+    
+  <body onload="init()">
+  <div id="leftbar"></div>
+  <div id="text1"></div>
+  <div id="text2"></div>
+  <div id="text3"></div>
+  <div id="text4"></div>
+  <div id="beatles"></div>
+  <div id="bandname"></div>
+  <div id="icon"></div>
+  <div id="storybehind"></div>
+<!--  <embed src="YellowSubmarine.mp3" width="32" height="32"></embed>
+-->  </div>
+      
+  </body>
+    
+  </html>
+</div>
+

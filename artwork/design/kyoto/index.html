@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+  <head>
+
+  <title>kyoto</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<style type="text/css">
+
+body{
+	background-color:black;
+	
+}
+.your-class{
+	margin:0 10% 10% 10%;
+    
+}
+.slick-prev:before {
+  content: "<<";
+  color: white;
+  font-size: 40px;
+  margin-left:-100px;
+}
+
+.slick-next:before {
+  content: ">>";
+  color: white;
+  font-size: 40px;
+margin-right:-100px;
+}
+
+h1{
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:2em;
+	font-weight:normal;
+	text-align:center;  
+}
+
+
+</style>
+  </head>
+  
+  
+  
+  <body>
+  <h1>KYOTO LANDSCAPE</h1>
+ <div class="your-class">
+  <img src="s1.jpg">
+  <img src="s2.jpg">
+  <img src="s3.jpg">
+  <img src="s4.jpg">
+  <img src="s1.jpg">
+  <img src="s2.jpg">
+  <img src="s3.jpg">
+  <img src="s4.jpg">
+
+</div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+   accessibility: true,
+   adaptiveHeight: true,
+autoplay: true,
+ autoplaySpeed: 3000,
+pauseOnHover: true,
+vertical: false,
+
+
+
+
+	  });
+    });
+  </script>
+
+  </body>
+</html>

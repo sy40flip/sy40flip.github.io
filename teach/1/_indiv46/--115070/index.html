@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<script type="text/javascript" src="_js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="_js/jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+body {
+	height: 8500px;
+}
+
+#pic1a {
+	background-image: url(_img/pic0.png);
+	position: fixed;
+	height: 250px;
+	width: 655px;
+	top: -50%;
+	right: 17%;
+}
+
+#pic2a {
+	background-image: url(_img/pic2a.png);
+	height: 120px;
+	width: 402px;
+	position: fixed;
+	top: -50%;
+	right: 28%;
+}
+
+#pic2b {
+	background-image: url(_img/pic2b.png);
+	position: fixed;
+	height: 400px;
+	width: 676px;
+	top: 130%;
+	right: 18%;
+}
+
+#pic3a {
+	background-image: url(_img/pic3a.gif);
+	position: fixed;
+	height: 400px;
+	width: 284px;
+	top: 130%;
+	left: -5%;
+}
+
+#pic3b {
+	background-image: url(_img/pic3b.png);
+	position: fixed;
+	height: 153px;
+	width: 600px;
+	top: 130%;
+	right: -5%;
+}
+
+#pic4a {
+	background-image: url(_img/pic4a.png);
+	position: fixed;
+	height: 150px;
+	width: 464px;
+	top: 130%;
+	left: -5%;
+}
+
+#pic4b {
+	background-image: url(_img/pic4b.png);
+	position: fixed;
+	height: 480px;
+	width: 656px;
+	top: 130%;
+	right: -5%;
+}
+
+#pic5a {
+	background-image: url(_img/pic5a.png);
+	position: fixed;
+	height: 550px;
+	width: 520px;
+	top: -100%;
+	right: -10%;
+}
+
+#pic5b {
+	background-image: url(_img/pic5b.png);
+	position: fixed;
+	height: 128px;
+	width: 300px;
+	top: 35%;
+	left: -50%;
+}
+
+#pic5c {
+	background-image: url(_img/pic5c.png);
+	position: fixed;
+	height: 500px;
+	width: 227px;
+	top: 20%;
+	right: -50%;
+}
+
+#pic6a {
+	background-image: url(_img/pic6a.png);
+	position: fixed;
+	height: 474px;
+	width: 330px;
+	top: 10%;
+	left: -100%;
+}
+
+#pic6b {
+	background-image: url(_img/pic6b.png);
+	position: fixed;
+	height: 146px;
+	width: 600px;
+	top: 30%;
+	right: -100%;
+}
+
+#pic7a {
+	background-image: url(_img/pic7a.png);
+	position: fixed;
+	height: 100px;
+	width: 572px;
+	top: 1550px;
+	right: -350px;
+}
+
+#pic7b {
+	background-image: url(_img/pic7b.png);
+	position: fixed;
+	height: 493px;
+	width: 1000px;
+	top: 200%;
+	right: -10%;
+}
+
+#pic7c {
+	background-image: url(_img/pic7c.png);
+	position: fixed;
+	height: 15px;
+	width: 197px;
+	top: -20%;
+	right: -20%;
+}
+
+#pic7d {
+	background-image: url(_img/pic7d.png);
+	position: fixed;
+	height: 15px;
+	width: 178px;
+	top: -20%;
+	left: -20%;
+}
+
+#pic8 {
+	background-image: url(_img/pic8.png);
+	position: fixed;
+	height: 50px;
+	width: 400px;
+	top: -50%;
+	right: -50%;
+}
+
+#pic9a {
+	background-image: url(_img/pic9a.png);
+	position: fixed;
+	height: 550px;
+	width: 471px;
+	top: -20%;
+	right: -50%;
+}
+
+#pic9b {
+	background-image: url(_img/pic9b.png);
+	position: fixed;
+	height: 150px;
+	width: 372px;
+	top: -20%;
+	right: -50%;
+}
+
+
+</style>
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	jarallax.addAnimation('#pic1a', [
+	{progress:'0%',top:'30%',opacity:'0'}, 
+	{progress:'3%',top:'30%',opacity:'5'}, 
+	{progress:'7%',top:'30%',opacity:'1'},
+	{progress:'9%',top:'-50%',opacity:'0'},
+	{progress:'100%',top:'-50%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic2a', [
+	{progress:'10%',top:'-50%',opacity:'0'}, 
+	{progress:'12%',top:'10%',opacity:'5'}, 
+	{progress:'16%',top:'10%',opacity:'1'},
+	{progress:'18%',top:'-50%',opacity:'0'},
+	{progress:'100%',top:'-50%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic2b', [
+	{progress:'10%',top:'200%',opacity:'0'}, 
+	{progress:'12%',top:'35%',opacity:'5'}, 
+	{progress:'16%',top:'35%',opacity:'1'},
+	{progress:'18%',top:'130%',opacity:'0'},
+	{progress:'100%',top:'200%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic3a', [
+	{progress:'19%',left:'-60%',top:'20%',opacity:'0'}, 
+	{progress:'20%',left:'8%',top:'20%',opacity:'5'}, 
+	{progress:'25%',left:'8%',top:'20%',opacity:'1'},
+	{progress:'27%',left:'-60%',top:'20%',opacity:'0'},
+	{progress:'100%',left:'-60%',top:'20%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic3b', [
+	{progress:'19%',right:'-200%',top:'30%',opacity:'0'}, 
+	{progress:'20%',right:'3%',top:'30%',opacity:'5'}, 
+	{progress:'25%',right:'3%',top:'30%',opacity:'1'},
+	{progress:'27%',right:'-200%',top:'30%',opacity:'0'},
+	{progress:'100%',right:'-200%',top:'30%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic4a', [
+	{progress:'28%',left:'-150%',top:'-30%',opacity:'0'}, 
+	{progress:'30%',left:'8%',top:'8%',opacity:'5'}, 
+	{progress:'35%',left:'8%',top:'8%',opacity:'1'},
+	{progress:'37%',left:'200%',top:'-30%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic4b', [
+	{progress:'28%',right:'-200%',top:'35%',opacity:'0'}, 
+	{progress:'30%',right:'3%',top:'32%',opacity:'5'}, 
+	{progress:'35%',right:'3%',top:'32%',opacity:'1'},
+	{progress:'37%',right:'200%',top:'32%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic5a', [
+	{progress:'38%',left:'50%',top:'-100%',opacity:'0'}, 
+	{progress:'40%',left:'40%',top:'11%',opacity:'5'},
+	{progress:'43%',left:'40%',top:'11%',opacity:'5'},
+	{progress:'47%',left:'6%',top:'11%',opacity:'5'},
+	{progress:'50%',left:'6%',top:'11%',opacity:'5'},
+	{progress:'53%',left:'6%',top:'11%',opacity:'5'},
+	{progress:'55%',left:'-100%',top:'11%',opacity:'0'}])
+
+	jarallax.addAnimation('#pic5b', [
+	{progress:'40%',top:'35%',left:'-5%',opacity:'0'},
+	{progress:'43%',top:'35%',left:'5%',opacity:'5'}, 
+	{progress:'45%',top:'35%',left:'50%',opacity:'5'},
+	{progress:'53%',top:'35%',left:'50%',opacity:'1'},
+	{progress:'55%',top:'-100%',left:'50%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic5c', [
+	{progress:'38%',right:'-50%',top:'18%',opacity:'0'}, 
+	{progress:'40%',right:'5%',top:'18%',opacity:'5'},
+	{progress:'43%',right:'5%',top:'18%',opacity:'5'},
+	{progress:'53%',right:'5%',top:'18%',opacity:'1'},
+	{progress:'55%',right:'-50%',top:'18%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic6a', [
+	{progress:'56%',left:'-50%',top:'-20%',opacity:'0'}, 
+	{progress:'58%',left:'5%',top:'18%',opacity:'5'}, 
+	{progress:'61%',left:'5%',top:'18%',opacity:'1'},
+	{progress:'62%',left:'120%',top:'-20%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic6b', [
+	{progress:'56%',right:'-200%',top:'35%',opacity:'0'}, 
+	{progress:'58%',right:'3%',top:'35%',opacity:'5'}, 
+	{progress:'61%',right:'3%',top:'35%',opacity:'1'},
+	{progress:'62%',right:'200%',top:'35%',opacity:'0'}]);
+
+	jarallax.addAnimation('#pic7a', [
+	{progress:'63%',left:'-50%',top:'-20%',opacity:'0'}, 
+	{progress:'65%',left:'22%',top:'10%',opacity:'5'}, 
+	{progress:'70%',left:'22%',top:'10%',opacity:'1'},
+	{progress:'72%',left:'200%',top:'-20%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic7b', [
+	{progress:'63%',right:'-200%',top:'37%',opacity:'0'}, 
+	{progress:'65%',right:'0%',top:'37%',opacity:'5'}, 
+	{progress:'70%',right:'0%',top:'37%',opacity:'1'},
+	{progress:'72%',right:'200%',top:'37%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic7c', [ 
+	{progress:'65%',right:'30%',top:'40%',opacity:'0'}, 
+	{progress:'70%',right:'-50%',top:'0%',opacity:'5'},
+	{progress:'72%',right:'-50%',top:'-20%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic7d', [ 
+	{progress:'66%',left:'22%',top:'40%',opacity:'0'}, 
+	{progress:'70%',left:'-50%',top:'0%',opacity:'5'},
+	{progress:'72%',left:'-50%',top:'-20%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic8', [
+	{progress:'73%',left:'32%',top:'-20%',opacity:'0'}, 
+	{progress:'75%',left:'32%',top:'40%',opacity:'5'}, 
+	{progress:'79%',left:'32%',top:'40%',opacity:'1'},
+	{progress:'81%',left:'32%',top:'200%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic9a', [
+	{progress:'82%',left:'28%',top:'-250%',opacity:'0'}, 
+	{progress:'84%',left:'28%',top:'13%',opacity:'5'}, 
+	{progress:'89%',left:'28%',top:'13%',opacity:'1'},
+	{progress:'90%',left:'28%',top:'200%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic9b', [
+	{progress:'82%',left:'33%',top:'150%',opacity:'0'}, 
+	{progress:'84%',left:'33%',top:'48%',opacity:'5'}, 
+	{progress:'89%',left:'33%',top:'48%',opacity:'1'},
+	{progress:'90%',left:'33%',top:'-100%',opacity:'0'},
+	{progress:'100%',left:'33%',top:'-100%',opacity:'0'}]);
+	
+	jarallax.addAnimation('#pic1a', [
+	{progress:'91%',top:'30%',opacity:'0'}, 
+	{progress:'93%',top:'30%',opacity:'5'}, 
+	{progress:'98%',top:'30%',opacity:'1'},
+	{progress:'100%',top:'30%',opacity:'0'}]);
+	
+
+}
+</script>
+
+</head>
+
+
+<body onload="init()">
+<div id="pic1a"></div>
+<div id="pic2a"></div>
+<div id="pic2b"></div>
+<div id="pic3a"></div>
+<div id="pic3b"></div>
+<div id="pic4a"></div>
+<div id="pic4b"></div>
+<div id="pic5a"></div>
+<div id="pic5b"></div>
+<div id="pic5c"></div>
+<div id="pic6a"></div>
+<div id="pic6b"></div>
+<div id="pic7a"></div>
+<div id="pic7b"></div>
+<div id="pic7c"></div>
+<div id="pic7d"></div>
+<div id="pic8"></div>
+<div id="pic9a"></div>
+<div id="pic9b"></div>
+
+</body>
+</html>

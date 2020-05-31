@@ -1,0 +1,476 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Romance in the Maldives</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+
+	
+<style type="text/css">
+
+
+body {
+	height: 10000px;
+	width: 768px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	background-color: #f5f6f7;
+}
+
+
+#bg1a {
+	background-image: url(BG_Front%20island.jpg);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+
+#ship {
+	background-image: url(BG_Front%20onlyShip.png);
+	position: fixed;
+	width: 92px;
+	height: 128px;
+	left: 50%;
+	top: 50%;
+	margin-left: -227px;
+	margin-top: -384px;
+}
+
+
+#bg1b {
+	background-image: url(BG_Front%20stayin.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#bg2 {
+	background-image: url(BG_Wedding.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#bg3 {
+	background-image: url(BG_Resort.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#bg4 {
+	background-image: url(BG_Snorkeling.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#bg5l {
+	background-image: url(BG_Lastl.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#bg5r {
+	background-image: url(BG_Lastr.png);
+	width: 1024px;
+	height: 768px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -517px;
+	margin-top: -384px;
+}
+
+#butterfly {
+	background-image: url(butterfyl3.gif);
+	width: 332px;
+	height: 348px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -166px;
+	margin-top: -174px;
+}
+
+#bird {
+	background-image: url(bird3.gif);
+	width: 595px;
+	height: 559px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -297px;
+	margin-top: -279px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+#star1 {
+	background-image: url(fish9a.gif);
+	width: 141px;
+	height: 155px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -71px;
+	margin-top: -78px;
+}
+
+#star2 {
+	background-image: url(fish10.gif);
+	width: 162px;
+	height: 199px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -81px;
+	margin-top: -100px;
+}
+
+#opening {
+	background-image: url(BG_Front%20stayin-01.svg);
+	width: 478px;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -239px;
+	margin-top: -100px;
+}
+
+#wedding {
+	background-image: url(BG_Wedding-01.svg);
+	width: 486px;
+	height: 118px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -243px;
+	margin-top: -59px;
+}
+
+#aboutwedding1 {
+	background-image: url(BG_Wedding-02.svg);
+	width: 362px;
+	height: 62px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -131px;
+	margin-top: -31px; 
+}
+
+
+#resort {
+	background-image: url(BG_Resort-01.svg);
+	width: 352px;
+	height: 120px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -176px;
+	margin-top: -60px;
+}
+
+#aboutresort1 {
+	background-image: url(BG_Resort-02.svg);
+	width: 329px;
+	height: 91px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -164px;
+	margin-top: -46px;
+}
+
+
+#snorkeling {
+	background-image: url(BG_Snorkeling-01.svg);
+	width: 346px;
+	height: 113px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -173px;
+	margin-top: -57px;
+}
+
+#aboutsnork1 {
+	background-image: url(BG_Snorkeling-02.svg);
+	width: 534px;
+	height: 100px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -267px;
+	margin-top: -50px;
+}
+
+
+
+#ending {
+	background-image: url(BG_Last-01.svg);
+	width: 389px;
+	height: 269px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -195px;
+	margin-top: -135px;
+}
+
+#scrolldown {
+	background-image: url(scrolldown.png);
+	width: 122px;
+	
+	height: 115px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -61px;
+	margin-top: -58px;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	jarallax.setDefault('#bg1b', {opacity:'0'});
+	jarallax.setDefault('#bg1c', {opacity:'0'});
+	jarallax.setDefault('#bg2', {opacity:'0'});
+	jarallax.setDefault('#bg3', {opacity:'0'});
+	jarallax.setDefault('#bg4', {opacity:'0'});
+	jarallax.setDefault('#bg5l', {opacity:'0'});
+	jarallax.setDefault('#bg5r', {opacity:'0'});
+	jarallax.setDefault('#butterfly', {opacity:'0'});
+	jarallax.setDefault('#bird', {opacity:'0'});
+	jarallax.setDefault('#star1', {opacity:'0'});
+	jarallax.setDefault('#star2', {opacity:'0'});
+	jarallax.setDefault('#opening', {opacity:'0'});
+	jarallax.setDefault('#wedding', {opacity:'0'});
+	jarallax.setDefault('#aboutwedding1', {opacity:'0'});
+	jarallax.setDefault('#resort', {opacity:'0'});
+	jarallax.setDefault('#aboutresort1', {opacity:'0'});
+	jarallax.setDefault('#snorkeling', {opacity:'0'});
+	jarallax.setDefault('#aboutsnork1', {opacity:'0'});
+	jarallax.setDefault('#ending', {opacity:'0'});
+	jarallax.setDefault('#scrolldown', {marginLeft:'-61px', marginTop:'258px'});
+
+
+	
+	jarallax.addAnimation('#bg1a', 
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'20%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'25%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'100%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'}]);
+						  
+    jarallax.addAnimation('#ship', 	[{progress:'0%', marginLeft:'-227px', marginTop:'-384px',opacity:'1'},
+										 {progress:'20%',marginLeft:'-117px', marginTop:'-255px',opacity:'1'},
+										 {progress:'30%',marginLeft:'-117px', marginTop:'-255px',opacity:'0' },
+										 {progress:'100%', marginLeft:'-117px', marginTop:'-255px',opacity:'0'}]);
+										 
+	jarallax.addAnimation('#scrolldown', [{progress:'0%', marginLeft:'-61px', marginTop:'258px',opacity:'1'},
+										 {progress:'10%',marginLeft:'-61px', marginTop:'258px',opacity:'0'},
+										 {progress:'100%', marginLeft:'-200px', marginTop:'-120px',opacity:'0'}]);							 
+	jarallax.addAnimation('#bg1b', 
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'20%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'22%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'30%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'32%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'35%',marginLeft:'-2617px', marginTop:'-384px',opacity:'0'},
+						  {progress:'100%',marginLeft:'-2617px', marginTop:'-384px',opacity:'0'}]);
+										 
+	jarallax.addAnimation('#opening', [{progress:'0%',marginLeft:'-239px', marginTop:'-200px',opacity:'0'},
+										  {progress:'25%',marginLeft:'-239px', marginTop:'-200px',opacity:'0'},
+										  {progress:'30%',marginLeft:'-239px', marginTop:'-200px',opacity:'1'},
+										  {progress:'32%',marginLeft:'-239px', marginTop:'-200px',opacity:'1'},
+										  {progress:'35%',marginLeft:'-1339px', marginTop:'-200px',opacity:'1'},
+										  {progress:'100%',marginLeft:'-1339px', marginTop:'-200px',opacity:'1'}]);
+	
+	jarallax.addAnimation('#bg2',
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'30%',marginLeft:'1217px', marginTop:'2084px',opacity:'0'},
+						  {progress:'35%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'45%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'50%',marginLeft:'717px', marginTop:'-384px',opacity:'1'},
+						  {progress:'100%',marginLeft:'717px', marginTop:'-384px',opacity:'0'}]);	
+						  
+	jarallax.addAnimation('#butterfly', [{progress:'0%',marginLeft:'866px', marginTop:'-154px',opacity:'0'},
+											{progress:'35%',marginLeft:'-1017px', marginTop:'154px',opacity:'0'},
+											{progress:'40%',marginLeft:'-397px', marginTop:'-204px',opacity:'1'},
+											{progress:'45%',marginLeft:'-397px', marginTop:'-204px',opacity:'1'},
+											{progress:'50%',marginLeft:'905px', marginTop:'-204px',opacity:'0'},
+											{progress:'100%',marginLeft:'905px', marginTop:'-204px',opacity:'0'}]);			
+	
+	jarallax.addAnimation('#wedding', [{progress:'0%',marginLeft:'-262px', marginTop:'-168px',opacity:'0'},
+											{progress:'35%',marginLeft:'-100px', marginTop:'-359px',opacity:'0'},
+											{progress:'36%',marginLeft:'-100px', marginTop:'-359px',opacity:'1'},
+											{progress:'45%',marginLeft:'-100px', marginTop:'-359px',opacity:'1'},
+											{progress:'47%',marginLeft:'-100px', marginTop:'-359px',opacity:'0'},
+											{progress:'100%',marginLeft:'-100px', marginTop:'-359px',opacity:'0'}]);	
+											
+   jarallax.addAnimation('#aboutwedding1', [{progress:'0%',marginLeft:'-262px', marginTop:'-168px',opacity:'0'},
+	                                    {progress:'36%',marginLeft:'3px', marginTop:'-250px',opacity:'0'},
+											{progress:'40%',marginLeft:'3px', marginTop:'-250px',opacity:'1'},
+											{progress:'45%',marginLeft:'3px', marginTop:'-250px',opacity:'1'},
+											{progress:'47%',marginLeft:'3px', marginTop:'-250px',opacity:'0'},
+											{progress:'100%',marginLeft:'3px', marginTop:'-250px',opacity:'0'}]);
+
+	jarallax.addAnimation('#bg3',
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'45%',marginLeft:'-1017px', marginTop:'784px',opacity:'0'},
+						  {progress:'50%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'60%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'65%',marginLeft:'-1017px', marginTop:'784px',opacity:'1'},
+						  {progress:'100%',marginLeft:'-1017px', marginTop:'784px',opacity:'0'}]);	
+				
+	jarallax.addAnimation('#bird',  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+										{progress:'50%',marginLeft:'147px', marginTop:'-784px',opacity:'0'},
+										{progress:'55%',marginLeft:'-120px', marginTop:'-384px',opacity:'1'},
+										{progress:'60%',marginLeft:'-120px', marginTop:'-384px',opacity:'1'},
+										{progress:'65%',marginLeft:'-620px', marginTop:'784px',opacity:'0'},
+										{progress:'100%',marginLeft:'-620px', marginTop:'784px',opacity:'0'}]);	
+										
+	jarallax.addAnimation('#resort',  [{progress:'0%',marginLeft:'-173px', marginTop:'-57px',opacity:'0'},
+										{progress:'50%',marginLeft:'-427px', marginTop:'134px',opacity:'0'},
+										{progress:'51%',marginLeft:'-427px', marginTop:'134px',opacity:'1'},
+										{progress:'60%',marginLeft:'-427px', marginTop:'134px',opacity:'1'},
+										{progress:'62%',marginLeft:'-427px', marginTop:'134px',opacity:'0'},
+										{progress:'100%',marginLeft:'-427px', marginTop:'134px',opacity:'0'}]);	
+											
+	jarallax.addAnimation('#aboutresort1',  [{progress:'0%',marginLeft:'-173px', marginTop:'-57px',opacity:'0'},
+										{progress:'51%',marginLeft:'-460px', marginTop:'234px',opacity:'0'},
+										{progress:'55%',marginLeft:'-460px', marginTop:'234px',opacity:'1'},
+										{progress:'60%',marginLeft:'-460px', marginTop:'234px',opacity:'1'},
+										{progress:'62%',marginLeft:'-460px', marginTop:'234px',opacity:'0'},
+										{progress:'100%',marginLeft:'-460px', marginTop:'234px',opacity:'0'}]);	
+																   
+	jarallax.addAnimation('#bg4',
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'60%',marginLeft:'-517px', marginTop:'1084px',opacity:'0'},
+						  {progress:'65%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'75%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'80%',marginLeft:'-517px', marginTop:'-1284px',opacity:'1'},
+						  {progress:'100%',marginLeft:'-517px', marginTop:'-1284px',opacity:'0'}]);
+						  
+   jarallax.addAnimation('#star1',  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+										{progress:'60%',marginLeft:'-1px', marginTop:'1384px',opacity:'0'},
+										{progress:'65%',marginLeft:'-1px', marginTop:'-84px',opacity:'1',rotate:'320'},
+										{progress:'75%',marginLeft:'-44px', marginTop:'-84px',opacity:'1',rotate:'210'},
+										{progress:'80%',marginLeft:'-44px', marginTop:'-984px',opacity:'1'},
+										{progress:'100%',marginLeft:'-44px', marginTop:'-984px',opacity:'0'}]);	
+   
+   jarallax.addAnimation('#star2',  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+										{progress:'60%',marginLeft:'-180px', marginTop:'1284px',opacity:'0'},
+										{progress:'65%',marginLeft:'-180px', marginTop:'-184px',opacity:'1',rotate:'320'},
+										{progress:'75%',marginLeft:'-170px', marginTop:'-164px',opacity:'1',rotate:'290'},
+										{progress:'80%',marginLeft:'-170px', marginTop:'-1064px',opacity:'1'},
+										{progress:'100%',marginLeft:'-170px', marginTop:'-1064px',opacity:'0'}]);	
+										
+   jarallax.addAnimation('#snorkeling',  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+										{progress:'65%',marginLeft:'-390px', marginTop:'84px',opacity:'0'},
+										{progress:'66%',marginLeft:'-390px', marginTop:'84px',opacity:'1'},
+										{progress:'75%',marginLeft:'-390px', marginTop:'84px',opacity:'1'},
+										{progress:'77%',marginLeft:'-390px', marginTop:'84px',opacity:'0'},
+										{progress:'100%',marginLeft:'-390px', marginTop:'84px',opacity:'0'}]);	
+										
+   jarallax.addAnimation('#aboutsnork1',  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+										{progress:'66%',marginLeft:'-320px', marginTop:'184px',opacity:'0'},
+										{progress:'70%',marginLeft:'-320px', marginTop:'184px',opacity:'1'},
+										{progress:'75%',marginLeft:'-320px', marginTop:'184px',opacity:'1'},
+										{progress:'77%',marginLeft:'-320px', marginTop:'184px',opacity:'0'},
+										{progress:'100%',marginLeft:'-320px', marginTop:'184px',opacity:'0'}]);
+																  
+	jarallax.addAnimation('#bg5l',
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'67%',marginLeft:'-1567px', marginTop:'-384px',opacity:'0'},
+						  {progress:'90%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'100%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'}]);
+	
+	jarallax.addAnimation('#bg5r',
+						  [{progress:'0%',marginLeft:'-517px', marginTop:'-384px',opacity:'0'},
+						  {progress:'67%',marginLeft:'533px', marginTop:'-384px',opacity:'0'},
+						  {progress:'90%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'},
+						  {progress:'100%',marginLeft:'-517px', marginTop:'-384px',opacity:'1'}]);
+						  
+	jarallax.addAnimation('#ending',
+						  [{progress:'0%',marginLeft:'-195px', marginTop:'-135px',opacity:'0'},
+						  {progress:'90%',marginLeft:'-180px', marginTop:'-120px',opacity:'0'},
+						  {progress:'95%',marginLeft:'-180px', marginTop:'-120px',opacity:'1'},
+						  {progress:'100%',marginLeft:'-180px', marginTop:'-120px',opacity:'1'}]);					  
+
+	}
+</script>
+
+</head>
+
+
+<body onload="init()">
+
+</div>
+<div id="bg1a"></div>
+<div id="bg1b"></div>
+<div id="bg1c"></div>
+<div id="bg2"></div>
+<div id="bg3"></div>
+<div id="bg4"></div>
+<div id="bg5r"></div>
+<div id="bg5l"></div>
+<div id="butterfly"></div>
+<div id="bird"></div>
+<div id="star1"></div>
+<div id="star2"></div>
+<div id="cloudl"></div>
+<div id="cloudr"></div>
+<div id="ship"></div>
+<div id="opening"></div>
+<div id="wedding"></div>
+<div id="aboutwedding1"></div>
+<div id="resort"></div>
+<div id="aboutresort1"></div>
+<div id="snorkeling"></div>
+<div id="aboutsnork1"></div>
+<div id="ending"></div>
+<div id="scrolldown"></div>
+</body>
+
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fin or Free The Sharks</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+body{
+	height:14000px;
+}
+
+#description {
+	position:absolute;
+	right: 0%;
+	top: 0%;
+}
+
+#description p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#title {
+	background-image: url(text/title.png);
+	height: 343px;
+	width: 486px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -243px;
+	margin-top: -171.5px;
+
+}
+
+#para1 {
+	background-image: url(text/para1.png);
+	height: 265px;
+	width: 432px;
+	position: fixed;
+	right: -100%;
+	top: 75%;
+	margin-left: -216x;
+	margin-top: -132.5px;
+	z-index:0;
+}
+
+#para2 {
+	background-image: url(text/para2.png);
+	height: 353px;
+	width: 605px;
+	position: fixed;
+	left: 50%;
+	top: 200%;
+	margin-left: -302.5px;
+	margin-top: -176px;
+	z-index: 0;
+
+}
+
+#para3 {
+	background-image:url(text/para3.png);
+	height: 186px;
+	width: 527px;
+	position: fixed;
+	left: -30%;
+	top: 50%;
+	margin-left: -263.5px;
+	margin-top: -93px;
+	z-index:3;
+	
+}
+
+#para4 {
+	background-image:url(text/para4.png);
+	height: 224px;
+	width: 800px;
+	position: fixed;
+	left: 150%;
+	top: 60%;
+	margin-left: -400px;
+	margin-top: -112px;
+	z-index:1;	
+}
+
+
+#para5a{
+    background-image:url(text/para5a.png);
+	height: 354px;
+	width: 570px;
+	position: fixed;
+	left: 150%;
+	top: 40%;
+	margin-left: -285px;
+	margin-top: -177px;
+	z-index:1;	
+}
+
+#para5b{
+    background-image:url(text/para5b.png);
+	height: 600px;
+	width: 604px;
+	position: fixed;
+	left: 150%;
+	top: 50%;
+	margin-left: -302px;
+	margin-top: -300px;
+	z-index:1;	
+}
+
+#para6{
+    background-image:url(text/para6.png);
+	height: 600px;
+	width: 700px;
+	position: fixed;
+	left: 150%;
+	top: 50%;
+	margin-left: -350px;
+	margin-top: -300px;
+	z-index:1;	
+}
+
+#BG {
+    background-image: url(text/BG.jpg);
+	height: 15002px;
+	width: 1024px;
+	position: fixed;
+	z-index: -6;
+	
+}
+
+#blood {
+    background-image: url(text/blood.png);
+	height: 1866px;
+	width: 1024px;
+	position: fixed;
+	left: 0%;
+	top: -1000%;
+	z-index: 1;
+	
+}
+	
+
+#fin1 {
+	background-image: url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: -30%;
+	top: 80%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:-3;
+	
+}
+
+#fin2 {
+	background-image: url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: -50%;
+	top: 40%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:-3;
+	
+}
+
+#fin3 {
+	background-image: url(text/finLEFT.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: 150%;
+	top: 60%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:-3;
+	
+}
+	
+#fin4 {
+	background-image: url(text/finLEFT.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: 100%;
+	top: 300%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index: 3;
+	rotate: 0;
+	
+}
+
+#fin5 {
+	background-image:url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: 50%;
+	top: -10%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:3;
+}
+
+#fin6 {
+	background-image:url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: -50%;
+	top: 50%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:3;
+}
+
+#fin7 {
+	background-image:url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: -30%;
+	top: 80%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:3;
+}
+
+#fin8 {
+	background-image:url(text/fin.png);
+	height: 89px;
+	width: 120px;
+	position: fixed;
+	left: -80%;
+	top: 73%;
+	margin-left: -60px;
+	margin-top: -44.5px;
+	z-index:3;
+}
+
+#ship {
+	background-image: url(text/ship.png);
+	height: 294px;
+	width: 553px;
+	position: fixed;
+	left: 35%;
+	top: 260%;
+	margin-left: -278.5px;
+	margin-top: -147px;
+	z-index: 4;
+	
+}
+
+#marry1 {
+	background-image:url(text/marry.png);
+	height: 178px;
+	width: 179px;
+	position: fixed;
+	left: -20%;
+	top: 18%;
+	margin-left: -89.5px;
+	margin-top: -89px;
+	z-index:3;
+}
+
+#marry2 {
+	background-image:url(text/marry.png);
+	height: 178px;
+	width: 179px;
+	position: fixed;
+	left: 120%;
+	top: 18%;
+	margin-left: -89.5px;
+	margin-top: -89px;
+	z-index:3 ;
+}
+
+#soup1 {
+	background-image:url(text/soup.png);
+	height: 140px;
+	width: 200px;
+	position: fixed;
+	left: 50%;
+	top: 120%;
+	margin-left: -100px;
+	margin-top: -70px;
+	z-index:2;
+
+}
+
+#soup2 {
+	background-image:url(text/soup.png);
+	height: 140px;
+	width: 200px;
+	position: fixed;
+	left: 50%;
+	top: -10%;
+	margin-left: -100px;
+	margin-top: -70px;
+	z-index:1;
+
+}
+
+#chop {
+	background-image:url(text/chop.png);
+	height: 42px;
+	width: 320px;
+	position: fixed;
+	left: 50%;
+	top: 110%;
+	margin-left: -160px;
+	margin-top: -21px;
+	z-index:2 ;
+
+}
+
+</style>
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#title', [
+	{progress:'0%', left:'50%',top:'50%', marginLeft:'-243px', marginTop:'-171.5px'},
+	{progress:'4%', left:'50%',top:'30%'},
+	{progress:'9%', left:'50%',top:'30%'},
+	{progress:'10%', left:'50%',top:'-30%'},
+	{progress:'100%', left:'50%',top:'-30%'}]);
+	
+	jarallax.addAnimation('#para1', [
+	{progress:'0%', right:'-100%',top:'75%', marginLeft:'-216px', marginTop:'-132.5px'},
+	{progress:'12%', right:'-100%',top:'75%'},
+	{progress:'16%', right:'0%',top:'75%'},
+	{progress:'25%', right:'0%',top:'75%'},
+	{progress:'30%', right:'-100%',top:'75%'},
+	{progress:'100%', right:'-100%',top:'75%'}]);
+	
+	jarallax.addAnimation('#para2', [
+	{progress:'0%', left:'50%',top:'200%', marginLeft:'-302.5px', marginTop:'-176px'},
+	{progress:'28%', left:'50%',top:'200%'},
+	{progress:'32%', left:'50%',top:'40%'},
+	{progress:'45%', left:'50%',top:'40%'},
+	{progress:'47%', left:'50%',top:'-50%'},
+	{progress:'100%', left:'50%',top:'-50%'},]);
+	
+	jarallax.addAnimation('#para3', [
+    {progress:'0%', left:'-30%',top:'50%', marginLeft:'-263.5px', marginTop:'-93px'},
+	{progress:'48%', left:'-30%',top:'50%'},
+	{progress:'52%', left:'25%',top:'50%'},
+	{progress:'57%', left:'25%',top:'50%'},
+	{progress:'60%', left:'-30%',top:'50%'},
+	{progress:'100%', left:'-30%',top:'50%'}]);
+	
+	jarallax.addAnimation('#para4', [
+	{progress:'0%', left:'150%',top:'60%', marginLeft:'-400px', marginTop:'-112px'},
+	{progress:'63%', left:'150%',top:'60%'},
+	{progress:'65%', left:'50%',top:'60%'},
+	{progress:'68%', left:'50%',top:'60%'},
+	{progress:'70%', left:'-50%',top:'60%'},
+	{progress:'100%', left:'-50%',top:'60%'}]);
+	
+	jarallax.addAnimation('#para5a', [
+	{progress:'0%', left:'150%',top:'40%', marginLeft:'-300px', marginTop:'-117px'},
+	{progress:'73%', left:'150%',top:'40%'},
+	{progress:'75%', left:'50%',top:'40%'},
+	{progress:'78%', left:'50%',top:'40%'},
+	{progress:'80%', left:'-50%',top:'40%'},
+	{progress:'100%', left:'-50%',top:'40%'}]);
+	
+	jarallax.addAnimation('#para5b', [
+	{progress:'0%', left:'150%',top:'50%', marginLeft:'-302px', marginTop:'-300px'},
+	{progress:'82%', left:'150%',top:'50%'},
+	{progress:'83%', left:'50%',top:'50%'},
+	{progress:'85%', left:'50%',top:'50%'},
+	{progress:'88%', left:'-50%',top:'50%'},
+	{progress:'100%', left:'-50%',top:'50%'}]);
+		
+	jarallax.addAnimation('#para6', [
+	{progress:'0%', left:'150%',top:'50%', marginLeft:'-350px', marginTop:'-300px'},
+	{progress:'87%', left:'150%',top:'50%'},
+	{progress:'89%', left:'50%',top:'50%'},
+	{progress:'92%', left:'50%',top:'50%'},
+	{progress:'94%', left:'50%',top:'-150%'},
+	{progress:'100%', left:'50%',top:'-150%'}]);
+	
+	jarallax.addAnimation('#BG', [
+	{progress:'0%', left:'0%',top:'0%'},
+	{progress:'15%', left:'0%',top:'-270%'},
+	{progress:'19%', left:'0%',top:'-270%'},
+	{progress:'90%', left:'0%',top:'-2070%'},
+	{progress:'98%', left:'0%',top:'-2070%'},
+	{progress:'100%', left:'0%',top:'-2070%'}]);
+	
+	jarallax.addAnimation('#blood', [
+	{progress:'0%', left:'0%', top:'-1000%'},
+	{progress:'48%', left:'0%', top:'35%'},
+	{progress:'55%', left:'0%', top:'35%'},
+	{progress:'60%', left:'0%', top:'200%'},
+	{progress:'100%', left:'0%',top:'200%'}]);
+	
+	jarallax.addAnimation('#fin1', [
+	{progress:'0%', left:'-30%',top:'80%', marginLeft:'-60px', marginTop:'-44.5px'},
+	{progress:'16%', left:'-30%',top:'80%'},
+	{progress:'20%', left:'20%',top:'80%'},
+	{progress:'30%', left:'150%',top:'80%'},
+	{progress:'100%', left:'150%',top:'80%'}]);
+	
+	jarallax.addAnimation('#fin2', [
+	{progress:'0%', left:'-50%',top:'40%', marginLeft:'-60px', marginTop:'-44.5px'},
+	{progress:'18%', left:'-50%',top:'40%'},
+	{progress:'22%', left:'20%',top:'40%'},
+	{progress:'28%', left:'150%',top:'40%'},
+	{progress:'100%', left:'150%',top:'40%'}]);
+	
+	jarallax.addAnimation('#fin3', [
+	{progress:'0%', left:'150%',top:'60%', marginLeft:'-60px', marginTop:'-44.5px'},
+	{progress:'16%', left:'150%',top:'60%'},
+	{progress:'20%', left:'50%',top:'60%'},
+	{progress:'30%', left:'-50%',top:'60%'},
+	{progress:'100%', left:'-50%',top:'60%'}]);
+	
+	jarallax.addAnimation('#fin4', [
+	{progress:'0%', left:'100%',top:'300%', marginLeft:'-60px', marginTop:'-44.5px',rotate:'0'},
+	{progress:'15%', left:'80%',top:'23%',rotate:'0'},
+	{progress:'18%', left:'50%',top:'23%',rotate:'0'},
+	{progress:'19%', left:'50%',top:'23%',rotate:'60'},
+	{progress:'32%', left:'50%',top:'80%',rotate:'480'},
+	{progress:'40%', left:'50%',top:'80%',rotate:'480'},
+	{progress:'45%', left:'50%',top:'68%',rotate:'-25'},
+	{progress:'50%', left:'50%',top:'68%',rotate:'25'},
+	{progress:'55%', left:'50%',top:'68%',rotate:'-25'},
+	{progress:'60%', left:'50%',top:'120%',rotate:'25'},
+	{progress:'65%', left:'50%',top:'120%',rotate:'-25'},
+	{progress:'100%', left:'50%',top:'120%'}]);
+	
+     jarallax.addAnimation('#soup1', [
+	{progress:'0%', left:'50%',top:'120%', marginLeft:'-100px', marginTop:'-70px'},
+    {progress:'40%', left:'50%',top:'120%'},
+	{progress:'45%', left:'50%',top:'77%',rotate:'-20'},
+	{progress:'50%', left:'50%',top:'77%',rotate:'20'},
+	{progress:'55%', left:'50%',top:'77%',rotate:'-20'},
+	{progress:'60%', left:'50%',top:'130%',rotate:'20'},
+	{progress:'65%', left:'50%',top:'130%',rotate:'-20'},
+	{progress:'100%', left:'50%',top:'130%'}]);
+	
+	jarallax.addAnimation('#soup2', [
+	{progress:'0%', left:'50%',top:'-10%', marginLeft:'-100px', marginTop:'-70px'},
+	{progress:'60%', left:'50%',top:'-10%',rotate:'20'},
+	{progress:'62%', left:'50%',top:'30%',rotate:'-20'},
+	{progress:'65%', left:'50%',top:'30%',rotate:'20'},	
+	{progress:'68%', left:'50%',top:'30%',rotate:'-20'},
+	{progress:'72%', left:'50%',top:'120%',rotate:'-20'},
+	{progress:'100%', left:'50%',top:'120%'}]);	
+	
+	jarallax.addAnimation('#fin5', [
+	{progress:'0%', left:'50%',top:'-10%', marginLeft:'-100px', marginTop:'-70px'},
+	{progress:'60%', left:'50%',top:'-10%',rotate:'25'},
+	{progress:'62%', left:'54%',top:'23%',rotate:'-23'},
+	{progress:'65%', left:'54%',top:'23%',rotate:'23'},	
+	{progress:'68%', left:'54%',top:'23%',rotate:'-23'},
+	{progress:'80%', left:'54',top:'130%',rotate:'240'},
+	{progress:'83%', left:'-10%',top:'130%',rotate:'0'},
+	{progress:'95%', left:'-10%',top:'65%',rotate:'0'},
+	{progress:'100%', left:'150%',top:'65%'}]);	
+	
+	jarallax.addAnimation('#fin6', [
+	{progress:'0%', left:'-50%',top:'45%', marginLeft:'-100px', marginTop:'-70px'},
+	{progress:'95%', left:'-50%',top:'45%'},
+	{progress:'100%', left:'110%',top:'45%'}]);	
+	
+	jarallax.addAnimation('#fin7', [
+	{progress:'0%', left:'-30%',top:'75%', marginLeft:'-100px', marginTop:'-70px'},
+	{progress:'95%', left:'-30%',top:'75%'},
+	{progress:'100%', left:'130%',top:'75%'}]);	
+	
+	jarallax.addAnimation('#fin8', [
+	{progress:'0%', left:'-80%',top:'70%', marginLeft:'-100px', marginTop:'-70px'},
+	{progress:'95%', left:'-80%',top:'70%'},
+	{progress:'100%', left:'110%',top:'70%'}]);
+	
+	jarallax.addAnimation('#chop', [
+	{progress:'0%', left:'50%',top:'110%', marginLeft:'-160px', marginTop:'-21px'},
+    {progress:'40%', left:'50%',top:'110%'},
+	{progress:'45%', left:'50%',top:'93%'},
+	{progress:'55%', left:'50%',top:'93%'},
+    {progress:'60%', left:'50%',top:'130%'},	
+	{progress:'100%', left:'50%',top:'130%'}]);
+	
+    jarallax.addAnimation('#ship', [
+	{progress:'0%', left:'35%',top:'260%', marginLeft:'-278.5px', marginTop:'-147px'},
+	{progress:'15%', left:'35%',top:'10%'},
+	{progress:'19%', left:'35%',top:'10%'},
+	{progress:'20%', left:'35%',top:'-30%'},
+	{progress:'100%', left:'35%',top:'-30%'}]);
+	
+	jarallax.addAnimation('#marry1', [
+	{progress:'0%', left:'-20%',top:'18%', marginLeft:'-89.5px', marginTop:'-89px'},
+	{progress:'45%', left:'-20%',top:'18%'},
+	{progress:'50%', left:'30%',top:'18%'},
+	{progress:'60%', left:'30%',top:'18%'},
+	{progress:'65%', left:'-20%',top:'18%'},
+	{progress:'100%', left:'-20%',top:'18%'}]);
+	
+	jarallax.addAnimation('#marry2', [
+	{progress:'0%', left:'120%',top:'18%', marginLeft:'-89.5px', marginTop:'-89px'},
+	{progress:'45%', left:'120%',top:'18%'},
+	{progress:'50%', left:'70%',top:'18%'},
+	{progress:'60%', left:'70%',top:'18%'},
+	{progress:'65%', left:'120%',top:'18%'},	
+	{progress:'100%', left:'120%',top:'18%'}]);
+	
+
+	jarallax.addAnimation('#soup', [
+	{progress:'%', left:'%',top:'%', marginLeft:'-px', marginTop:'-px',rotate:'%'}]);
+	
+	jarallax.addAnimation('#', [{progress:'0%'}, {progress:'100%'}]);	
+}
+</script>
+
+</head>
+
+
+<body onLoad="init()">
+     <div id="description">
+     <p>This website is best viewed on Google Chrome with monitor resolution of 1024 x 768</p></div>
+     <div id="title"></div>
+     <div id="para1"></div>
+     <div id="para2"></div>
+     <div id="para3"></div>
+     <div id="para4"></div>
+     <div id="para5a"></div>
+     <div id="para5b"></div>
+     <div id="para6"></div>
+     <div id="BG"></div>
+     <div id="blood"></div>
+     <div id="marry1"></div>
+     <div id="marry2"></div>
+     <div id="fin1"></div>
+     <div id="fin2"></div>
+     <div id="fin3"></div>
+     <div id="fin4"></div>
+     <div id="fin5"></div>
+     <div id="fin6"></div>
+     <div id="fin7"></div>
+     <div id="fin8"></div>
+     <div id="ship"></div>
+     <div id="soup1"></div>
+     <div id="soup2"></div>
+     <div id="chop"></div>
+     <div id="music"><embed src="text/sea.mp3" width="32" height="32"></embed></div>
+</body>
+
+</html>

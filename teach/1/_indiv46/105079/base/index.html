@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>~ arrow ~</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+#bg {
+	background-image: url(../bg.jpg);
+	height:1050px;
+	width: 1680px;
+	margin-top: -525px;
+	margin-left: -840px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	
+}
+#stop {
+	background-image: url(../stop.png);
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+	position: fixed;
+	left: 36%;
+	top: 40%;
+	
+}
+#text1 {
+	background-image: url(../seg1.png);
+	height: 190px;
+	width: 445px;
+	position: fixed;
+	left: 51%;
+	top: 50%;
+	margin-top: -95px;
+	margin-left: -222.5px;
+}
+
+#text2 {
+	background-image: url(../seg2.png);
+	height: 240px;
+	width: 596px;
+	position: fixed;
+	left: 80%;
+	top: -30%;
+	margin-top: -120px;
+	margin-left: -298px;
+}
+#text3 {
+	background-image: url(../seg3.png);
+	height: 162px;
+	width: 654px;
+	margin-top: -81px;
+	margin-left: -327px;
+	position: fixed;
+	left: 50%;
+	top: 120%;
+}
+
+
+#text4 {
+	background-image: url(../seg4.png);
+	height: 189px;
+	width: 276px;
+	margin-top: -138px;
+	margin-left: -94.5px;
+	position: fixed;
+	left: 30%;
+	top: 150%;
+}
+
+#text5 {
+	background-image: url(../seg5.png);
+	height: 112px;
+	width: 336px;
+	margin-top: -168px;
+	margin-left: -56px;
+	position: fixed;
+	left: -40%;
+	top: 20%;
+}
+
+
+
+body {
+	height: 16000px;
+}
+</style>
+
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	jarallax.addAnimation('#text1', [
+	{progress:'0%', left:'51%',marginLeft:'-222.5px', top:'50%', marginTop:'-95px'},
+	{progress:'5%', left:'51%',marginLeft:'-222.5px', top:'50%', marginTop:'-95px'},
+	{progress:'15%', left:'-1%', top:'-20%'}]);
+	
+	jarallax.addAnimation('#text2', [
+	{progress:'0%', left:'80%',marginLeft:'-241px', top:'-30%', marginTop:'-74.5px'}, 
+	{progress:'15%',left:'65%',top:'20%'},
+	{progress:'22%',left:'65%',top:'20%'},
+	{progress:'28%',left:'20%',top:'120%'}]);	
+	
+	jarallax.addAnimation('#text3', [
+	{progress:'0%', left:'50%',marginLeft:'-131.5px', top:'120%', marginTop:'-138px'}, 
+	{progress:'28%', left:'50%',marginLeft:'-131.5px', top:'120%', marginTop:'-138px'},
+	{progress:'35%',left:'50%',top:'50%'},
+	{progress:'43%',left:'50%',top:'50%'}, 
+	{progress:'50%',left:'50%',top:'-40%'}]);	
+	
+	jarallax.addAnimation('#text4', [
+	{progress:'0%', left:'-10%',marginLeft:'-80px', top:'50%', marginTop:'-269.5px'},
+	{progress:'48%', left:'-10%',marginLeft:'-80px', top:'50%', marginTop:'-269.5px'},
+	{progress:'58%',left:'30%',top:'70%'}, 
+	{progress:'65%',left:'30%',top:'70%'},
+	{progress:'73%',left:'120%',top:'50%'}]);
+	
+	jarallax.addAnimation('#text5', [
+	{progress:'0%', left:'-40%',marginLeft:'-127px', top:'20%', marginTop:'-270.5px'},
+	{progress:'73%', left:'-40%',marginLeft:'-127px', top:'20%', marginTop:'-270.5px'}, 
+	{progress:'85%',left:'60%',top:'72%'}, 
+	{progress:'100%',left:'60%',top:'72%'}]);
+	
+	jarallax.addAnimation('#stop', [
+	{progress:'0%', left:'36%', top:'40%'},
+	{progress:'5%', left:'36%', top:'40%'},
+	{progress:'15%',left:'53%',top:'22%'},
+	{progress:'28%',left:'53%',top:'22%'},
+	{progress:'35%',left:'53%',top:'56%'},
+	{progress:'43%',left:'53%',top:'56%'},
+	{progress:'53%',left:'22%',top:'33%'},
+	{progress:'75%',left:'22%',top:'33%',rotate:'0'},
+	
+	{progress:'80%',left:'45%',top:'48%',rotate:'290'},
+	{progress:'85%', left:'50%', top:'50%',rotate:'360'}, 
+	{progress:'100%',left:'50%',top:'50%'}, ]);
+	
+	jarallax.addAnimation('#', [{progress:'0%'}, {progress:'100%'}]);	
+}
+</script>
+
+</head>
+
+
+<body onload="init()">
+<div id="bg"></div>
+<div id="stop"></div>
+<div id="text1"></div>
+<div id="text2"></div>
+<div id="text3"></div>
+<div id="text4"></div>
+<div id="text5"></div>
+
+
+</body>
+
+</html>
