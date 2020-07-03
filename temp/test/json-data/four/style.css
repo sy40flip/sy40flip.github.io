@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background:#A10039;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a{
+	color:#999;
+	font-size:0.8em;
+	text-decoration:none;
+}
+
+h2{
+	font-weight:normal;
+	color:#FF9193;
+	font-size:1.5em;
+}
+
+#siteTitle p{
+	color:#fff;
+	font-size:2.5em;
+	margin-left: 30px;
+	margin-top: 30px;
+	width:900px;
+}
+
+#update{
+	position:absolute;
+	top: 130px;
+	left: 30px;
+}
+
+li{
+	list-style-type: none;
+	margin-bottom:15px;
+}
+form{
+	margin-left:30px;
+	margin-bottom:30px;
+}
+select{
+	appearance: none;
+	background: transparent;
+	border:1px solid #FF9193;
+	height:20px;
+	width:100px;
+	border-radius:0px;
+	color:#999;
+	position:relative;
+	top:5px;
+}
+select:focus{
+	appearance:none;
+	color:#fff;
+	border:1px solid #FF9193;
+	background-color:#FF9193;
+}
+
+input{
+	appearance: none;
+	background: transparent;
+	border:1px solid #FF9193;
+	border-radius:4px;
+	height:20px;
+	width:200px;
+	position:relative;
+	top:5px;
+}
+::-webkit-input-placeholder {
+  color: #999;
+  text-align:left;
+}
+

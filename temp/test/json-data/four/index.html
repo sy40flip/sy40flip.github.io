@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>LIST OF FILM REVIEWS</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="siteTitle">
+	<p>LIST OF FILM REVIEWS</p>
+</div>
+
+<form>
+  <select id="newInput" name="film-director">
+    <option value="&query=martin%20scorsese" selected>scorsese</option>
+    <option value="&query=damien%20chazelle" >chazelle</option>
+    <option value="&query=quentin%20tarantino" >tarantino</option>
+    <option value="&query=alfred%20hitchcock" >hitchcock</option>
+    <option value="&query=mary%20harron" >harron</option>
+    <option value="&query=jim%20jarmusch" >jarmusch</option>
+  </select>
+  <input type="search" name="search" id="search" placeholder="keyword search......" />
+</form>
+
+<div id="update"></div>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--
+retrieve film data here:
+https://developer.nytimes.com/movie_reviews_v2.json#/Console/GET/reviews/search.json
+-->

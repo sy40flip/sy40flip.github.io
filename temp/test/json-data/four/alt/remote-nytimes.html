@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>LIST OF FILMS</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="siteTitle">
+	<p>LIST OF FILMS</p>
+</div>
+
+<form>
+  <select id="newInput" name="film-director">
+    <option value="&query=martin%20scorsese" selected>scorsese</option>
+    <option value="&query=damien%20chazelle" >chazelle</option>
+  </select>
+  <br><br>
+<!--  <input type="submit">-->
+</form>
+
+
+<div id="update"></div>
+<div id="update2"></div>
+<script src="jquery.js"></script>
+<script src="scriptNytimes-remote.js"></script>
+</body>
+</html>
+
+<!--
+retrieve film data here:
+http://www.omdbapi.com/ 
+-->

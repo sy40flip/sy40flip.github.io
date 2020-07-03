@@ -1,0 +1,216 @@
+/* The Maker Bus Stylesheet */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', arial, sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;}
+
+header {
+  display: block;
+  height: 140px;
+  border-top: 2px solid #C70000;
+  margin-top: 20px;}
+
+h1 {
+  font-weight: normal;
+  margin: 28px 0 0 0;
+  float: left;
+  width: 225px;
+  height: 90px;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;}
+
+h2 {
+  font-size: 0.9em;
+  margin: 0.7em 0 1.7em 0;
+  padding: 0;
+  color: #000;
+  line-height: 1em;
+  text-transform: uppercase;}
+
+h3 {
+	margin-left: 310px;
+	width: 960px;
+	font-size: 0.9em;
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;}
+
+h4 {
+  font-size: 1em;
+  margin: 1em 0 1em 0;
+  padding: 0;
+  color: #C70000;
+  line-height: 2em;
+  alignment-baseline:hanging}
+
+nav {
+  font-family: 'Lato', sans-serif;
+  float: right; 
+  width: 700px;
+  padding-top: 30px;
+  font-size: 1em;
+  text-align: right;
+  text-transform: uppercase;}
+nav a {
+  padding-left: 10px;}
+nav a:hover {
+  color: #C70000;}
+nav a.current {
+	font-weight: 700;
+}
+
+a {text-decoration: none; color: #000;}
+
+#first {
+	background: url(../img/poster.png);
+	width: 734px;
+	height: 734px;
+	position: absolute;
+	margin-left:-367px;
+	top:200px;
+	left:60%;}
+
+.third, .event {
+  font-size: 0.9em;
+  width: 650px;
+  float: left;
+  text-align: left;}
+
+.event p {border-right: 1px solid #999; }
+#content .event:last-child p {border-right: none;}
+
+.third p {
+  padding: 0 20px 0 20px;
+  margin: 0px 0 20px 0;
+  text-align: left;
+  line-height: 1.4em;}
+
+.intro p {
+  margin: 0 0 0 0;
+  padding: 0 0px 20px 0;}
+
+
+.half {
+  padding-top: 60px;
+  width: 480px;
+  float: left;
+  text-align: center;}
+
+#vote {padding-top: 20px;}
+p#selector {margin-top: -40px;}
+
+form {
+  width: 400px;}
+select{
+	appearance: none;
+	background: transparent;
+	border:1px solid #FF9193;
+	height:20px;
+	width:100px;
+	border-radius:0px;
+	color:#000;
+	position:relative;
+	top:5px;
+}
+select:focus{
+	appearance:none;
+	color:#00000;
+	border:1px solid #FF9193;
+}
+input{
+	appearance: none;
+	background: transparent;
+	border:1px solid #FF9193;
+	border-radius:4px;
+	height:20px;
+	width:180px;
+	position:relative;
+	top:5px;
+	padding: 6px 10px 6px 10px;}
+::-webkit-input-placeholder {
+  color: #000;
+  text-align:left;
+}
+label, input {
+  display: inline-block;}
+label {
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+  text-transform: uppercase;}
+input[type=submit] {
+  background-color: #FF9193;
+  color: #fff;
+  font-weight: bold;
+  clear:left;
+  float: right;
+  width: 8em;
+  padding: 8px 20px 8px 20px;
+  margin-top: 10px;
+  text-transform: uppercase;}
+input[type=submit]:hover {
+  background-color: #000;
+  cursor: pointer;}
+  
+#map {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+/* Example */
+#event a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 4.5em;
+  display: block; 
+  height: 120px; width: 100%;}
+#event img {
+  width: 100%;
+  float: left;}
+#event a:hover, #sessions a:hover {color: #FF9193;}
+#sessions a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;}
+#sessions p {
+  margin-top: 2em;}
+#sessions ul {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  padding: 0 20px 0 20px;
+  margin: 0 0 40px 0;}
+#sessions li {
+  list-style-type: none; 
+  padding: 0 0 20px 0; 
+  background-color: #fff; 
+  border-top: 1px solid #d6d6d6;
+  text-align: left;}
+#sessions li:first-child {
+  border-top: none;
+  padding-top: 1.8em;}
+#sessions li .time {
+  display: inline-block;
+  width: 60px;}
+#details div {
+  text-align: left;
+  padding: 0 0 0 1;}
+#details p {
+  padding: 0;
+  margin: 0 0 0 0;}
+  
+li{
+	list-style-type:none;
+	margin-left: -350px;
+	margin-top: 70px;
+}

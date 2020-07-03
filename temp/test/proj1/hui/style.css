@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Bold.ttf');
+	font-weight: bold;
+ }
+
+
+body {background-color: #3C235A;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+ 
+
+ul{list-style-type: none;}
+
+.adf{display: inline-block;}
+
+.wrap{
+	position: absolute;
+   	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	
+	width: auto; height: auto; 
+	}
+
+
+/*ball*/
+
+.ball {
+	position: relative;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	width: 500px; height: 500px; 
+	
+	}
+
+.ball img{
+		width: 100%;
+		height: 100%;}
+
+.overimg{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		}
+
+.overimg img{
+		width: 100%;
+		height: 100%;}
+
+#fansite {position: absolute; bottom:187px; right: 193px; overflow: visible;}
+
+
+.overimg {
+  
+  -webkit-animation: spin 10s linear 0s infinite reverse;
+  -moz-animation: spin 10s linear 0s infinite reverse;  
+  -ms-animation: spin 10s linear 0s infinite reverse;
+  -o-animation: spin 10s linear 0s infinite reverse;
+  animation: spin 10s linear 0s infinite reverse;
+  
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;  
+  animation-play-state: paused;
+}
+
+.overimg.run {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+
+
+
+/*teams*/
+
+
+.theteam {
+	position: relative;
+	
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	
+	
+	padding: 0px 0px 0px 100px;
+	
+	
+	display: none;
+	
+	width: 1000px; height: auto; 
+	overflow: visible;
+	}
+
+
+
+
+/*table*/
+
+.thetable {
+	position: relative;
+	
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	
+	width: auto; height: 413px;
+	padding: 0px 0px 0px 210px;
+	overflow-y: scroll;
+	
+	display: none;
+	}
+
+.thetable p{
+	font-family:Futura;
+	font-weight: bold;
+	letter-spacing:-0.03em;
+	display: inline;
+	}
+
+
+
+.tablebox1 {display: inline-block;width:75px; height:100%;background-color:#3C235A; color:#FFFFFF; }
+.tablebox2 {display: inline-block;width:288px; height:100%;background-color:#FFFFFF;color:#3C235A;}
+.tablebox3 {display: inline-block;width:110px; height:100%;background-color:#3C235A;color:#FFFFFF;}
+
+.tabletop {height:42px;}
+.tabletop p{font-size:20px; margin-left: 6px;line-height: 63px;}
+
+.tablething {height:62px;}
+.tablething p{font-size:28px; margin-left: 6px;line-height: 90px;}
+
+
+
+.tableeven .tablebox1 {background-color:#FFFFFF; color:#3C235A;}
+.tableeven .tablebox2 {background-color:#3C235A; color:#FFFFFF;}
+.tableeven .tablebox3 {background-color:#FFFFFF;color:#3C235A;}
+
+
+/*teamweek*/
+
+.theteamweek {
+	position: relative;
+	
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	
+	
+	width: auto; height: 450px;
+	padding: 0px 0px 0px 170px;
+	
+	
+	display: none;
+	
+	}
+
+.court{
+	position: absolute;
+   	top: 55%;
+    left: 63%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.row{display: table; position: relative;margin-left: auto; margin-right: auto; width: auto;  margin-top: 20px; }
+.player{width: 70px; height:70px;display: inline-block; margin: 0px 27px 0px 27px; }
+
+.pthing{
+	position:absolute;
+	top:40px;
+	font-family:Futura;
+	font-weight: bold;
+	letter-spacing:-0.06em;
+	width: 70px;
+	font-size: 20px;
+	line-height: 8px;
+	pointer-events: none;
+	
+	}
+
+.pname{display: table;position: absolute;
+	color: #3C235A;
+   	top: 3px;
+    left: 50%;
+    margin-right: -50%;
+	transform: scale(0.705,0.7896) translate(-50%, -50%);
+	transform-origin: 0% 0%;}
+.pclub{width: 70px; display: table;  white-space: nowrap; position: absolute;
+	color: #FFFFFF;
+   	top: 15px;
+    left: 50%;
+    margin-right: -50%;
+    
+	transform: scale(0.34,0.3808) translate(-50%, -50%);
+	transform-origin: 0% 0%;}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HKBU Academy of Film 2017</title>
+    <link rel="stylesheet" href="css/c08.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>HKBU Academy of Film 2017</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index2.html">Student Profiles</a>
+        <a href="index3.html" class="current">Alumni Profiles</a>
+        <a href="index4.html">Dates & Location</a>
+      </nav>
+    </header>
+
+    <section id="content">
+      <div id="container">
+        <h2>Alumni Profiles</h2>
+
+          <form>
+          <select id="newInput" name="year">
+            <option selected>select year</option>
+            <option value="2016.json" >2016</option>
+            <option value="2015.json" >2015</option>
+            <option value="2014.json" >2014</option>
+            <option value="2013.json" >2013</option>
+            <option value="2012.json" >2012</option>
+            <option value="data.json" >Show All</option>
+
+          </select>
+            <input type="search" name="search" id="search" placeholder="Search" />
+          </form>
+          <div id="update"></div>
+          
+          </div>
+
+    </section>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jq-load.js"></script>
+    <script src="js/alumni.js"></script>
+
+
+  </body>
+</html>

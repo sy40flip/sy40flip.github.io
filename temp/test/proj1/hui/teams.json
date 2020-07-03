@@ -1,0 +1,180 @@
+{
+  "currentseason": "2016-2017",
+  "week": "34",
+  "teams": [
+    {
+      "num": 1,
+	  "name": "Arsenal",
+      "rank": 6,
+      "points": 57
+      },
+	 
+	 {
+      "num": 2,
+	  "name": "Bournemouth",
+      "rank": 16,
+      "points": 35
+      },
+	  
+	 {
+      "num": 3,
+	  "name": "Burnley",
+      "rank": 14,
+      "points": 36
+      }, 
+	  
+	   {
+      "num": 4,
+	  "name": "Chelsea",
+      "rank": 1,
+      "points": 75
+      },
+	  
+	   {
+      "num": 5,
+	  "name": "Crystal Palace",
+      "rank": 15,
+      "points": 35
+      },
+	  
+	   {
+      "num": 6,
+	  "name": "Everton",
+      "rank": 7,
+      "points": 57
+      },
+	  
+	   {
+      "num": 7,
+	  "name": "Hull",
+      "rank": 17,
+      "points": 30
+      },
+	  
+	   {
+      "num": 8,
+	  "name": "Leicester",
+      "rank": 12,
+      "points": 37
+      },
+	  
+	    {
+      "num": 9,
+	  "name": "Liverpool",
+      "rank": 3,
+      "points": 66
+      },
+	    {
+      "num": 10,
+	  "name": "Manchester City",
+      "rank": 4,
+      "points": 64
+      },
+	    {
+      "num": 11,
+	  "name": "Manchester United",
+      "rank": 5,
+      "points": 60
+      },
+	    {
+      "num": 12,
+	  "name": "Middlesbrough",
+      "rank": 19,
+      "points": 24
+      },
+	    {
+      "num": 13,
+	  "name": "Southampton",
+      "rank": 9,
+      "points": 40
+      },
+	    {
+      "num": 14,
+	  "name": "Stoke City",
+      "rank": 11,
+      "points": 39
+      },
+	    {
+      "num": 15,
+	  "name": "Sunderland",
+      "rank": 20,
+      "points": 21
+      },
+	    {
+      "num": 16,
+	  "name": "Swansea",
+      "rank": 18,
+      "points": 28
+      },
+	    {
+      "num": 17,
+	  "name": "Tottenham",
+      "rank": 2,
+      "points": 71
+      },
+	    {
+      "num": 18,
+	  "name": "Watford",
+      "rank": 10,
+      "points": 40
+      },
+	    {
+      "num": 19,
+	  "name": "West Brom",
+      "rank": 8,
+      "points": 44
+      },
+	    {
+      "num": 20,
+	  "name": "West Ham",
+      "rank": 13,
+      "points": 37
+      }
+  ],
+  "bestxi": [
+	  {
+      "playername": "Pickford",
+	  "club": "Sunderland"
+      },
+	  {
+      "playername": "Walker",
+	  "club": "Tottenham"
+      },
+	  {
+      "playername": "Otamendi",
+	  "club": "Manchester City"
+      },
+	  {
+      "playername": "van Dijk",
+	  "club": "Southampton"
+      },
+	  {
+      "playername": "Rose",
+	  "club": "Tottenham"
+      },
+	  {
+      "playername": "Mane",
+	  "club": "Liverpool"
+      },
+	  {
+      "playername": "Pogba",
+	  "club": "Manchester United"
+      },
+	  {
+      "playername": "Eriksen",
+	  "club": "Tottenham"
+      },
+	  {
+      "playername": "Hazard",
+	  "club": "Chelsea"
+      },
+	  {
+      "playername": "Lukaku",
+	  "club": "Everton"
+      },
+	  {
+      "playername": "Sanchez",
+	  "club": "Arsenal"
+      }
+  ]
+}// JSON Document

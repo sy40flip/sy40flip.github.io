@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>台灣全國動物認領資料平台 - 領養代替購買</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="Nav">
+<a href="index.html" class="button">領養資料庫</a>
+<a href="index1.html" class="button">領養計算機</a>
+</div>
+<div class="Cover"></div>
+<form>
+  <select id="newInput" name="animal-kind">
+    <option value="狗" >狗</option>
+    <option value="貓">貓</option>
+  </select>
+  <input type="search" name="search" id="search" placeholder="ID/種類/性別/顏色/位置等..." />
+</form>
+
+<div id="update"></div>
+
+<script src="jquery.js"></script>
+<script src="scriptAnimal.js"></script>
+</body>
+</html>
+
+<!--
+retrieve film data here:
+http://data.coa.gov.tw/Service/OpenData/AnimalOpenData.aspx?
+-->

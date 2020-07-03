@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>HTML5 Example</title>
+
+		<script type="text/javascript">
+			// define destination x, y
+			var dx=0;
+			var dy=0;
+			// define position
+			var x=0;
+			var y=0;
+			//var store for div
+			var d;
+						
+			
+		function init() {
+			d = document.getElementById("box");
+			// initial size
+			dx = 400;
+			dy = 400;
+//			dx = Math.random() * 800;
+//			dy = Math.random() * 800;
+			loop();
+		}
+
+		function loop (){
+			requestAnimationFrame(loop);
+			// set easing
+			x += (dx-x) * 0.1;
+			y += (dy-y) * 0.1;
+		/*1. setting position*/
+			//d.style.left = x + "px";
+			//d.style.top = y + "px"; 
+		/*2. setting size*/
+			d.style.width = x + "px";
+			d.style.height = y + "px"; 
+			// go to new position once arriving new target		
+			function newtar() {
+			if(Math.abs(x-dx) < 1) {
+				dx = Math.random() * 800;
+				dy = Math.random() * 800;			
+			}
+			}
+			
+		/* 3. change only while listening to event */
+			window.addEventListener("mousedown", newtar, false);
+			
+		
+		}
+		</script>
+
+	</head>
+
+	<body onload="init()">		
+    	<div id="box" style="width:200px; position:absolute; height:200px; background-color:#3423FF;"></div>
+	</body>
+
+</html>
+
+
