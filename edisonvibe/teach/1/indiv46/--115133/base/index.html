@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<div id="text5">
+  <html>
+  <head>
+    
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>~ arrow ~</title>
+    
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="jarallax-0.2.4.js"></script>
+    
+  <style type="text/css">
+#text1 {
+	background-image: url(../1.png);
+	width: 572px;
+	position: fixed;
+	top: 10%;
+	height: 172px;
+	left: 120%;
+}
+#text2 {
+	background-image: url(../2.png);
+	height: 172px;
+	width: 668px;
+	position: fixed;
+	top: 30%;
+	left: 140%;
+}
+#text3 {
+	background-image: url(../3.png);
+	height: 180px;
+	width: 756px;
+	left: 160%;
+	top: 50%;
+	position: fixed;
+}
+#text4 {
+	background-image: url(../4.png);
+	height: 450px;
+	width: 1370px;
+	position: fixed;
+	left: -100%;
+	top: 30%;
+}
+#text5 {
+	background-image: url(../5.png);
+	height: 500px;
+	width: 500px;
+	position: fixed;
+	left: -100%;
+	top: 10%;	
+}
+#text6 {
+	background-image: url(../6.png);
+	height: 600px;
+	width: 600px;
+	position: fixed;
+	left: -100%;
+	top: 30%;	
+	<br>
+}
+#text7 {
+	background-image: url(../7.gif);
+	height: 105px;
+	width: 200px;
+	position: fixed;
+	left: -100%;
+	top: 51%;
+}
+body {
+	height: 8000px;
+	background-image: url(../dark-grey-texture-abstract-hd-wallpaper-1920x1200-1223.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+  </style>
+    
+  <script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	jarallax.addAnimation('#text1', [{progress:'0%', left:'120%'}, {progress:'5%', left:'80%'},{progress:'15%', left:'20%'},{progress:'25%', left:'-60%'}]);
+	jarallax.addAnimation('#text2', [{progress:'0%', left:'140%'}, {progress:'20%', left:'100%'},{progress:'25%', left:'50%'},{progress:'35%', left:'0%'},{progress:'50%', left:'-60%'}]);
+	jarallax.addAnimation('#text3', [{progress:'0%', left:'160%'}, {progress:'40%', left:'80%'},{progress:'50%', left:'60%'},{progress:'60%', left:'-10%'},{progress:'75%', left:'-60%'}]);
+	jarallax.addAnimation('#text4', [{progress:'0%', left:'-100%'}, {progress:'55%', left:'-100%'},{progress:'78%', left:'10%'},{progress:'85%', left:'40%'},{progress:'95%', left:'80%'},{progress:'100%', left:'120%'}]);	
+	jarallax.addAnimation('#text5', [{progress:'0%', left:'-100%'}, {progress:'70%', left:'-100%'},{progress:'90%', left:'10%'},{progress:'95%', left:'40%'},{progress:'100%', left:'60%'}]);
+	jarallax.addAnimation('#text6', [{progress:'0%', left:'-100%'}, {progress:'90%', left:'-100%'},{progress:'97%', left:'2%'},{progress:'100%', left:'10%'}]);
+	jarallax.addAnimation('#text7', [{progress:'0%', left:'-100%'}, {progress:'90%', left:'-100%'},{progress:'97%', left:'2%'},{progress:'100%', left:'20%'}]);
+}
+</script>
+    
+  </head>
+    
+    
+  <body onload="init()">
+  <div id="text1"> </div>
+  <div id="text2"> </div>
+  <div id="text3"> </div>
+  <div id="text4"> </div>
+  <div id="text5"> </div>
+  <div id="text6"> </div>
+  <div id="text7"> </div>
+  </body>
+    
+    
+  </html>
+</div>

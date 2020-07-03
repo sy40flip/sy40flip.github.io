@@ -1,0 +1,996 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>~Cocoa~</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+<script type="text/javascript" src="audio.js"></script>
+	
+<style type="text/css">
+body{
+	height: 80000px;
+	background-color: #000;
+}
+
+#bg1 {
+	background-image: url(gfx//farm/farm_0032_sky.png);
+	height: 768px;
+	width: 1024px;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	z-index: 0.1;
+}
+
+#bg2 {
+	background-image: url(gfx/factory/factory1.png);
+	height: 768px;
+	width: 1024px;
+	position: fixed;
+	left: 0%;
+	top: 300%;
+	z-index: 1;
+}
+
+#bg21 {
+	background-image: url(gfx/factory/factory2.png);
+	height: 768px;
+	width: 1024px;
+	position: fixed;
+	left: 0%;
+	top: 300%;
+	z-index: 0.5;
+}
+
+#moon {
+	background-image: url(gfx/factory/factory_0001_moon-and-star.png);
+	height: 177px;
+	width: 211px;
+	position: fixed;
+	left: 120%;
+	top: 40%;
+	z-index: 0.4;
+	zoom: 50%;
+	opacity: 1;
+}
+
+#bg3 {
+	height: 768px;
+	width: 1024px;
+	position: fixed;
+	left: 300%;
+	top: 0%;
+	background-image: url(gfx/coffee%20shop/coffeeshop_0003_%E5%9C%96%E5%B1%A4-2.png);
+	z-index: 0;
+}
+
+#text1 {
+	background-image: url(gfx/text/how_0000_HOW-IS--HOT-CHOCOLATE--MADE_-.png);
+	position: fixed;
+	height: 274px;
+	width: 924px;
+	left: 35%;
+	top: 35%;
+	zoom: 50%;
+	opacity: 1;
+}
+
+#cup1 {
+	background-image: url(gfx/text/how_0001_%E5%9C%96%E5%B1%A4-2.png);
+	position: fixed;
+	height: 262px;
+	width: 315px;
+	left: 15%;
+	top: 35%;
+	zoom: 50%;
+}
+
+#m1 {
+	background-image: url(gfx/farm/farm_0023_mountain-1.png);
+	position: fixed;
+	z-index: 1;
+	height: 280px;
+	width: 1090px;
+	zoom: 65%;
+	top: 200%;
+	left: 0%;
+	opacity: 0;
+	z-index: 1;
+}
+
+#m2 {
+	background-image: url(gfx/farm/farm_0022_mountain-2.png);
+	position: fixed;
+	z-index: 2;
+	height: 279px;
+	width: 950px;
+	zoom: 65%;
+	top: 200%;
+	left: 0%;
+	opacity: 0;
+	z-index: 1;
+}
+
+#m3 {
+	background-image: url(gfx/farm/farm_0021_mountain-3.png);
+	position: fixed;
+	z-index: 3;
+	height: 220px;
+	width: 1024px;
+	zoom: 80%;
+	top: 200%;
+	left: 20%;
+	opacity: 0;
+	z-index: 0;
+}
+
+#m4 {
+	background-image: url(gfx/farm/farm_0020_mountain-4.png);
+	position: fixed;
+	z-index: 4;
+	height: 220px;
+	width: 1024px;
+	zoom: 80%;
+	top: 200%;
+	left: 20%;
+	opacity: 0;
+	z-index: 0;
+}
+
+#sun {
+	background-image: url(gfx/farm/farm_0025_sun.gif);
+	position: fixed;
+	height: 311px;
+	width: 305px;
+	zoom: 70%;
+	top: 3%;
+	left: 75%;
+	opacity: 0;
+}
+
+#truck {
+	background-image: url(gfx/farm/farm_0024_trunk.png);
+	position: fixed;
+	height: 903px;
+	width: 821px;
+	zoom: 70%;
+	top: 200%;
+	left: 25%;
+	opacity: 0;
+	z-index: 0.5;
+}
+
+#leaf {
+	background-image: url(gfx/farm/farm_0024_leaf.png);
+	position: fixed;
+	height: 903px;
+	width: 821px;
+	zoom: 70%;
+	top: 200%;
+	left: 25%;
+	opacity: 0;
+	z-index: 0.5;
+}
+
+#cocoas {
+	background-image: url(gfx/farm/farm_0024_cocoa.png);
+	position: fixed;
+	height: 903px;
+	width: 821px;
+	zoom: 70%;
+	top: 200%;
+	left: 25%;
+	opacity: 0;
+	z-index: 0.5;
+}
+
+#seed {
+	background-image: url(gfx/farm/cocoa.gif);
+	position: fixed;
+	height: 201px;
+	width: 128px;
+	zoom: 70%;
+	top: 19%;
+	left: 32%;
+	opacity: 0;
+	z-index: 2;
+}
+
+#cloud {
+	background-image: url(gfx/farm/farm_0028_cloud.png);
+	position: fixed;
+	height: 63px;
+	width: 238px;
+	zoom: 70%;
+	top: 19%;
+	left: 19%;
+	opacity: 1;
+	z-index: 3;
+}
+
+#cloud2 {
+	background-image: url(gfx/farm/farm_0028_cloud.png);
+	position: fixed;
+	height: 63px;
+	width: 238px;
+	zoom: 70%;
+	top: 58%;
+	left: 70%;
+	opacity: 1;
+	z-index: 3;
+}
+
+#machine {
+	background-image: url(gfx/factory/machine2.gif);
+	position: fixed;
+	height: 2990px;
+	width: 2000px;
+	zoom: 50%;
+	top: 150%;
+	left: -10%;
+	z-index: 3;
+}
+
+#machine_top {
+	background-image: url(gfx/factory/machine1.gif);
+	position: fixed;
+	height: 2990px;
+	width: 2000px;
+	zoom: 50%;
+	top: 150%;
+	left: -10%;
+	z-index: 1;
+}
+
+#cocoa {
+	background-image: url(gfx/factory/cocoa.png);
+	position: fixed;
+	height: 37px;
+	width: 53px;
+	zoom: 120%;
+	top: 55%;
+	left: 52%;
+	z-index: 4;
+	opacity : 0;
+}
+
+#cocoa_rising {
+	background-image: url(gfx/factory/cocoa.png);
+	position: fixed;
+	height: 37px;
+	width: 53px;
+	top: 77%;
+	left: 70%;
+	z-index: 6;
+	opacity : 0;
+}
+
+#cocoa2 {
+	background-image: url(gfx/factory/cocoa.png);
+	position: fixed;
+	height: 37px;
+	width: 53px;
+	zoom: 120%;
+	top: 55%;
+	left: 52%;
+	z-index: 4;
+	opacity : 0;
+}
+
+#cocoa3 {
+	background-image: url(gfx/factory/cocoa.png);
+	position: fixed;
+	height: 37px;
+	width: 53px;
+	zoom: 120%;
+	top: 55%;
+	left: 52%;
+	z-index: 4;
+	opacity : 0;
+}
+
+#track {
+	background-image: url(gfx/factory/track.gif);
+	position: fixed;
+	height: 1272px;
+	width: 2517px;
+	top: -20%;
+	left: 30%;
+	zoom: 85%;
+	z-index: 5;
+	opacity : 0;
+}
+
+#cocoamount {
+	background-image: url(gfx/factory/many_cocoa.png);
+	position: fixed;
+	height: 266px;
+	width: 819px;
+	top: 85%;
+	left: 147%;
+	zoom: 150%;
+	z-index: 8;
+	opacity : 1;
+}
+
+#bag {
+	background-image: url(gfx/factory/bag.png);
+	position: fixed;
+	height: 1072px;
+	width: 1920px;
+	top: 62%;
+	left: 22%;
+	zoom: 80%;
+	z-index: 9;
+	opacity : 0;
+}
+
+
+#table {
+	background-image: url(gfx/coffee%20shop/coffeeshop_0002_%E5%9C%96%E5%B1%A4-10.png);
+	position: fixed;
+	height: 399px;
+	width: 1920px;
+	top: 170%;
+	left: -10%;
+	z-index: 1;
+	opacity : 0;
+	zoom: 60%;
+}
+
+#cup2 {
+	background-image: url(gfx/coffee%20shop/coffeeshop_0001_cup.png);
+	position: fixed;
+	height: 703px;
+	width: 845px;
+	top: 50%;
+	left: 31.5%;
+	z-index: 2;
+	opacity : 0;
+	zoom: 50%;
+}
+
+#clock {
+	background-image: url(gfx/coffee%20shop/clock.gif);
+	position: fixed;
+	height: 540px;
+	width: 480px;
+	top: 5%;
+	left: 5%;
+	z-index: 1;
+	opacity : 0;
+	zoom: 50%;
+}
+
+#poster {
+	background-image: url(gfx/coffee%20shop/coffeeshop_0000_%E5%9C%96%E5%B1%A4-11.png);
+	position: fixed;
+	height: 452px;
+	width: 315px;
+	top: 5%;
+	left: 80%;
+	z-index: 1;
+	opacity : 0;
+	zoom: 50%;
+}
+
+#table {
+	background-image: url(gfx/coffee%20shop/coffeeshop_0002_%E5%9C%96%E5%B1%A4-10.png);
+	position: fixed;
+	height: 399px;
+	width: 1920px;
+	top: 170%;
+	left: -10%;
+	z-index: 4;
+	opacity : 0;
+	zoom: 60%;
+}
+
+#cup2 {
+	background-image: url(gfx/coffee%20shop/cuphalf2.png);
+	position: fixed;
+	height: 1080px;
+	width: 1920px;
+	top: 50%;
+	left: -200%;
+	z-index: 7;
+	opacity : 1;
+	zoom: 35%;
+}
+
+#cup3 {
+	background-image: url(gfx/coffee%20shop/cuphalf1.png);
+	position: fixed;
+	height: 1080px;
+	width: 1920px;
+	top: 50%;
+	left: -200%;
+	z-index: 5;
+	opacity : 1;
+	zoom: 35%;
+}
+
+#cup4 {
+	background-image: url(gfx/coffee%20shop/cupfull.png);
+	position: fixed;
+	height: 1080px;
+	width: 1920px;
+	top: 50%;
+	left: -200%;
+	z-index: 8;
+	opacity : 0;
+	zoom: 35%;
+}
+
+#clock {
+	background-image: url(gfx/coffee%20shop/clock.gif);
+	position: fixed;
+	height: 540px;
+	width: 480px;
+	top: 5%;
+	left: 5%;
+	z-index: 1;
+	opacity : 0;
+	zoom: 60%;
+}
+
+#poster {
+	background-image: url(gfx/coffee%20shop/coffeeshop_0000_%E5%9C%96%E5%B1%A4-11.png);
+	position: fixed;
+	height: 452px;
+	width: 315px;
+	top: 5%;
+	left: 75%;
+	z-index: 1;
+	opacity : 0;
+	zoom: 70%;
+}
+
+#water {
+	background-image: url(gfx/coffee%20shop/water.gif);
+	position: fixed;
+	height: 6695px;
+	width: 1400px;
+	top: 5%;
+	left: 40%;
+	z-index: 3;
+	opacity : 0;
+	zoom: 10%;
+}
+
+#window {
+	background-image: url(gfx/coffee%20shop/water.gif);
+	position: fixed;
+	height: 6695px;
+	width: 1400px;
+	top: 5%;
+	left: 40%;
+	z-index: 3;
+	opacity : 0;
+	zoom: 10%;
+}
+
+#text2 {
+	background-image: url(text/cocoa_tree.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+	
+}
+
+#text3 {
+	background-image: url(text/first.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+}
+
+#text4 {
+	background-image: url(text/second.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+}
+
+#text5 {
+	background-image: url(text/cocoa_rich.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+}
+
+#text6 {
+	background-image: url(text/bags.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+}
+
+#text7 {
+	background-image: url(text/not_yet_last.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+	opacity : 0;
+}
+
+#text8 {
+	background-image: url(text/last.png);
+	position: fixed;
+	height: 768px;
+	width: 1024px;
+	top: 0%;
+	left: 0%;
+	z-index: 15;
+	opacity : 0;
+}
+
+p {
+	width:700px;
+	text-align:right;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	font-size:12px;
+	line-height:1.2em;
+	color:#333;
+}
+
+</style>
+
+<script type="text/javascript">
+	init = function() {
+
+	function soundfxBGM(){
+		startsoundfx("BGM.mp3");
+	}
+	function soundfxMachine(){
+		startsoundfx("Machine.mp3");
+	}
+	function soundfxBelt(){
+		startsoundfx("Belt.mp3");
+	}
+	function soundfxDrop(){
+		startsoundfx("Drop.mp3");
+	}
+	
+
+	var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#text2', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'9%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'10%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'19%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'20%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'0%', top:'0%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#text3', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'21%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'22%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'30%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'31%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'0%', top:'0%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#text4', [
+	{progress:'0%', left:'-20%', top:'0%', opacity:'0'},
+	{progress:'31%', left:'-20%', top:'0%', opacity:'0'},
+	{progress:'32%', left:'-20%', top:'0%', opacity:'1'},
+	{progress:'36%', left:'-20%', top:'0%', opacity:'1'},
+	{progress:'37%', left:'-20%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'-20%', top:'0%', opacity:'0'}]);
+
+	jarallax.addAnimation('#text5', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'58%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'59%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'68%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'69%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'0%', top:'0%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#text6', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'71%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'72%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'82%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'83%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'0%', top:'0%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#text7', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'87%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'88%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'96%', left:'0%', top:'0%', opacity:'1'},
+	{progress:'97%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'100%', left:'0%', top:'0%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#text8', [
+	{progress:'0%', left:'0%', top:'0%', opacity:'0'},
+	{progress:'97%', left:'-3%', top:'25%', opacity:'0'},
+	{progress:'99%', left:'-5%', top:'22%', opacity:'1'},
+	{progress:'100%', left:'-5%', top:'22%', opacity:'1'}]);
+
+
+	jarallax.addAnimation('#bg1', [
+	{progress:'0%', left:'0%', top:'0%'},
+	{progress:'50%', left:'0%', top:'0%'},
+	{progress:'80%', left:'0%', top:'0%'},
+	{progress:'100%', left:'-300%', top:'0%'}]);	
+	
+    jarallax.addAnimation('#bg2', [
+	{progress:'0%', left:'0%', top:'300%'},
+	{progress:'50%', left:'0%', top:'0%'},
+	{progress:'80%', left:'0%', top:'0%'},
+	{progress:'90%', left:'-300%', top:'0%'},
+	{progress:'100%', left:'-300%', top:'0%'}]);
+	
+	jarallax.addAnimation('#bg21', [
+	{progress:'0%', left:'0%', top:'300%'},
+	{progress:'50%', left:'0%', top:'0%'},
+	{progress:'80%', left:'0%', top:'0%'},
+	{progress:'90%', left:'-300%', top:'0%'},
+	{progress:'100%', left:'-300%', top:'0%'}]);
+	
+	jarallax.addAnimation('#moon', [
+	{progress:'0%', left:'120%', top:'40%'},
+	{progress:'40%', left:'120%', top:'40%'},
+	{progress:'50%', left:'80%', top:'20%'},
+	{progress:'80%', left:'50%', top:'30%'},
+	{progress:'90%', left:'-200%', top:'30%'},
+	{progress:'100%', left:'-200%', top:'30%'}]);
+	
+	jarallax.addAnimation('#bg3', [
+	{progress:'0%', left:'300%', top:'0%'},
+	{progress:'75%', left:'300%', top:'0%'},
+	{progress:'80%', left:'0%', top:'0%'},
+	{progress:'100%', left:'0%', top:'0%'}]);
+	
+	jarallax.addAnimation('#text1', [
+	{progress:'0%', opacity:'1'},
+	{progress:'2.5%', opacity:'1'},
+	{progress:'5%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#cup1', [
+	{progress:'0%', opacity:'1'},
+	{progress:'2.5%', opacity:'1'},
+	{progress:'5%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#cloud', [
+	{progress:'0%', left:'19%', top:'19%'},
+	{progress:'0.5%', left:'19%', top:'19%', opacity:'1'},
+	{progress:'5%', left:'57%', top:'19%', opacity:'0'},
+    {progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#cloud2', [
+	{progress:'0%', left:'70%', top:'58%'},
+	{progress:'0.5%', left:'70%', top:'58%', opacity:'1'},
+	{progress:'5%', left:'32%', top:'58%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#m1', [
+	{progress:'0%', opacity:'0'},
+	{progress:'0.5%',  top:'100%',opacity:'0'},
+	{progress:'5%', top:'80%', opacity:'1'},
+	{progress:'16%', top:'80%', opacity:'1'},
+	{progress:'17.5%', top:'80%', left:'0%'},
+	{progress:'20%', top:'100%', left:'-200%'},
+	{progress:'50%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#m2', [
+	{progress:'0%', opacity:'0'},
+	{progress:'3.5%',  top:'100%',opacity:'0'},
+	{progress:'5%', top:'81%', opacity:'1'},
+	{progress:'16%', top:'80%', opacity:'1'},
+	{progress:'17.5%', top:'81%', left:'0%'},
+	{progress:'20%', top:'100%', left:'-200%'},
+	{progress:'50%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+    jarallax.addAnimation('#m3', [
+	{progress:'0%', opacity:'0'},
+	{progress:'3%',  top:'100%',opacity:'0'},
+	{progress:'5%', top:'85%', opacity:'1'},
+	{progress:'16%', top:'85%', opacity:'1'},
+	{progress:'17.5%', top:'85%', left:'20%'},
+	{progress:'20%', top:'100%', left:'200%'},
+	{progress:'50%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#m4', [
+	{progress:'0%', opacity:'0'},
+	{progress:'1.5%',  top:'100%',opacity:'0'},
+	{progress:'5%', top:'85%', opacity:'1'},
+	{progress:'16%', top:'85%', opacity:'1'},
+	{progress:'17.5%', top:'85%', left:'20%'},
+	{progress:'20%', top:'100%', left:'200%'},
+	{progress:'50%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#sun', [
+	{progress:'0%', opacity:'0'},
+	{progress:'1.5%',  top:'-50%',opacity:'0'},
+	{progress:'5%', top:'5%', opacity:'1'},
+	{progress:'17.5%', top:'5%', opacity:'1'},
+	{progress:'20%', top:'-50%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#truck', [
+	{progress:'0%', left:'25%', top:'100%', opacity:'0'},
+	{progress:'7.5%', left:'25%', top:'40%', opacity:'0'},
+	{progress:'10%', left:'25%', top:'20%', opacity:'1'},
+	{progress:'15%', left:'25%', top:'20%', opacity:'1', zoom: '70%'},
+	{progress:'16.5%', left:'25%', top:'20%', opacity:'1', zoom: '100%'},
+	{progress:'18%', left:'25%', top:'20%', opacity:'1', zoom: '130%'},
+	{progress:'21%', left:'25%', top:'-30%', opacity:'1', zoom: '130%'},
+	{progress:'22%', left:'25%', top:'-30%', opacity:'0', zoom: '130%'},
+	{progress:'100%', opacity:'0'}]);
+	
+	
+	jarallax.addAnimation('#leaf', [
+	{progress:'0%', left:'25%', top:'20%', opacity:'0'},
+	{progress:'11%', left:'25%', top:'20%', opacity:'0'},
+	{progress:'13.5%', left:'25%', top:'20%', opacity:'1'},
+	{progress:'15%', opacity:'1', zoom: '70%'},
+	{progress:'16.5%', left:'25%', top:'20%', opacity:'1', zoom: '100%'},
+	{progress:'18%', left:'25%', top:'20%', opacity:'1', zoom: '130%'},
+	{progress:'21%', left:'25%', top:'-30%', opacity:'1', zoom: '130%'},
+	{progress:'22%', left:'25%', top:'-30%', opacity:'0', zoom: '130%'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#cocoas', [
+	{progress:'0%', left:'25%', top:'20%', opacity:'0'},
+	{progress:'11%', left:'25%', top:'20%', opacity:'0'},
+	{progress:'13.5%', left:'25%', top:'20%', opacity:'1'},
+	{progress:'15%', opacity:'1', zoom: '70%'},
+	{progress:'16.5%', left:'25%', top:'20%', opacity:'1', zoom: '100%'},
+	{progress:'18%', left:'25%', top:'20%', opacity:'1', zoom: '130%'},
+    {progress:'21%', left:'25%', top:'-30%', opacity:'1', zoom: '130%'},
+	{progress:'22%', left:'25%', top:'-30%', opacity:'0', zoom: '130%'},
+	{progress:'100%', opacity:'0'}]);
+	
+    jarallax.addAnimation('#seed', [
+	{progress:'0%', left:'32%', top:'19%', opacity:'0'},
+	{progress:'11%', left:'32%', top:'19%', opacity:'0'},
+	{progress:'11.5%', left:'32%', top:'19%', opacity:'1'},
+	{progress:'15%', opacity:'1', zoom: '70%'},
+	{progress:'16.5%', left:'33%', top:'19%', opacity:'1', zoom: '100%'},
+	{progress:'18%', left:'33%', top:'19%', opacity:'1', zoom: '130%'},
+	{progress:'35%', left:'33%', top:'55%', opacity:'1', zoom: '130%'},
+	{progress:'37%', left:'33%', top:'55%', opacity:'0', zoom: '130%'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#machine', [
+    {progress:'0%', left:'-10%', top:'150%', opacity:'0'},
+	{progress:'27.5%', left:'-10%', top:'100%', opacity:'0'},
+    {progress:'30.5%', left:'-10%', top:'45%', opacity:'1',event:{start:soundfxMachine}},
+	{progress:'38%', left:'-10%', top:'-45%', opacity:'1',event:{stop:soundfxMachine}},
+	{progress:'44%', left:'-10%', top:'-95%', opacity:'1'}, 
+	{progress:'47%', left:'-10%', top:'-125%', opacity:'1'},
+	{progress:'51%', left:'-20%', top:'-125%', opacity:'1', zoom: '50%'},
+	{progress:'56%', left:'-13%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'56%', left:'-13%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'64%', left:'-53%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'70%', left:'-53%', top:'-10%', opacity:'0', zoom: '23%'},
+	{progress:'80%', opacity:'1'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#machine_top', [
+    {progress:'0%', left:'-10%', top:'150%', opacity:'0'},
+	{progress:'27.5%', left:'-10%', top:'100%', opacity:'0'},
+    {progress:'30.5%', left:'-10%', top:'45%', opacity:'1'},
+	{progress:'38%', left:'-10%', top:'-45%', opacity:'1'},
+	{progress:'44%', left:'-10%', top:'-95%', opacity:'1'},
+	{progress:'47%', left:'-10%', top:'-125%', opacity:'1'},
+	{progress:'51%', left:'-20%', top:'-125%', opacity:'1', zoom: '50%'},
+	{progress:'56%', left:'-13%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'56%', left:'-13%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'64%', left:'-53%', top:'-10%', opacity:'1', zoom: '23%'},
+	{progress:'70%', left:'-53%', top:'-10%', opacity:'0', zoom: '23%'},
+	{progress:'80%', opacity:'1'},
+	{progress:'100%', opacity:'0'}]);
+	
+    jarallax.addAnimation('#cocoa', [
+	{progress:'0%', left:'50%', top:'54%', opacity:'0'},
+	{progress:'48%', left:'54%', top:'54%', opacity:'0'},
+	{progress:'50%', left:'54%', top:'54%', opacity:'1'},
+	{progress:'53%', left:'120%', top:'66%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	 jarallax.addAnimation('#cocoa2', [
+	{progress:'0%', left:'50%', top:'56%', opacity:'0'},
+	{progress:'48%', left:'56%', top:'56%', opacity:'0'},
+	{progress:'50%', left:'56%', top:'56%', opacity:'1'},
+	{progress:'53%', left:'110%', top:'65%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	 jarallax.addAnimation('#cocoa3', [
+	{progress:'0%', left:'54%', top:'57%', opacity:'0'},
+	{progress:'48%', left:'58%', top:'57%', opacity:'0'},
+	{progress:'50%', left:'58%', top:'57%', opacity:'1'},
+	{progress:'53%', left:'115%', top:'64%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+		
+	 jarallax.addAnimation('#cocoa_rising', [
+	{progress:'0%', left:'70%', top:'77%', opacity:'0'},
+	{progress:'78%', left:'70%', top:'77%', opacity:'0'},
+	{progress:'79%', left:'70%', top:'77%', opacity:'1'},
+	{progress:'84%', left:'74%', top:'-10%', opacity:'1'},
+	{progress:'88%', left:'52%', top:'-10%', opacity:'1'},
+	{progress:'93%', left:'52%', top:'70%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	
+	 jarallax.addAnimation('#cocoamount', [
+	{progress:'0%', left:'150%', top:'147%', opacity:'1'},
+	{progress:'49%', left:'85%', top:'147%', opacity:'1', zoom: '150%'},
+	{progress:'56%', left:'55%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'60%', left:'55%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'64%', left:'60%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'77%', left:'60%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'78%', left:'30%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'84%', left:'30%', top:'53%', opacity:'1', zoom: '150%'},
+	{progress:'86%', left:'30%', top:'53%', opacity:'0', zoom: '150%'},
+	{progress:'100%', opacity:'0', zoom: '150%'}]);
+	
+	
+	jarallax.addAnimation('#track', [
+	{progress:'0%', left:'30%', top:'100%', opacity:'0', zoom: '85%'},
+    {progress:'47%', left:'30%', top:'100%', opacity:'0', zoom: '85%'},
+	{progress:'52%', left:'30%', top:'100%',opacity:'1', zoom: '85%'},
+	{progress:'56%', left:'16%', top:'35%',opacity:'1', zoom: '45%',event:{start:soundfxBelt}},
+	{progress:'68%', left:'5%', top:'35%',opacity:'1', zoom: '45%',event:{stop:soundfxBelt}},
+	{progress:'70%', left:'5%', top:'35%',opacity:'1', zoom: '45%'},
+	{progress:'76%', left:'5%', top:'45%',opacity:'1', zoom: '45%'},
+	{progress:'84%', opacity:'1'},
+	{progress:'85%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#bag', [
+	{progress:'0%', opacity:'0'},
+	{progress:'71%', top:'122%',left: "14%",zoom:'80%', opacity:'0'},
+	{progress:'76%', top:'62%',left: "14%",zoom:'80%', opacity:'1'},
+	{progress:'77%', top:'59%',left: "0%",zoom:'80%', opacity:'1'},
+	{progress:'78%', top:'56%',left: "-24%",zoom:'80%', opacity:'1'},
+	{progress:'84%', top:'56%',left: "-24%",zoom:'80%', opacity:'1'},
+	{progress:'86%', top:'56%',left: "-24%",zoom:'80%', opacity:'0'},
+	{progress:'100%', opacity:'0'}]);
+	
+	jarallax.addAnimation('#table', [
+	{progress:'0%', opacity:'0'},
+	{progress:'80%', top:'170%', opacity:'0'},
+	{progress:'83%', top:'70%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	jarallax.addAnimation('#cup2', [
+	{progress:'0%', left:'-200%'},
+	{progress:'85%', left:'-200%'},
+	{progress:'88%', left:'20%' },
+	{progress:'95%', left:'20%', opacity:'0' },
+	{progress:'100%', left:'20%'}]);
+	
+    jarallax.addAnimation('#cup3', [
+	{progress:'0%', left:'-200%'},
+	{progress:'85%', left:'-200%'},
+	{progress:'88%', left:'20%' },
+	{progress:'95%', left:'20%', opacity:'0' },
+	{progress:'100%', left:'20%'}]);
+	
+	jarallax.addAnimation('#cup4', [
+	{progress:'0%', left:'-200%',top:'50%'},
+	{progress:'85%', left:'-200%',top:'50%'},
+	{progress:'92%', left:'20%',top:'50%' ,opacity:'0', event:{start:soundfxDrop}},
+	{progress:'95%', left:'20%',top:'50%' ,opacity:'1', zoom:'35%',event:{stop:soundfxDrop}},
+	{progress:'100%', left:'-36%',top:'-5%', opacity:'1', zoom:'85%'}]);
+	
+	jarallax.addAnimation('#clock', [
+	{progress:'0%', opacity:'0'},
+	{progress:'80%', top:'-100%', opacity:'0'},
+	{progress:'83%', top:'5%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	jarallax.addAnimation('#poster', [
+	{progress:'0%', opacity:'0'},
+	{progress:'80%', top:'-100%', opacity:'0'},
+	{progress:'83%', top:'5%', opacity:'1'},
+	{progress:'100%', opacity:'1'}]);
+	
+	
+}
+</script>
+
+</head>
+
+<body onload="init()">
+
+<div id="bg1"></div>
+<div id="bg2"></div>
+<div id="bg21"></div>
+<div id="moon"></div>
+<div id="bg3"></div>
+
+<div id="text1"></div>
+<div id="cup1"></div>
+<div id="m1"></div>
+<div id="m2"></div>
+<div id="m3"></div>
+<div id="m4"></div>
+<div id="sun"></div>
+<div id="truck"></div>
+<div id="leaf"></div>
+<div id="cocoas"></div>
+<div id="seed"></div>
+<div id="cloud"></div>
+<div id="cloud2"></div>
+
+<div id="machine"></div>
+<div id="machine_top"></div>
+<div id="cocoa"></div>
+<div id="cocoa2"></div>
+<div id="cocoa3"></div>
+<div id="cocoamount"></div>
+<div id="track"></div>
+<div id="bag"></div>
+<div id="cocoa_rising"></div>
+
+<div id="window"></div>
+<div id="night"></div>
+<div id="moon"></div>
+
+<div id="table"></div>
+<div id="cup2"></div>
+<div id="cup3"></div>
+<div id="cup4"></div>
+<div id="clock"></div>
+<div id="poster"></div>
+<div id="water"></div>
+
+<div id="text2"></div>
+<div id="text3"></div>
+<div id="text4"></div>
+<div id="text5"></div>
+<div id="text6"></div>
+<div id="text7"></div>
+<div id="text8"></div>
+
+<audio autoplay loop>
+<source src="sound/bgm.mp3" type="audio/mp3">
+</audio>
+
+
+<p>This scrolling site experience is best viewed<br/>at viewport resolution of 1024 x 768 pixels and<br/>by Google Chrome 18 or higher.</p>
+
+
+</body>
+
+</html>

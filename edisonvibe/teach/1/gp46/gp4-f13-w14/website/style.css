@@ -1,0 +1,1903 @@
+body {
+	height: 200000px;
+	background-color: #000;
+}
+
+#Background1 {
+	background-image: url(GFX/BG/Background1.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 1;
+	z-index: -99;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#BGText1 {
+	background-image: url(GFX/TX/BGText1.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#BGText2 {
+	background-image: url(GFX/TX/BGText2.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Graphic3 {
+	background-image: url(GFX/Graphic3.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -40;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Text4 {
+	background-image: url(GFX/TX/Text4.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Graphic5 {
+	background-image: url(GFX/Graphic5.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -45;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Text5 {
+	background-image: url(GFX/TX/Text5.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Text6 {
+	background-image: url(GFX/TX/Text6.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Graphic7 {
+	background-image: url(GFX/Graphic7.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 20;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Background8 {
+	background-image: url(GFX/BG/Background8.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Text9 {
+	background-image: url(GFX/TX/Text9.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Ground10 {
+	background-image: url(GFX/Ground10.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#DialogBox10 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialoigText10 {
+	background-image: url(GFX/TX/DialoigText10.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Gif11 {
+	background-image: url(GFX/Gif11.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still12 {
+	background-image: url(GFX/Still12.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Text13 {
+	background-image: url(GFX/TX/Text13.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#bgm14 {
+	background-image: url();
+	height: px;
+	width: px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -0px;
+	margin-left: -0px;
+}
+#Text14 {
+	background-image: url(GFX/TX/Text14.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Background15 {
+	background-image: url(GFX/BG/Background15.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Ground16 {
+	background-image: url(GFX/Ground16.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Gif17 {
+	background-image: url(GFX/Gif17.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still18 {
+	background-image: url(GFX/Still18.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox19 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace19 {
+	background-image: url(GFX/DialogFace19.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText19 {
+	background-image: url(GFX/TX/DialogText19.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox20 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace20 {
+	background-image: url(GFX/DialogFace20.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText20 {
+	background-image: url(GFX/TX/DialogText20.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Still20 {
+	background-image: url(GFX/Still20.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still21 {
+	background-image: url(GFX/Still21.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox21 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf21 {
+	background-image: url(GFX/DialogHalf21.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace21 {
+	background-image: url(GFX/DialogFace21.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText21 {
+	background-image: url(GFX/TX/DialogText21.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox22 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace22 {
+	background-image: url(GFX/DialogFace22.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText22 {
+	background-image: url(GFX/TX/DialogText22.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox23 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf23 {
+	background-image: url(GFX/DialogHalf21.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace23 {
+	background-image: url(GFX/DialogFace21.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText23 {
+	background-image: url(GFX/TX/DialogText23.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Still24 {
+	background-image: url(GFX/Still24.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Gif25 {
+	background-image: url(GFX/Gif25.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Gif26 {
+	background-image: url(GFX/Gif26.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Text27 {
+	background-image: url(GFX/TX/Text27.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Background28 {
+	background-image: url(GFX/BG/Background28.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Ground29 {
+	background-image: url(GFX/Ground29.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Gif30 {
+	background-image: url(GFX/Gif30.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Gif31 {
+	background-image: url(GFX/Gif31.gif);
+	height: 102px;
+	width: 150px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -51px;
+	margin-left: -75px;
+}
+#Gif32 {
+	background-image: url(GFX/Gif32.gif);
+	height: 102px;
+	width: 150px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -51px;
+	margin-left: -75px;
+}
+#Gif33 {
+	background-image: url(GFX/Gif33.gif);
+	height: 102px;
+	width: 150px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -51px;
+	margin-left: -75px;
+}
+#Still34 {
+	background-image: url(GFX/Still34.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Ground35 {
+	background-image: url(GFX/Ground35.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -5;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Background35 {
+	background-image: url(GFX/BG/Background35.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Still36 {
+	background-image: url(GFX/Still36.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox37 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf37 {
+	background-image: url(GFX/DialogHalf21.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace37 {
+	background-image: url(GFX/DialogFace21.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText37 {
+	background-image: url(GFX/TX/DialogText37.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox38 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf38 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 78%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace38 {
+	background-image: url(GFX/DialogFace38.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText38 {
+	background-image: url(GFX/TX/DialogText38.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox39 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf39 {
+	background-image: url(GFX/DialogHalf21.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace39 {
+	background-image: url(GFX/DialogFace21.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText39 {
+	background-image: url(GFX/TX/DialogText39.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Gif40 {
+	background-image: url(GFX/Gif40.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Background41 {
+	background-image: url(GFX/BG/Background41.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Ground42 {
+	background-image: url(GFX/Ground42.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Gif42 {
+	background-image: url(GFX/Gif40.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox43 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace43 {
+	background-image: url(GFX/DialogFace43.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText43 {
+	background-image: url(GFX/TX/DialogText43.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox44 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace44 {
+	background-image: url(GFX/DialogFace44.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText44 {
+	background-image: url(GFX/TX/DialogText44.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox45 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace45 {
+	background-image: url(GFX/DialogFace43.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText45 {
+	background-image: url(GFX/TX/DialogText45.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Still46 {
+	background-image: url(GFX/Still34.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox46 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace46 {
+	background-image: url(GFX/DialogFace46.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText46 {
+	background-image: url(GFX/TX/DialogText46.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Background47 {
+	background-image: url(GFX/BG/Background8.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 9;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#DialogHalf48 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 78%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace48 {
+	background-image: url(GFX/DialogFace48.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#Gif48 {
+	background-image: url(GFX/Gif40.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Background49 {
+	background-image: url(GFX/BG/Background49.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -51;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#SceneChange50 {
+	background-image: url(GFX/SceneChange50.png);
+	height: 2500px;
+	width: 2500px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 50;
+	margin-top: -1250px;
+	margin-left: -1250px;
+}
+
+#Background51 {
+	background-image: url(GFX/BG/Background51.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Ground52 {
+	background-image: url(GFX/Ground52.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Still52 {
+	background-image: url(GFX/Still52.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still52_1 {
+	background-image: url(GFX/Still52.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox53 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogFace53 {
+	background-image: url(GFX/DialogFace53.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText53 {
+	background-image: url(GFX/TX/DialogText53.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Still54 {
+	background-image: url(GFX/Still54.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still55 {
+	background-image: url(GFX/Still55.gif);
+	height: 75px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 40;
+	margin-top: -37.5px;
+	margin-left: -25px;
+}
+
+#Still56 {
+	background-image: url(GFX/Still55.gif);
+	height: 75px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -37.5px;
+	margin-left: -25px;
+}
+#Still56_1 {
+	background-image: url(GFX/Still56.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still57 {
+	background-image: url(GFX/Still58.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+#Still57 {
+	background-image: url(GFX/Still58.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+#Still58 {
+	background-image: url(GFX/Still58.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+#Still58_1 {
+	background-image: url();
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+
+#Still58 {
+	background-image: url(GFX/Still58.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+#Still58_1 {
+	background-image: url(GFX/Still58_1.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+#Still60 {
+	background-image: url(GFX/Still58.gif);
+	height: 50px;
+	width: 75px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -37.5px;
+}
+
+#Still61 {
+	background-image: url(GFX/Still61.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Background62 {
+	background-image: url(GFX/BG/Background62.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#bgm62 {
+	background-image: url();
+	height: px;
+	width: px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -0px;
+	margin-left: -0px;
+}
+#Ground62 {
+	background-image: url(GFX/Ground62.png);
+	height: 154px;
+	width: 564px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -77px;
+	margin-left: -282px;
+}
+#Still62 {
+	background-image: url(GFX/Still62.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Gif63 {
+	background-image: url(GFX/Gif63.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Gif64 {
+	background-image: url(GFX/Gif64.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still64 {
+	background-image: url(GFX/Still54.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 8;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox65 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf65 {
+	background-image: url(GFX/DialogHalf65.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 75.9%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace65 {
+	background-image: url(GFX/DialogFace65.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText65 {
+	background-image: url(GFX/TX/DialogText65.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox66 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf66 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace66 {
+	background-image: url(GFX/DialogFace66.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText66 {
+	background-image: url(GFX/TX/DialogText66.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Gif67 {
+	background-image: url(GFX/Gif67.gif);
+	height: 65px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -32.5px;
+	margin-left: -25px;
+}
+#Still68 {
+	background-image: url(GFX/Still54.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#Still69 {
+	background-image: url(GFX/Gif67.gif);
+	height: 65px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -32.5px;
+	margin-left: -25px;
+}
+#Still69_1 {
+	background-image: url(GFX/Still69_1.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+
+#Still70 {
+	background-image: url(GFX/Still34.gif);
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#DialogBox71 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf71 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 78%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace71 {
+	background-image: url(GFX/DialogFace48.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText71 {
+	background-image: url(GFX/TX/DialogText71.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Graphic72 {
+	background-image: url(GFX/Graphic3.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Graphic73 {
+	background-image: url(GFX/Graphic73.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#DialogBox74 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf74 {
+	background-image: url(GFX/DialogHalf74.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 24.1%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace74 {
+	background-image: url(GFX/DialogFace74.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 16.65%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText74 {
+	background-image: url(GFX/TX/DialogText74.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogBox75 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf75 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 78%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace75 {
+	background-image: url(GFX/DialogFace46.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.4%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText75 {
+	background-image: url(GFX/TX/DialogText75.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Text75 {
+	background-image: url(GFX/TX/Text75.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Text76 {
+	background-image: url(GFX/TX/Text76.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#DialogBox77 {
+	background-image: url(GFX/DialogBox.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#DialogHalf77 {
+	background-image: url(GFX/DialogHalf38.png);
+	height: 400px;
+	width: 400px;
+	top: 40.9%;
+	left: 78%;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+#DialogFace77 {
+	background-image: url(GFX/DialogFace66.png);
+	height: 200px;
+	width: 200px;
+	top: 80%;
+	left: 83.40%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#DialogText77 {
+	background-image: url(GFX/TX/DialogText77.png);
+	height: 200px;
+	width: 700px;
+	top: 80%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 10;
+	margin-top: -100px;
+	margin-left: -350px;
+}
+#Gif78 {
+	background-image: url(GFX/Gif78.gif);
+	height: 65px;
+	width: 50px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -32.5px;
+	margin-left: -25px;
+}
+#Graphic79 {
+	background-image: url(GFX/Graphic79.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Background80 {
+	background-image: url(GFX/BG/Background1.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#BGText81 {
+	background-image: url(GFX/TX/BGText81.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#BGText82 {
+	background-image: url(GFX/TX/BGText82.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#Graphic83 {
+	background-image: url(GFX/Graphic83.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+#BGText83 {
+	background-image: url(GFX/TX/BGText83.png);
+	height: 768px;
+	width: 1366px;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	opacity: 0;
+	z-index: 0;
+	margin-top: -384px;
+	margin-left: -683px;
+}
+p {
+	position: fixed;
+	z-index: 0;
+	bottom: 1%;
+	text-align: right;
+	right: 1%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}

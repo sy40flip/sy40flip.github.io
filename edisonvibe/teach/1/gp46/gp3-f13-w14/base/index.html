@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Toy Boy</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+#title {
+	background-image:url(text/title.png);
+	width:332px;
+	height:90px;
+	position:fixed;
+	margin-left: -116px;
+	margin-top: -45px;
+	top:50%;
+	left:45%;
+	z-index:-7;
+}
+
+#bg {
+	position:fixed;
+	background:url(curtain/bg1.png);
+	background-repeat: no-repeat;
+	width:1024px;
+	height:768px;
+	top:0;
+	left:0;
+	z-index:-6;
+}
+
+#bgl {
+	background-image:url(curtain/bgl.png);
+	width:1024px;
+	height:768px;
+	position:fixed;
+	margin-left: -512px;
+	margin-top: -384px;
+	top:50%;
+	left:50%;
+	z-index:-7;
+}
+
+#bgr {
+	background-image:url(curtain/bgr.png);
+	width:1024px;
+	height:768px;
+	position:fixed;
+	margin-left: -512px;
+	margin-top: -384px;
+	top:50%;
+	left:50%;
+	z-index:-8;
+}
+#sheep {
+	background-image:url(curtain/sheep.jpg);
+	width:10240px;
+	height:768px;
+	position:fixed;
+	z-index:-9;
+}
+#toyboy {
+	background-image:url(fig/toyboy.png);
+	width:109px;
+	height:251px;
+	position:fixed;
+	margin-left: -54.5px;
+	margin-top: -125.5px;
+	top:-30%;
+	left:50%;
+	z-index:-9;
+}
+#toyboy1 {
+	background-image:url(fig/toyboy1.png);
+	width:81px;
+	height:186px;
+	position:fixed;
+	margin-left: -40.5px;
+	margin-top: -93px;
+	top:20%;
+	left:-20%;
+	z-index:-9;
+}
+#boy {
+	background-image:url(fig/boy.png);
+	width:207px;
+	height:490px;
+	position:fixed;
+	margin-left: -103.5px;
+	margin-top: -245px;
+	top:50%;
+	left:-30%;
+	z-index:-9;
+}
+#mum {
+	background-image:url(fig/mum.png);
+	width:238px;
+	height:309px;
+	position:fixed;
+	margin-left: -119px;
+	margin-top: -154.5px;
+	top:-50%;
+	left:50%;
+	z-index:-9;
+}
+#moon {
+	background-image:url(fig/moon.png);
+	width:720px;
+	height:343px;
+	position:fixed;
+	margin-left: -360px;
+	margin-top: -171.5px;
+	top:-30%;
+	left:80%;
+	z-index:-9;
+}
+#bin {
+	background-image:url(fig/bin.png);
+	width:220px;
+	height:266px;
+	position:fixed;
+	margin-left: -110px;
+	margin-top: -133px;
+	top:130%;
+	left:50%;
+	z-index:-9;
+}
+#uncle {
+	background-image:url(fig/uncle.png);
+	width:220px;
+	height:500px;
+	position:fixed;
+	margin-left: -110px;
+	margin-top: -250px;
+	top:70%;
+	left:130%;
+	z-index:-9;
+}
+#text1 {
+	background-image:url(text/text1.png);
+	width:388px;
+	height:118px;
+	position:fixed;
+	margin-left: -194px;
+	margin-top: -59px;
+	top:-30%;
+	left:50%;
+	z-index:-9;
+}
+#wind {
+	background-image:url(fig/wind.gif);
+	width:300px;
+	height:183px;
+	position:fixed;
+	margin-left: -150px;
+	margin-top: -91.5px;
+	top:20%;
+	left:-20%;
+	z-index:-9;
+}
+#text2 {
+	background-image:url(text/text2.png);
+	width:507px;
+	height:80px;
+	position:fixed;
+	margin-left: -253.5px;
+	margin-top: -40px;
+	top:-30%;
+	left:60%;
+	z-index:-9;
+}
+#text3 {
+	background-image:url(text/text3.png);
+	width:495px;
+	height:85px;
+	position:fixed;
+	margin-left: -247.5px;
+	margin-top: -42.5px;
+	top:-30%;
+	left:50%;
+	z-index:-9;
+}
+#leave {
+	background-image:url(fig/leave.png);
+	width:65px;
+	height:65px;
+	position:fixed;
+	margin-left: -32.5px;
+	margin-top: -32.5px;
+	top:20%;
+	left:100%;
+	z-index:-9;
+}
+#text4 {
+	background-image:url(text/text4.png);
+	width:496px;
+	height:85px;
+	position:fixed;
+	margin-left: -248px;
+	margin-top: -42.5px;
+	top:130%;
+	left:20%;
+	z-index:-9;
+}
+#text5{
+	background-image:url(text/text5.png);
+	width:365px;
+	height:92px;
+	position:fixed;
+	margin-left: -182.5px;
+	margin-top: -46px;
+	top:70%;
+	left:120%;
+	z-index:-9;
+}
+#text6{
+	background-image:url(text/text6.png);
+	width:363px;
+	height:88px;
+	position:fixed;
+	margin-left: -181.5px;
+	margin-top: -44px;
+	top:-30%;
+	left:50%;
+	z-index:-9;
+}
+#text7{
+	background-image:url(text/text7.png);
+	width:602px;
+	height:48px;
+	position:fixed;
+	margin-left: -301px;
+	margin-top: -24px;
+	top:-30%;
+	left:50%;
+	z-index:-9;
+}
+p {
+	width: 300px;
+	text-align: right;
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	font-size: 12px;
+	line-height: 1.2em;
+	color: #FFF;
+}
+
+
+body {
+	height: 20000px;
+}
+</style>
+
+<script type="text/javascript">
+	init = function() {
+		
+		var width = 1024;
+    var height = 768;
+    window.resizeTo(width, height);
+    window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2)); 
+		
+    var jarallax = new Jarallax();
+	
+jarallax.addAnimation('#sheep', [{progress:'0%', left:'0%'}, {progress:'100%', left:'-800%'}]);
+
+	jarallax.addAnimation('#bgl', [{progress:'0%', left:'50%'}, {progress:'10%', left:'7%'},{progress:'96%', left:'7%'},{progress:'100%', left:'50%'}]);
+	
+	jarallax.addAnimation('#bgr', [{progress:'0%', left:'50%'}, {progress:'10%', left:'93%'},{progress:'96%', left:'93%'},{progress:'100%', left:'50%'}]);
+	
+	jarallax.addAnimation('#title', [{progress:'0%', top:'50%',marginLeft:'-116px', left:'45%', marginTop:'-45px'},
+	{progress:'10%', top:'120%',marginLeft:'-116px', left:'45%', marginTop:'-45px'},
+	{progress:'100%', top:'120%',marginLeft:'-116px', left:'45%', marginTop:'-45px'},
+ ])
+	
+jarallax.addAnimation('#toyboy', [{progress:'0%', top:'-30%',marginLeft:'-54.5.5px', left:'50%', marginTop:'-125.5px'},
+ {progress:'10%', top:'55%',marginLeft:'-54.5.5px', left:'50%', marginTop:'-125.5px'},
+ {progress:'12.5%', top:'50%',marginLeft:'-54.5.5px', left:'50%', marginTop:'-125.5px'},
+ {progress:'15%',top:'50%',marginLeft:'-54.5.5px', left:'25%', marginTop:'-125.5px'},
+ {progress:'20%',top:'50%',marginLeft:'-54.5.5px', left:'25%', marginTop:'-125.5px'},
+ {progress:'25%',top:'60%',marginLeft:'-54.5.5px', left:'80%', marginTop:'-125.5px'},
+ {progress:'30%',top:'60%',marginLeft:'-54.5.5px', left:'80%', marginTop:'-125.5px'},
+ {progress:'35%',top:'60%',marginLeft:'-54.5.5px', left:'60%', marginTop:'-125.5px',rotate:'0'},
+ {progress:'38%',top:'60%',marginLeft:'-54.5.5px', left:'60%', marginTop:'-125.5px',rotate:'0'},
+ {progress:'40%',top:'60%',marginLeft:'-54.5.5px', left:'80%', marginTop:'-125.5px',rotate:'0'},
+ {progress:'42%',top:'80%',marginLeft:'-54.5.5px', left:'90%', marginTop:'-125.5px',rotate:'180'},
+ {progress:'43%',top:'100%',marginLeft:'-54.5.5px', left:'120%', marginTop:'-125.5px',rotate:'360'},
+ {progress:'100%',top:'100%',marginLeft:'-54.5.5px', left:'120%', marginTop:'-125.5px',rotate:'360'}
+ ])
+ 
+ 
+	jarallax.addAnimation('#text1', [{progress:'0%', top:'50%',marginLeft:'-194px', left:'130%', marginTop:'-59px'},
+ {progress:'10%', top:'50%',marginLeft:'-194px', left:'130%', marginTop:'-59px'},
+ {progress:'15%',top:'50%',marginLeft:'-194px', left:'55%', marginTop:'-59px'},
+ {progress:'20%',top:'50%',marginLeft:'-194px', left:'55%', marginTop:'-59px'},
+ {progress:'25%',top:'50%',marginLeft:'-194px', left:'-130%', marginTop:'-59px'},
+ {progress:'100%',top:'50%',marginLeft:'-194px', left:'-130%', marginTop:'-59px'}])
+ 
+ jarallax.addAnimation('#text2', [{progress:'0%', top:'130%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'},
+ {progress:'20%', top:'130%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'},
+ {progress:'25%', top:'50%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'},
+ {progress:'30%', top:'50%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'},
+ {progress:'35%', top:'-10%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'},
+ {progress:'100%', top:'-10%',marginLeft:'-253.5px', left:'52%', marginTop:'-40px'}])
+ 
+ jarallax.addAnimation('#boy', [{progress:'0%', top:'50%',marginLeft:'-103.5px', left:'-30%', marginTop:'-245px'},
+ {progress:'10%', top:'50%',marginLeft:'-103.5px', left:'-30%', marginTop:'-245px'},
+ {progress:'15%',top:'50%',marginLeft:'-103.5px', left:'-30%', marginTop:'-245px'},
+ {progress:'20%',top:'65%',marginLeft:'-103.5px', left:'-30%', marginTop:'-245px'},
+ {progress:'25%',top:'65%',marginLeft:'-103.5px', left:'22%', marginTop:'-245px'},
+ {progress:'30%',top:'65%',marginLeft:'-103.5px', left:'22%', marginTop:'-245px'},
+ {progress:'35%',top:'65%',marginLeft:'-103.5px', left:'50%', marginTop:'-245px'},
+ {progress:'38%',top:'65%',marginLeft:'-103.5px', left:'50%', marginTop:'-245px'},
+ {progress:'40%',top:'65%',marginLeft:'-103.5px', left:'-50%', marginTop:'-245px'},
+ {progress:'100%',top:'65%',marginLeft:'-103.5px', left:'-50%', marginTop:'-245px'}])
+ 
+  jarallax.addAnimation('#mum', [{progress:'0%', top:'-30%',marginLeft:'-119px', left:'50%', marginTop:'-154.5px'},
+ {progress:'38%',top:'-30%',marginLeft:'-119px', left:'50%', marginTop:'-154.5px'} ,
+ {progress:'40%',top:'45%',marginLeft:'-119px', left:'50%', marginTop:'-154.5px'},
+ {progress:'43%',top:'45%',marginLeft:'-119px', left:'50%', marginTop:'-154.5px'},
+ {progress:'45%',top:'180%',marginLeft:'-119px', left:'-30%', marginTop:'-154.5px'},
+ {progress:'100%',top:'180%',marginLeft:'-119px', left:'-30%', marginTop:'-154.5px'}])
+ 
+  jarallax.addAnimation('#text3', [{progress:'0%', top:'-30%',marginLeft:'-247.5px', left:'50%', marginTop:'-42.5px'},
+  {progress:'38%', top:'-30%',marginLeft:'-247.5px', left:'50%', marginTop:'-42.5px'},
+ {progress:'40%', top:'70%',marginLeft:'-247.5px', left:'50%', marginTop:'-42.5px'},
+ {progress:'43%', top:'70%',marginLeft:'-247.5px', left:'50%', marginTop:'-42.5px'},
+ {progress:'45%', top:'180%',marginLeft:'-247.5px', left:'-30%', marginTop:'-42.5px'},
+ {progress:'100%', top:'180%',marginLeft:'-247.5px', left:'-30%', marginTop:'-42.5px'}])
+ 
+   jarallax.addAnimation('#text4', [{progress:'0%', top:'130%',marginLeft:'-248px', left:'20%', marginTop:'-42.5px'},
+   {progress:'38%', top:'130%',marginLeft:'-248px', left:'50%', marginTop:'-42.5px'},
+ {progress:'40%', top:'80%',marginLeft:'-248px', left:'50%', marginTop:'-42.5px'},
+ {progress:'43%', top:'80%',marginLeft:'-248px', left:'50%', marginTop:'-42.5px'},
+ {progress:'45%', top:'180%',marginLeft:'-248px', left:'-30%', marginTop:'-42.5px'},
+ {progress:'100%', top:'180%',marginLeft:'-248px', left:'-30%', marginTop:'-42.5px'}])
+ 
+  jarallax.addAnimation('#moon', [{progress:'0%', top:'-30%',marginLeft:'-360px', left:'80%', marginTop:'-171.5px'},
+   {progress:'40%', top:'-30%',marginLeft:'-360px', left:'80%', marginTop:'-171.5px'}, 
+   {progress:'46%', top:'20%',marginLeft:'-360px', left:'70%', marginTop:'-171.5px'},
+   {progress:'65%', top:'20%',marginLeft:'-360px', left:'40%', marginTop:'-171.5px'},
+   {progress:'78%', top:'20%',marginLeft:'-360px', left:'-30%', marginTop:'-171.5px'},
+   {progress:'100%', top:'20%',marginLeft:'-360px', left:'-30%', marginTop:'-171.5px'}
+   ])
+   
+  jarallax.addAnimation('#toyboy1', [{progress:'0%', top:'20%',marginLeft:'-40.5px', left:'-20%', marginTop:'-93px',rotate:'0'},
+ {progress:'45%',top:'20%',marginLeft:'-40.5px', left:'-20%', marginTop:'-93px',rotate:'90'},
+ {progress:'48%',top:'40%',marginLeft:'-40.5px', left:'15%', marginTop:'-93px',rotate:'180'},
+ {progress:'50%',top:'40%',marginLeft:'-40.5px', left:'20%', marginTop:'-93px',rotate:'360'},
+ {progress:'55%',top:'50%',marginLeft:'-40.5px', left:'30%', marginTop:'-93px',rotate:'290'},
+ {progress:'58%',top:'65%',marginLeft:'-40.5px', left:'30%', marginTop:'-93px',rotate:'270'},
+ {progress:'60%',top:'60%',marginLeft:'-40.5px', left:'50%', marginTop:'-93px',rotate:'290'},
+ {progress:'63%',top:'55%',marginLeft:'-40.5px', left:'80%', marginTop:'-93px',rotate:'270'},
+ {progress:'70%',top:'58%',marginLeft:'-40.5px', left:'47%', marginTop:'-93px',rotate:'290'},
+ {progress:'78%',top:'58%',marginLeft:'-40.5px', left:'18%', marginTop:'-93px',rotate:'290'},
+ {progress:'79%',top:'50%',marginLeft:'-40.5px', left:'18%', marginTop:'-93px',rotate:'600'},
+ {progress:'80%',top:'58%',marginLeft:'-40.5px', left:'45%', marginTop:'-93px',rotate:'800'},
+ {progress:'83%',top:'80%',marginLeft:'-40.5px', left:'50%', marginTop:'-93px',rotate:'850'},
+ {progress:'85%',top:'90%',marginLeft:'-40.5px', left:'50%', marginTop:'-93px',rotate:'960'},
+ {progress:'87%',top:'90%',marginLeft:'-40.5px', left:'50%', marginTop:'-93px',rotate:'960'},
+ {progress:'90%',top:'95%',marginLeft:'-40.5px', left:'50%', marginTop:'-93px',rotate:'980'},
+ {progress:'91%',top:'95%',marginLeft:'-40.5px', left:'80%', marginTop:'-95px',rotate:'980'},
+ {progress:'92.5%',top:'95%',marginLeft:'-40.5px', left:'80%', marginTop:'-95px',rotate:'980'},
+ {progress:'94%',top:'95%',marginLeft:'-40.5px', left:'45%', marginTop:'-95px',rotate:'980'},
+ {progress:'96%',top:'95%',marginLeft:'-40.5px', left:'45%', marginTop:'-95px',rotate:'980'},
+ {progress:'100%',top:'95%',marginLeft:'-40.5px', left:'45%', marginTop:'-95px',rotate:'980'}])
+ 
+  jarallax.addAnimation('#text5', [{progress:'0%', top:'70%',marginLeft:'-182.5px', left:'120%', marginTop:'-46px'},
+ {progress:'55%', top:'70%',marginLeft:'-182.5px', left:'120%', marginTop:'-46px'},
+ {progress:'60%', top:'70%',marginLeft:'-182.5px', left:'110%', marginTop:'-46px'},
+ {progress:'63%', top:'70%',marginLeft:'-182.5px', left:'80%', marginTop:'-46px'},
+ {progress:'70%', top:'70%',marginLeft:'-182.5px', left:'50%', marginTop:'-46px'},
+ {progress:'73%', top:'70%',marginLeft:'-182.5px', left:'50%', marginTop:'-46px'},
+ {progress:'78%', top:'70%',marginLeft:'-182.5px', left:'-20%', marginTop:'-46px'},
+ {progress:'100%', top:'70%',marginLeft:'-182.5px', left:'-20%', marginTop:'-46px'}])
+ 
+ jarallax.addAnimation('#leave', [{progress:'0%', top:'20%',marginLeft:'-32.5px', left:'100%', marginTop:'-32.5px'},
+ {progress:'63%', top:'20%',marginLeft:'-32.5px', left:'100%', marginTop:'-32.5px'},
+ {progress:'70%', top:'70%',marginLeft:'-32.5px', left:'75%', marginTop:'-32.5px',rotate:'0'},
+ {progress:'73%', top:'80%',marginLeft:'-32.5px', left:'75%', marginTop:'-32.5px', rotate:'360'},
+ {progress:'75%', top:'85%',marginLeft:'-32.5px', left:'20%', marginTop:'-32.5px'},
+ {progress:'78%', top:'120%',marginLeft:'-32.5px', left:'-20%', marginTop:'-32.5px'},
+ {progress:'100%', top:'120%',marginLeft:'-32.5px', left:'-20%', marginTop:'-32.5px'}
+ ])
+ 
+  jarallax.addAnimation('#text6', [{progress:'0%', top:'-30%',marginLeft:'-181.5px', left:'50%', marginTop:'-44px'},
+ {progress:'78%',  top:'-30%',marginLeft:'-181.5px', left:'50%', marginTop:'-44px'},
+ {progress:'83%',  top:'50%',marginLeft:'-181.5px', left:'50%', marginTop:'-44px'},
+ {progress:'86%',  top:'50%',marginLeft:'-181.5px', left:'50%', marginTop:'-44px'},
+ {progress:'90%',  top:'30%',marginLeft:'-181.5px', left:'150%', marginTop:'-44px'},
+ {progress:'100%',  top:'30%',marginLeft:'-181.5px', left:'150%', marginTop:'-44px'}
+ ])
+
+ jarallax.addAnimation('#bin', [{progress:'0%', top:'130%',marginLeft:'-110px', left:'50%', marginTop:'-133px'},
+ {progress:'70%', top:'130%',marginLeft:'-110px', left:'50%', marginTop:'-133px'},
+ {progress:'78%', top:'85%',marginLeft:'-110px', left:'50%', marginTop:'-133px'},
+ {progress:'83%', top:'85%',marginLeft:'-110px', left:'50%', marginTop:'-133px', rotate:'0'},
+ {progress:'90%', top:'90%',marginLeft:'-110px', left:'50%', marginTop:'-133px', rotate:'90'},
+ {progress:'94%', top:'90%',marginLeft:'-110px', left:'-10%', marginTop:'-133px'}, 
+ {progress:'100%', top:'90%',marginLeft:'-110px', left:'-10%', marginTop:'-133px'}
+ ])
+ 
+ jarallax.addAnimation('#wind', [{progress:'0%',top:'70%', marginleft:'-150px',left:'-50%',margintop:'-91.5px'}, 
+ {progress:'80%',top:'30%', marginleft:'-150px',left:'-50%',margintop:'-91.5px'},
+ {progress:'85%',top:'70%', marginleft:'-150px',left:'30%',margintop:'-91.5px'},
+ {progress:'90%',top:'40%', marginleft:'-150px',left:'120%',margintop:'-91.5px'},
+ {progress:'100%',top:'40%', marginleft:'-150px',left:'120%',margintop:'-91.5px'}])
+ 
+ jarallax.addAnimation('#uncle', [{progress:'0%',top:'70%', marginleft:'-110px',left:'130%',margintop:'-250px'}, 
+ {progress:'91%',top:'70%', marginleft:'-110px',left:'120%',margintop:'-250px'},
+ {progress:'94%',top:'70%', marginleft:'-110px',left:'60%',margintop:'-250px'},
+ {progress:'96%',top:'70%', marginleft:'-110px',left:'60%',margintop:'-250px'},
+ {progress:'100%',top:'70%', marginleft:'-110px',left:'60%',margintop:'-250px'}])
+ 
+  jarallax.addAnimation('#text7', [{progress:'0%', top:'-30%',marginLeft:'-301px', left:'50%', marginTop:'-24px'}
+  ,{progress:'91%', top:'-30%',marginLeft:'-301px', left:'50%', marginTop:'-24px'},
+  {progress:'94%', top:'30%',marginLeft:'-301px', left:'50%', marginTop:'-24px'},
+  {progress:'96%', top:'30%',marginLeft:'-301px', left:'50%', marginTop:'-24px'},
+ {progress:'100%', top:'30%',marginLeft:'-301px', left:'50%', marginTop:'-24px'}
+ ])
+}
+
+
+</script> 
+</head>
+
+
+<body onload="init()">
+<embed src="Toy_Boy.mp3" width="0" height="0"></embed>
+<div id="bg"></div>
+<div id="bgl"></div>
+<div id="bgr"></div>
+<div id="sheep"> </div>
+<div id="toyboy"> </div>
+<div id="toyboy1"> </div>
+<div id="boy"> </div>
+<div id="mum"> </div>
+<div id="moon"> </div>
+<div id="bin"> </div>
+<div id="wind"> </div>
+<div id="uncle"> </div>
+<div id="text1"> </div>
+<div id="text2"> </div>
+<div id="text3"> </div>
+<div id="text4"> </div>
+<div id="text5"> </div>
+<div id="text6"> </div>
+<div id="text7"> </div>
+<div id="title"> </div>
+<div id="leave"> </div>
+
+<p>This scrolling site experience is best viewed<br/>at viewport resolution of 1024 x 768 pixels and<br/>by Google Chrome 18 or higher.</p>
+
+</body>
+
+</html>

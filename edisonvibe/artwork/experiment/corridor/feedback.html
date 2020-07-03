@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>corridor feedback</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <h1>the corridor</h1>
+</header>
+<nav>
+<ul>  
+  <li><a href="project.html">project</a> |</li>
+  <li><a href="exhibition.html">exhibition</a> |</li>
+  <li class="onpage"><a href="#">feedback</a> |</li>
+  <li><a href="artGroup.html">art group</a></li>
+</ul>
+</nav>
+
+<section>
+<h2>
+visitors feedback
+</h2>
+<p id="summary">
+In order to collect visitors’ feedback after their experience of <span class="hilink"><a href="project.html">"THE CORRIDOR"</a></span>, we designed sticker pads as questionaires. Visitors have to pick a sticker representing their age and answer questions.
+</p>
+
+<div class="box">
+<div class="imageBox">
+	<img src="images/fb2.png">
+</div>  
+<p>
+There are approximately 50 visitors coming to the exhibition this time. 65% of them are from design or media industry. The rest are educators and IT professionals.
+80% of them are of age 25 to 45.
+</p>
+</div>
+
+
+<div class="box">
+<div class="imageBox">
+	<img src="images/fb3.png">
+</div>  
+<p>
+On the question "How do you best describe this experience?", one third of the visitors think it is an interactive experience. Others think the experience give them an ambiguous feeling, a feeling similar to watching a film in cinema and seeing a painting in a gallery.
+</p>
+</div>
+
+<div class="box">
+<div class="imageBox">
+	<img src="images/fb4.png">
+</div>  
+<p>
+On the question "Which part of the installation do you like most?", more than half of the visitors states that, the audio-visual experience impress them the most. It provides a self-reflexive atmosphere for them to retreat from urban daily life.
+</p>
+</div>
+
+<div class="box">
+<div class="imageBox">
+	<img src="images/fb5.png">
+</div>  
+<p>
+On the question "What kind of experience do you expect if you participate in our exhibition next time?", many visitors wish to have an experience like falling into a hypnotizing dream. Others look for experiences that expand their mind.
+</p>
+</div>
+
+<div class="box">
+<div class="imageBox">
+	<img src="images/fb6.png">
+</div>  
+<p>
+These feedbacks do give us insights on how to bridge the gaps between what artists think and how visitors receive. We attempt to continue our explorations in this area in the years to come.
+</p>
+</div>
+
+</section>
+
+
+<section id="comments-carousel">
+<div class="boxC">
+<div class="imageBoxC">
+<img class="mySlides" src="images/fc1.png">
+<img class="mySlides" src="images/fc2.png">
+<img class="mySlides" src="images/fc3.png">
+<img class="mySlides" src="images/fc4.png">
+<img class="mySlides" src="images/fc5.png">
+<img class="mySlides" src="images/fc6.png">
+<img class="mySlides" src="images/fc7.png">
+<img class="mySlides" src="images/fc8.png">
+</div>
+</div>
+</section>
+<footer>
+<p>
+Copyright © 2016 <span class="hilinkCopy"><a href="http://www.edisonvibe.com">Edison Vibe</a></span>. All rights reserved.
+</p>
+</footer>
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3500); 
+}
+</script>
+</body>
+</html>

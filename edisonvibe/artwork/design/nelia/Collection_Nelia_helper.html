@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Nelia Collection : Helper</title>
+
+<!--<link href="nelia_css.css" rel="stylesheet" type="text/css"/>-->
+
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+
+<style type="text/css">
+
+
+
+/*box model*/
+html, body, #container, h1, h4 {margin:0 ; padding:0;}
+
+	/* Set the body selector first */
+body {
+	font-family: Century Gothic, helvetica, sans-serif; 
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+	background-color: #dfebf7;
+}
+	/* Set the container margin for centering*/
+#container {
+	width: 769px;
+	position: relative; 
+	margin: 0 auto;
+	padding: 0 0 140px 0;
+	background-color:#fff;
+	background: #fff url(pic/inpagePattern.gif) no-repeat bottom right; 
+}
+	
+	
+h1 {height: 154px; width: 769px; background:url(pic/header.png) no-repeat top left; margin:0; padding:0;}
+h1 span {display:none; }
+
+	/* Set the main navigation */
+.spacing {
+	margin: 0 25px;	
+	color: #ccc;
+}
+
+#nav-main ul li {
+	display: inline; 
+	padding: 0px 0px;
+}
+#nav-main ul {
+	text-align: center; 
+	border-bottom: #ccc 1px solid; 
+	padding: 8px 5px;
+	margin: 0 80px;
+	height: 10px;	
+}
+
+.spacinggt {
+	margin: 0 25px;	
+	color: #ccc;
+}
+#nav-uniform ul li {
+	display: inline; 
+	padding: 0px 0px;
+}
+#nav-uniform ul {
+	text-align: left; 
+	padding: 5px 55px;
+	margin: 0 0px;
+}
+	/* Set the lang navigation */
+#nav-sub ul li {display: inline; padding: 0 10px;}
+#nav-sub ul {text-align: right; margin-right: 80px;}
+
+#content-main {
+	margin: 14px 78px 10px 80px;
+	padding-bottom: 1000px;
+	border-bottom: #ccc 1px solid; 
+
+	
+}
+
+#collection-pic a img {
+	margin: 16px 7.5px 0 0;
+}
+
+
+#contact-info {
+	width: 300px;
+	float: left;
+	margin: 0 70px 0 0px;
+	padding: 0px;
+}
+
+#contact-info h2 {
+	font-family: TimesNewRomanMTStd, Times New Roman, serif;
+	font-size:2em;
+}
+
+#map {
+	margin: 0; 
+	padding-top: 10px;
+}
+
+#footer {
+	font-family: TimesNewRomanMTStd, Times New Roman, serif;
+	font-size: .7em;
+	font-style: italic;
+	margin: 0px 70px 0 80px;
+	clear:both;
+}
+
+
+/*styles*/
+
+#nav-main {
+	color: #808080; 
+	font-size: 0.9em; 
+	text-transform: uppercase; 
+} 
+
+#nav-main ul li {
+	color: #000;
+}
+
+#nav-main ul li a:link, #nav-main ul li a:visited  {
+	color: #808080;
+	text-decoration: none;
+}
+
+
+#nav-main ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#nav-uniform {
+	color: #808080; 
+	font-size: 0.9em; 
+	text-transform: uppercase; 
+} 
+
+#nav-uniform ul li {
+	color: #000;
+}
+
+#nav-uniform ul li a:link, #nav-uniform ul li a:visited  {
+	color: #808080;
+	text-decoration: none;
+}
+
+
+#nav-uniform ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#nav-sub {
+	color: #000000; 
+	font-size: 0.9em; 
+	text-transform: uppercase; 
+	line-height: 1.8em;
+}
+
+#nav-sub ul li {
+	color: #000;
+}
+
+#nav-sub ul li a:link,  #nav-sub ul li a:visited  {
+	color: #808080;
+	text-decoration: none;
+}
+
+
+#nav-sub ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#collection-pic a img {
+	border:0;
+}
+
+
+#collection-pic a {
+	float:left;
+	text-decoration: none;
+}
+
+
+
+.fotodesc {
+	width: 94px;
+	height: 15px;
+	background-color: #3a75c3;
+	color: #fff;
+	font-size: 0.9em;
+	font-weight:lighter;
+	text-align: center;
+	line-height: 1.5em;
+	word-spacing: 0.2em;
+	letter-spacing: 0.02em;
+	margin: 5px 0;
+	padding: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+
+		<h1><span>
+			Header Logo
+		</span>
+		</h1>
+	</div>
+    
+    <div id="nav-main">
+		<ul>
+			<li><a href="About_Nelia.html">about nelia</a><span class="spacing">|</span></li>
+			<li>collection<span class="spacing">|</span></li>
+			<li><a href="Measurements_Nelia.html">standard measurements</a><span class="spacing">|</span></li>
+			<li><a href="Contact_Nelia.html">contact</a></li>
+		</ul>
+	</div>
+	<div id="nav-uniform">
+		<ul>
+			<li><span class="spacinggt">&gt;</span>helpers</li>
+			<li><span class="spacing">|</span><a href="Collection_Nelia_nurse.html">nurses</a></li>
+			<li><span class="spacing">|</span><a href="Collection_Nelia_aprons.html">aprons</a></li>
+            <li><span class="spacing">|</span><a href="Collection_Nelia_chef.html">chef</a></li>            
+		</ul>
+	</div>
+	<!--
+	<div id="nav-sub">
+		<ul>
+			<li>eng</li>/
+			<li class="lang-link"> <a href="#">chi</a></li>
+		</ul>
+	</div>
+    -->
+    	<div id="content-main">
+
+			<div id="collection-pic">
+			<a href="pic/fullpic/helper_x/Helper_su-d-01x.jpg" rel="lightbox" title="Helper : SU-D-01"><img src="pic/thumb/helper/Helper_su-d-01a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-01</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-02x.jpg" rel="lightbox" title="Helper : SU-D-02"><img src="pic/thumb/helper/Helper_su-d-02a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-02</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-03x.jpg" rel="lightbox" title="Helper : SU-D-03"><img src="pic/thumb/helper/Helper_su-d-03a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-03</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-04x.jpg" rel="lightbox" title="Helper : SU-D-04"><img src="pic/thumb/helper/Helper_su-d-04a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-04</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-05x.jpg" rel="lightbox" title="Helper : SU-D-05"><img src="pic/thumb/helper/Helper_su-d-05a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-05</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-06x.jpg" rel="lightbox" title="Helper : SU-D-06"><img src="pic/thumb/helper/Helper_su-d-06a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-06</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-07x.jpg" rel="lightbox" title="Helper : SU-D-07"><img src="pic/thumb/helper/Helper_su-d-07a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-07</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-08x.jpg" rel="lightbox" title="Helper : SU-D-08"><img src="pic/thumb/helper/Helper_su-d-08a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-08</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-d-09x.jpg" rel="lightbox" title="Helper : SU-D-09"><img src="pic/thumb/helper/Helper_su-d-09a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-D-09</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-01x.jpg" rel="lightbox" title="Helper : SU-PT-01"><img src="pic/thumb/helper/Helper_su-pt-01a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-01</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-02x.jpg" rel="lightbox" title="Helper : SU-PT-02"><img src="pic/thumb/helper/Helper_su-pt-02a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-02</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-03x.jpg" rel="lightbox" title="Helper : SU-PT-03"><img src="pic/thumb/helper/Helper_su-pt-03a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-03</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-04x.jpg" rel="lightbox" title="Helper : SU-PT-04"><img src="pic/thumb/helper/Helper_su-pt-04a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-04</p></a>
+			<a href="pic/fullpic//helper_x/Helper_su-pt-05x.jpg" rel="lightbox" title="Helper : SU-PT-05"><img src="pic/thumb/helper/Helper_su-pt-05a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-05</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-06x.jpg" rel="lightbox" title="Helper : SU-PT-06"><img src="pic/thumb/helper/Helper_su-pt-06a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-06</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-07x.jpg" rel="lightbox" title="Helper : SU-PT-07"><img src="pic/thumb/helper/Helper_su-pt-07a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-07</p></a>
+			<a href="pic/fullpic/helper_x/Helper_su-pt-08x.jpg" rel="lightbox" title="Helper : SU-PT-08"><img src="pic/thumb/helper/Helper_su-pt-08a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">SU-PT-08</p></a>
+            <a href="pic/fullpic/helper_x/Helper_wu-d-01x.jpg" rel="lightbox" title="Helper : WU-D-01"><img src="pic/thumb/helper/Helper_wu-d-01a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">WU-D-01</p></a>            
+            <a href="pic/fullpic/helper_x/Helper_wu-d-02x.jpg" rel="lightbox" title="Helper : WU-D-02"><img src="pic/thumb/helper/Helper_wu-d-02a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">WU-D-02</p></a>                                                                                    
+			<a href="pic/fullpic/helper_x/Helper_wu-pt-01x.jpg" rel="lightbox" title="Helper : WU-PT-01"><img src="pic/thumb/helper/Helper_wu-pt-01a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">WU-PT-01</p></a>                                    
+			</div>
+
+		</div>
+
+	<div id="footer">
+		<p>Copyright ©	Uniforms by Nelia All Rights Reserved</p>
+	</div>
+</body>
+</html>

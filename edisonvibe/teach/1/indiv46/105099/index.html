@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>~ arrow ~</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+body {
+	height: 16000px;
+}
+
+#pic5 {
+	background-image: url(pic/Blue-sea-horizon.jpg);
+	position: fixed;
+	height: 1600px;
+	width: 2560px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -893px;
+	margin-left: -1387px;
+}
+#pic2 {
+	background-image: url(pic/pic2.png);
+	position: fixed;
+	height: 600px;
+	width: 800px;
+	left: 200%;
+	top: 140%;
+	margin-top: -300px;
+	margin-left: -400px;
+}
+
+#pic1 {
+	background-image: url(pic/pic1.png);
+	height: 600px;
+	width: 800px;
+	left: 10%;
+	top: 70%;
+	margin-top: -300px;
+	margin-left: -400px;
+	position: fixed;
+}
+
+
+
+#text1 {
+	background-image: url(text/word1.png);
+	height: 194px;
+	width: 702px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -97px;
+	margin-left: -351px;
+}
+
+#text2 {
+	background-image: url(text/word2.png);
+	height: 120px;
+	width: 800px;
+	position: fixed;
+	left: -30%;
+	top: -90%;
+	margin-top: -60px;
+	margin-left: -400px;
+}
+
+
+
+#text3 {
+	background-image: url(text/word3.png);
+	height: 211px;
+	width: 540px;
+	position: fixed;
+	left: 180%;
+	top: 120%;
+	margin-top: -105px;
+	margin-left: -270px;
+}
+
+#text4 {
+	background-image: url(text/word4.png);
+	height: 156px;
+	width: 752px;
+	position: fixed;
+	left: 180%;
+	top: 180%;
+	margin-top: -78px;
+	margin-left: -376px;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#text1', [{progress:'0%', left:'50%', marginleft:'-351px', top:'50%', margintop:'-97px'}, 
+	{progress:'20%', left:'-20%', top:'-20%'}]);
+
+	
+	jarallax.addAnimation('#text2', [{progress:'0%', left:'-50%', marginleft:'-400px', top:'-50%', margintop:'-60px'}, 
+	{progress:'30%', left:'50%', top:'50%'},{progress:'31%', left:'50%', top:'50%'},  {progress:'60%', left:'150%', top:'-50%'}]);
+	
+	
+	jarallax.addAnimation('#text3', 
+	[{progress:'0%', left:'180%', marginleft:'-270px', top:'120%', margintop:'-105px'}, 
+	{progress:'60%', left:'50%', top:'50%'}, {progress:'61%', left:'50%', top:'50%'},{progress:'100%', left:'-50%', top:'-50%'}]);
+	
+	
+	jarallax.addAnimation('#text4',
+	[{progress:'0%', left:'180%', marginleft:'-376px', top:'180%', margintop:'-78px'}, 
+	{progress:'70%', left:'100%', top:'100%'},
+	{progress:'100%', left:'50%', top:'50%'}]);
+		
+		
+	jarallax.addAnimation('#pic1', 
+	[{progress:'0%', left:'10%', marginleft:'-400px', top:'70%', margintop:'-300px'}, 
+	{progress:'29%', left:'40%', top:'85%',rotate:'0'},
+	{progress:'30%', left:'40%', top:'85%',rotate:'-10'},
+	{progress:'60%', left:'150%', top:'-50%'},
+	{progress:'100%', left:'200%', top:'-100%'}]);
+			
+			
+	jarallax.addAnimation('#pic2', 
+	[{progress:'0%', left:'200%', marginleft:'-400px', top:'140%', margintop:'-300px'},
+	{progress:'90%', left:'43%', top:'43%'},
+	{progress:'91%', left:'41%', top:'41%',rotate:'0'},
+	{progress:'93%', left:'35%', top:'38%',rotate:'-8'},
+	{progress:'95%', left:'30%', top:'35%',rotate:'-8'},
+	{progress:'100%', left:'-30%', top:'30%'},
+	]);
+		
+		
+}
+</script>
+
+</head>
+
+
+<body onload="init()">
+<div id="pic5"></div>
+<div id="text1"></div>
+<div id="text2"></div>
+<div id="text3"></div>
+<div id="text4"></div>
+<div id="pic1"></div>
+<div id="pic4"></div>
+<div id="pic3"></div>
+<div id="pic2"></div>
+
+
+</body>
+
+</html>

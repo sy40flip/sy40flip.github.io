@@ -1,0 +1,635 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>あの日見た花の名前を僕達はまだ知らない。</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+	
+<style type="text/css">
+
+body {
+	height: 30000px;
+	
+}
+
+#bgg {
+	background-image: url(bg_g_50.png);
+	height: 1080px;
+	width: 1920px;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	z-index: -3;
+}
+#p01 {
+	background-image: url(text_segment/p01.png);
+	height: 400px;
+	width: 750px;
+	position: fixed;
+	left: 22%;
+	top: 19%;
+}
+#p02_title {
+	background-image: url(text_segment/p02_title.png);
+	height: 55px;
+	width: 946px;
+	position: fixed;
+	left: 130%;
+	top: 45%;
+}
+#icon {
+	background-image: url(icon_70.png);
+	height: 194px;
+	width: 194px;
+	position: fixed;
+	left: -30%;
+	top: 38%;
+	z-index: -1;
+}
+#p03 {
+	background-image: url(text_segment/p03.png);
+	height: 126px;
+	width: 684px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p04 {
+	background-image: url(text_segment/p04.png);
+	height: 124px;
+	width: 682px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p05 {
+	background-image: url(text_segment/p05.png);
+	height: 121px;
+	width: 565px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p06 {
+	background-image: url(text_segment/p06.png);
+	height: 339px;
+	width: 858px;
+	position: fixed;
+	left: 101%;
+	top: 30%;
+}
+#p07 {
+	background-image: url(text_segment/p07.png);
+	height: 53px;
+	width: 522px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p08 {
+	background-image: url(text_segment/p08.png);
+	position: fixed;
+	left: 101%;
+	top: 101%;
+	height: 195px;
+	width: 566px;
+}
+#menma {
+	background-image: url(menma.png);
+	height: 400px;
+	width: 163px;
+	position: fixed;
+	left: 90%;
+	top: 101%;
+}
+
+#p09 {
+	background-image: url(text_segment/p09.png);
+	height: 124px;
+	width: 680px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p10 {
+	background-image: url(text_segment/p10.png);
+	height: 336px;
+	width: 684px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#p11 {
+	background-image: url(text_segment/p11.png);
+	position: fixed;
+	left: 101%;
+	top: 101%;
+	height: 194px;
+	width: 702px;
+}
+#p12 {
+	background-image: url(text_segment/p12.png);
+	height: 53px;
+	width: 700px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#bgc {
+	background-image: url(bg_c_50.png);
+	height: 1080px;
+	width: 1920px;
+	position: fixed;
+	left: 0%;
+	top: 101%;
+	z-index: -3;
+}
+#p13 {
+	background-image: url(text_segment/p13.png);
+	height: 123px;
+	width: 641px;
+	position: fixed;
+	left: 101%;
+	top: 101ex;
+}
+#p14 {
+	background-image: url(text_segment/p14.png);
+	position: fixed;
+	left: 101%;
+	top: 101%;
+	height: 194px;
+	width: 288px;
+}
+#p15 {
+	background-image: url(text_segment/p15.png);
+	height: 334px;
+	width: 742px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#source {
+	background-image: url(text_segment/source.png);
+	height: 28px;
+	width: 729px;
+	position: fixed;
+	left: 101%;
+	top: 101%;
+}
+#hana {
+	background-image: url(hana.png);
+	margin: -70px;
+	height: 140px;
+	width: 140px;
+	position: fixed;
+	left: 105%;
+	top: 105%;
+	z-index: -1;
+}
+#f1 {
+	background-image: url(ex/anohana.png);
+	height: 120px;
+	width: 120px;
+	position: fixed;
+	z-index: -2;
+	left: -10%;
+	top: -30%;
+}
+#f1g {
+	background-image: url(ex/anohana_g.png);
+	height: 120px;
+	width: 120px;
+	position: fixed;
+	z-index: -2;
+	left: -10%;
+	top: -30%;
+}
+
+#f2 {
+	background-image: url(ex/anohana_2.png);
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	z-index: -2;
+	left: 20%;
+	top: -30%;
+}
+
+#f2g {
+	background-image: url(ex/anohana_2_g.png);
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	z-index: -2;
+	left: 20%;
+	top: -30%;
+}
+#f3 {
+	background-image: url(ex/wind_160.png);
+	height: 160px;
+	width: 160px;
+	position: fixed;
+	z-index: -2;
+	left: -10%;
+	top: 25%;
+	z-index: -2;
+}
+
+#f3g {
+	background-image: url(ex/wind_160_g.png);
+	height: 160px;
+	width: 160px;
+	position: fixed;
+	z-index: -2;
+	left: -10%;
+	top: 25%;
+	z-index: -2;
+}
+#f4 {
+	background-image: url(ex/wind_200.png);
+	height: 200px;
+	width: 200px;
+	position: fixed;
+	z-index: -2;
+	left: 50%;
+	top: -30%;
+}
+
+#f4g {
+	background-image: url(ex/wind_200_g.png);
+	height: 200px;
+	width: 200px;
+	position: fixed;
+	z-index: -2;
+	left: 50%;
+	top: -30%;
+}
+#f5 {
+	background-image: url(ex/wind_300.png);
+	height: 300px;
+	width: 300px;
+	position: fixed;
+	z-index: -2;
+	left: 70%;
+	top: -50%;
+}
+
+#f5g {
+	background-image: url(ex/wind_300_g.png);
+	height: 300px;
+	width: 300px;
+	position: fixed;
+	z-index: -2;
+	left: 70%;
+	top: -50%;
+}
+</style>
+
+<script type="text/javascript">
+	init = function() {
+    var jarallax = new Jarallax();
+	jarallax.addAnimation('#p01', [
+	{progress:'0%', left:'22%', top:'19%'}, 
+	{progress:'6.6%',left:'22%', top:'-40%'},
+	{progress:'100%',left:'22%', top:'-40%'}]);
+	
+	
+	jarallax.addAnimation('#p02_title', [
+	{progress:'0%', left:'130%', top:'45%'}, 
+	{progress:'6.6%',left:'17%', top:'45%'},
+	{progress:'9.9%',left:'17%', top:'45%'},
+	{progress:'13.2%',left:'-90%', top:'45%'},
+	{progress:'100%',left:'-90%', top:'45%'}]);
+	
+	
+	jarallax.addAnimation('#source', [
+	{progress:'0%', left:'101%', top:'95%'}, 
+	{progress:'6.6%',left:'43%', top:'95%'},
+	{progress:'9.9%',left:'43%', top:'95%'},
+	{progress:'13.2%',left:'101%', top:'95%'},
+	{progress:'100%',left:'101%', top:'95%'}]);
+	
+	
+	jarallax.addAnimation('#icon', [
+	{progress:'0%', left:'-30%', top:'38%'}, 
+	{progress:'6.6%', left:'15%', top:'38%'},
+	{progress:'9.9%', left:'15%', top:'38%'},
+	{progress:'13.2%', left:'100%', top:'38%'},
+	{progress:'100%', left:'100%', top:'38%'}]);
+	
+	
+	jarallax.addAnimation('#hana', [
+	{progress:'0%',left:'105%', top:'105%'},
+    {progress:'16.5%',left:'105%', top:'105%'},
+	{progress:'19.8%',left:'27%', top:'32%', rotate:'0'}, 
+	{progress:'23.1%',left:'27%', top:'32%', rotate:'90'},
+	{progress:'26.4%',left:'73%', top:'48%', rotate:'180'},
+    {progress:'29.7%',left:'73%', top:'48%', rotate:'270'},
+	{progress:'33%',left:'31%', top:'47%', rotate:'360'},
+    {progress:'36.3%',left:'31%', top:'47%', rotate:'450'},
+	{progress:'39.6%',left:'80%', top:'47%', rotate:'540'},
+    {progress:'42.9%',left:'80%', top:'47%', rotate:'630'},
+	{progress:'46.2%',left:'53%', top:'46%', rotate:'720'},
+    {progress:'49.5%',left:'53%', top:'46%', rotate:'810'},
+	{progress:'50%',left:'65%', top:'20%', rotate:'900'},
+    {progress:'51%',left:'85%', top:'25%', rotate:'990'},
+	{progress:'52.8%',left:'85%', top:'25%', rotate:'1080'},
+    {progress:'56.1%',left:'85%', top:'25%', rotate:'1170'},
+	{progress:'59.4%',left:'25%', top:'57%', rotate:'1260'},
+    {progress:'62.7%',left:'25%', top:'57%', rotate:'1350'},
+	{progress:'66%',left:'68%', top:'75%', rotate:'1440'},
+    {progress:'69.3%',left:'68%', top:'75%', rotate:'1530'},
+	{progress:'72.6%',left:'50%', top:'40%', rotate:'1620'},
+    {progress:'75.9%',left:'50%', top:'40%', rotate:'1890'},
+	{progress:'79.2%',left:'30%', top:'42%', rotate:'1620'},
+    {progress:'82.5%',left:'30%', top:'42%', rotate:'1440'},
+	{progress:'85.8%',left:'68%', top:'55%', rotate:'1350'},
+    {progress:'89.1%',left:'68%', top:'55%', rotate:'1260'},
+	{progress:'92.4%',left:'38%', top:'30%', rotate:'1170'},
+    {progress:'95.7%',left:'38%', top:'30%', rotate:'1080'},
+    {progress:'97%',left:'80%', top:'85%', rotate:'990'},
+    {progress:'98.5%',left:'80%', top:'80%', rotate:'810'},
+    {progress:'100%',left:'80%', top:'80%',rotate:'540'}]);	
+
+
+	jarallax.addAnimation('#p03', [
+	{progress:'0%',left:'101%', top:'101%'},
+	{progress:'16.5%',left:'101%', top:'101%'},
+	{progress:'19.8%',left:'27%', top:'32%'}, 
+	{progress:'23.1%',left:'27%', top:'32%'},
+	{progress:'26.4%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p04', [
+	{progress:'0%',left:'101%', top:'101%'},
+	{progress:'23.1%',left:'101%', top:'101%'},
+	{progress:'26.4%',left:'27%', top:'32%'}, 
+	{progress:'29.7%',left:'27%', top:'32%'},
+	{progress:'33%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+
+	jarallax.addAnimation('#p05', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'29.7%',left:'108%', top:'108%'},
+	{progress:'33%',left:'30%', top:'35%'}, 
+	{progress:'36.3%',left:'30%', top:'35%'},
+	{progress:'39.6%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p06', [
+	{progress:'0%',left:'108%', top:'28%'},
+	{progress:'36.3%',left:'108%', top:'28%'},
+	{progress:'39.6%',left:'20%', top:'28%'}, 
+	{progress:'42.9%',left:'20%', top:'28%'},
+	{progress:'46.2%',left:'-70%', top:'28%'},
+	{progress:'100%',left:'-70%', top:'28%'}]);
+	
+	
+	jarallax.addAnimation('#p07', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'42.9%',left:'108%', top:'108%'},
+	{progress:'46.2%',left:'33%', top:'40%'}, 
+	{progress:'49.5%',left:'33%', top:'40%'},
+	{progress:'52.8%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p08', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'49.5%',left:'108%', top:'108%'},
+	{progress:'52.8%',left:'30%', top:'35%'}, 
+	{progress:'56.1%',left:'30%', top:'35%'},
+	{progress:'59.4%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#menma', [
+	{progress:'0%',left:'101%', top:'101%'}, 
+	{progress:'49.5%',left:'101%', top:'101%'},
+	{progress:'52.8%',left:'75%', top:'35%'}, 
+	{progress:'56.1%',left:'75%', top:'35%'},
+	{progress:'59.4%',left:'-65%', top:'110%'},
+	{progress:'100%',left:'-65%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p09', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'56.1%',left:'108%', top:'108%'},
+	{progress:'59.4%',left:'25%', top:'38%'}, 
+	{progress:'62.7%',left:'25%', top:'38%'},
+	{progress:'66%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p10', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'62.7%',left:'108%', top:'108%'},
+	{progress:'66%',left:'27%', top:'25%'}, 
+	{progress:'69.3%',left:'27%', top:'25%'},
+	{progress:'72.6%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p11', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'69.3%',left:'108%', top:'108%'},
+	{progress:'72.6%',left:'25%', top:'35%'}, 
+	{progress:'75.9%',left:'25%', top:'35%'},
+	{progress:'79.2%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#bgg', [
+	{progress:'0%',left:'0%', top:'0%'},
+	{progress:'75.9%',left:'0%', top:'0%'},
+	{progress:'79.2%',left:'0%', top:'-170%'}, 
+	{progress:'100%',left:'0%', top:'-170%'}]);
+	
+	
+	jarallax.addAnimation('#bgc', [
+	{progress:'0%',left:'0%', top:'101%'},
+	{progress:'75.9%',left:'0%', top:'101%'},
+	{progress:'79.2%',left:'0%', top:'0%'}, 
+	{progress:'100%',left:'0%', top:'0%'}]);
+	
+	
+	jarallax.addAnimation('#p12', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'75.9%',left:'108%', top:'108%'},
+	{progress:'79.2%',left:'25%', top:'40%'}, 
+	{progress:'82.5%',left:'25%', top:'40%'},
+	{progress:'85.8%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p13', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'82.5%',left:'108%', top:'108%'},
+	{progress:'85.8%',left:'27%', top:'35%'}, 
+	{progress:'89.1%',left:'27%', top:'35%'},
+	{progress:'92.4%',left:'-60%', top:'110%'},
+	{progress:'100%',left:'-60%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p14', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'89.1%',left:'108%', top:'108%'},
+	{progress:'92.4%',left:'40%', top:'35%'}, 
+	{progress:'95.7%',left:'40%', top:'35%'},
+	{progress:'97%',left:'-35%', top:'110%'},
+	{progress:'100%',left:'-35%', top:'110%'}]);
+	
+	
+	jarallax.addAnimation('#p15', [
+	{progress:'0%',left:'108%', top:'108%'},
+	{progress:'95.7%',left:'108%', top:'108%'},
+	{progress:'97%',left:'25%', top:'28%'},
+	{progress:'99%',left:'25%', top:'28%'}, 
+	{progress:'100%',left:'25%', top:'28%'}]);
+	
+	
+	jarallax.addAnimation('#f1g', [
+	{progress:'0%',left:'-10%', top:'0%'},
+	{progress:'10%',left:'-10%', top:'0%'},
+	{progress:'72.6%',left:'10%', top:'65%', rotate:'270'},
+	{progress:'75.9%',left:'10%', top:'65%', rotate:'270'},
+	{progress:'100%',left:'10%', top:'180%', rotate:'270'},
+	]);
+	
+	
+	jarallax.addAnimation('#f1', [
+	{progress:'0%',left:'10%', top:'180%'},
+	{progress:'72.6%',left:'10%', top:'180%', rotate:'270'},
+	{progress:'75.9%',left:'10%', top:'65%', rotate:'270'},
+	{progress:'100%',left:'-10%', top:'20%', rotate:'0'},
+	]);
+	
+	
+	jarallax.addAnimation('#f2g', [
+	{progress:'0%',left:'20%', top:'-30%'},
+	{progress:'10%',left:'20%', top:'-30%', rotate:'0'},
+	{progress:'72.6%',left:'60%', top:'55%', rotate:'270'},
+	{progress:'75.9%',left:'60%', top:'55%', rotate:'270'},
+	{progress:'100%',left:'60%', top:'180%', rotate:'270'},
+	]);
+	
+	
+	jarallax.addAnimation('#f2', [
+	{progress:'0%',left:'60%', top:'180%'},
+	{progress:'72.6%',left:'60%', top:'180%', rotate:'270'},
+	{progress:'75.9%',left:'60%', top:'55%', rotate:'270'},
+	{progress:'100%',left:'20%', top:'-30%', rotate:'0'},
+	]);
+	
+	
+	jarallax.addAnimation('#f3g', [
+	{progress:'0%',left:'-10%', top:'25%'},
+	{progress:'10%',left:'-10%', top:'25%', rotate:'0'},
+	{progress:'72.6%',left:'80%', top:'50%', rotate:'270'},
+	{progress:'75.9%',left:'80%', top:'50%', rotate:'270'},
+	{progress:'100%',left:'80%', top:'180%', rotate:'270'},
+	]);
+	
+	
+	jarallax.addAnimation('#f3', [
+	{progress:'0%',left:'80%', top:'180%'},
+	{progress:'72.6%',left:'80%', top:'180%', rotate:'270'},
+	{progress:'75.9%',left:'10%', top:'50%', rotate:'270'},
+	{progress:'100%',left:'-10%', top:'25%', rotate:'0'},
+	]);
+	
+	
+	jarallax.addAnimation('#f4g', [
+	{progress:'0%',left:'50%', top:'-30%'},
+	{progress:'10%',left:'50%', top:'-30%', rotate:'0'},
+	{progress:'72.6%',left:'57%', top:'60%', rotate:'270'},
+	{progress:'75.9%',left:'57%', top:'60%', rotate:'270'},
+	{progress:'100%',left:'57%', top:'180%', rotate:'0'}]);
+	
+	
+	jarallax.addAnimation('#f4', [
+	{progress:'0%',left:'57%', top:'180%'},
+	{progress:'72.6%',left:'57%', top:'180%', rotate:'270'},
+	{progress:'75.9%',left:'57%', top:'60%', rotate:'270'},
+	{progress:'100%',left:'50%', top:'-30%', rotate:'0'}]);
+	
+	
+	jarallax.addAnimation('#f5g', [
+	{progress:'0%',left:'70%', top:'-50%'},
+	{progress:'10%',left:'70%', top:'-50%', rotate:'0'},
+	{progress:'72.6%',left:'7%', top:'75%', rotate:'270'},
+	{progress:'75.9%',left:'7%', top:'75%', rotate:'270'},
+	{progress:'100%',left:'7%', top:'200%'}]);
+	
+	
+	jarallax.addAnimation('#f5', [
+	{progress:'0%',left:'7%', top:'200%'},
+	{progress:'72.6%',left:'7%', top:'200%', rotate:'270'},
+	{progress:'75.9%',left:'7%', top:'75%', rotate:'270'},
+	{progress:'100%',left:'70%', top:'-50%', rotate:'0'}]);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+</script>
+
+</head>
+
+
+<body onload="init()">
+<div id="p01"></div>
+<div id="p02_title"></div>
+<div id="icon"></div>
+<div id="p03"></div>
+<div id="p04"></div>
+<div id="p05"></div>
+<div id="p06"></div>
+<div id="p07"></div>
+<div id="p08"></div>
+<div id="p09"></div>
+<div id="p10"></div>
+<div id="p11"></div>
+<div id="p12"></div>
+<div id="p13"></div>
+<div id="p14"></div>
+<div id="p15"></div>
+<div id="menma"></div>
+<div id="hana"></div>
+<div id="source"></div>
+<div id="bgg"></div>
+<div id="bgc"></div>
+<div id="f1"></div>
+<div id="f1g"></div>
+<div id="f2"></div>
+<div id="f2g"></div>
+<div id="f3"></div>
+<div id="f3g"></div>
+<div id="f4"></div>
+<div id="f4g"></div>
+<div id="f5"></div>
+<div id="f5g"></div>
+</body>
+
+</html>

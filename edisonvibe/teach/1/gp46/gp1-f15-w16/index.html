@@ -1,0 +1,942 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Life is like a train ride</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jarallax-0.2.4.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+
+body{
+	height:90000px;
+	}
+	
+	a {color:#0078ff;	}
+
+            #bgAudio, #bgAudioControls {
+                float:right;
+                position:fixed;
+            	right:350px;
+	            bottom:55px;
+            	z-index: 32;
+                opacity: 0.4;
+				zoom:0.2;
+
+            }
+            #bgAudio:hover, #bgAudioControls:hover {
+              opacity: 1;
+            }
+#btn1{
+	background:url(add/s6-button-green.png);
+	width:310px;
+	height:312px;
+	position:fixed;
+	right:80px;
+	bottom:100px;
+	z-index:10;
+	opacity:0.4;
+	zoom:0.15;
+}
+            #btn1:hover {
+              opacity: 1;
+            }
+
+p {
+	width:300px;
+	text-align:right;
+	position:fixed;
+	right:20px;
+	top:10px;
+	font-size:12px;
+	line-height:1.2em;
+	color:#FFF;
+	z-index:10;
+	}
+
+#s0-vidpic{
+	background:url(add/s0-vidpic.png);
+	width:1024px;
+	height:768px;
+	position:fixed;
+	z-index:6;
+	left:-5px;
+	top:-5px;
+	}
+	
+#s0-vidpic2{
+	background:url(add/s0-vidpic2.png);
+	width:1024px;
+	height:768px;
+	position:fixed;
+	z-index:6;
+	left:-5px;
+	top:-5px;
+	}
+		
+	
+#s1-cabin{
+	background:url(add/s1-cabin.png);
+	width:2104px;
+	height:769px;
+	position:fixed;
+	z-index:5;
+	left:-10px;
+	top:-10px;
+	}
+
+#s1-Sdoor{
+	background:url(add/s1-Sdoor.png);
+	width:1025px;
+	height:769px;
+	position:fixed;
+	z-index:6;
+	left:-10px;
+	top:-10px;
+	}
+		
+#s1-Ldoor{
+	background:url(add/s1-Ldoor.png);
+	width:424px;
+	height:768px;
+	position:fixed;
+	z-index:7;
+	}
+
+#s1-Rdoor{
+	background:url(add/s1-Rdoor.png);
+	width:427px;
+	height:768px;
+	position:fixed;
+	z-index:7;
+	}
+	
+#s1-doors{
+	background:url(add/s1-doors.png);
+	width:1024px;
+	height:768px;
+	position:fixed;
+	z-index:8;
+	left:-10px;
+	top:-10px;
+	}
+		
+#s2-ticket{
+	background:url(add/s2-ticket.png);
+	width:847px;
+	height:513px;
+	position:fixed;
+	z-index:10;
+	}
+	
+#s2-plane{
+	background:url(add/s2-plane.png);
+	width:991px;
+	height:173px;
+	position:fixed;
+	z-index:4;
+	zoom:1.1;
+	}
+	
+#s3-couple{
+	background:url(add/s3-couple.png);
+	width:705px;
+	height:1263px;
+	position:fixed;
+	z-index:10;
+	}
+
+#s4-pl{
+	background:url(add/s4-p1.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s4-p2{
+	background:url(add/s4-p2.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s4-p3{
+	background:url(add/s4-p3.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s4-p4{
+	background:url(add/s4-p4.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s4-p5{
+	background:url(add/s4-p5.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s4-p6{
+	background:url(add/s4-p6.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+
+#s-p6{
+	background:url(add/s4-p6.png);
+	width:121px;
+	height:138px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#s5-Ldoor{
+	background:url(add/s5-Ldoor.png);
+	width:489px;
+	height:769px;
+	position:fixed;
+	z-index:7;
+	}
+
+#s5-Rdoor{
+	background:url(add/s5-Rdoor.png);
+	width:489px;
+	height:769px;
+	position:fixed;
+	z-index:7;
+	zoom:1;
+	}
+	
+#s5-doors{
+	background:url(add/s5-doors.png);
+	width:1025px;
+	height:770px;
+	position:fixed;
+	z-index:5;
+	left:-10px;
+	top:-10px;
+	}
+	
+#s5-Sdoor{
+	background:url(add/s5-Sdoor.png);
+	width:1025px;
+	height:769px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#bg1{
+	background:url(add/bg1.png);
+	width:14283px;
+	height:768px;
+	position:fixed;
+	z-index:3;
+	zoom:0.9;
+	}
+	
+#bg2-hill{
+	background:url(add/bg2-hill.png);
+	width:7166px;
+	height:768px;
+	position:fixed;
+	z-index:3;
+	top:-10px;
+	}
+	
+#bg4-train{
+	background:url(add/bg4-train.png);
+	width:2744px;
+	height:307px;
+	position:fixed;
+	z-index:5;
+	zoom:0.5;
+	top:1000px;
+	}
+	
+#bg3-house{
+	background:url(add/bg3-house.png);
+	width:8127px;
+	height:540px;
+	position:fixed;
+	z-index:4;
+	top:150px;
+	}
+	
+#w1{
+	background:url(add/w1.png);
+	width:1077px;
+	height:323px;
+	position:fixed;
+	top:-10000px;
+	zoom:0.6;
+	z-index:6;
+	}
+
+#w2{
+	background:url(add/w2.png);
+	width:631px;
+	height:117px;
+	position:fixed;
+	z-index:6;
+	}
+	
+#w3{
+	background:url(add/w3.png);
+	width:824px;
+	height:153px;
+	position:fixed;
+	z-index:4;
+	zoom:1;
+	}
+	
+#w7{
+	background:url(add/w7.png);
+	width:374px;
+	height:108px;
+	position:fixed;
+	z-index:4;
+	}
+	
+#w8{
+	background:url(add/w8.png);
+	width:952px;
+	height:105px;
+	position:fixed;
+	zoom:0.7;
+	z-index:4;
+	}
+	
+		
+#w9{
+	background:url(add/w9.png);
+	width:942px;
+	height:100px;
+	position:fixed;
+	zoom:0.7;
+	z-index:4;
+	}
+		
+#w10{
+	background:url(add/w10.png);
+	width:634px;
+	height:107px;
+	position:fixed;
+	zoom:1.1;
+	z-index:4;
+	}
+	
+		
+#w11{
+	background:url(add/w11.png);
+	width:195px;
+	height:82px;
+	position:fixed;
+	z-index:4;
+	zoom:1.5;
+	}
+	
+		
+#w12{
+	background:url(add/w12.png);
+	width:199px;
+	height:106px;
+	position:fixed;
+	z-index:4;
+	zoom:1.5;
+	}
+	
+#w13{
+	background:url(add/w13.png);
+	width:149px;
+	height:103px;
+	position:fixed;
+	z-index:4;
+	zoom:1.5;
+	}
+	
+#w14{
+	background:url(add/w14.png);
+	width:572px;
+	height:119px;
+	position:fixed;
+	zoom:1.2;
+	z-index:8;
+	}
+	
+#w15{
+	background:url(add/w15.png);
+	width:806px;
+	height:93px;
+	position:fixed;
+	zoom:0.9;
+	z-index:8;
+	}
+	
+		
+#w16{
+	background:url(add/w16.png);
+	width:588px;
+	height:236px;
+	position:fixed;
+	zoom:0.9;
+	z-index:8;
+	}
+
+
+</style> 
+
+
+<script type="text/javascript">
+	init = function() {
+	
+	var width = 1024;
+    var height = 768;
+    window.resizeTo(width, height);
+    window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2));  
+
+/*btn----------------------------------------------------------------------*/
+$("button").click(function(){alert($("body").scrollTop());});
+$("#btn1").on('click', function(){$('body').scrollTop('85000');});
+
+
+
+/*audio--------------------------------------------------------------------*/
+document.getElementById("sound1").volume=0.2;
+document.getElementById("sound2").volume=0.5;
+document.getElementById("sound3").volume=0.6;
+document.getElementById("sound4").volume=0.6;
+document.getElementById("sound5").volume=0.6;
+document.getElementById("sound6").volume=0.3;
+document.getElementById("sound7").volume=0.9;
+
+
+		function playOne(){document.getElementById("sound1").play();}
+	    function stopOne(){document.getElementById("sound1").pause();
+		                   document.getElementById("sound1").currentTime=0;}
+		
+		function playTwo(){document.getElementById("sound2").play();}
+	    function stopTwo(){document.getElementById("sound2").pause();
+		                   document.getElementById("sound2").currentTime=0;}
+						   
+						   	
+		function playThree(){document.getElementById("sound3").play();}
+	    function stopThree(){document.getElementById("sound3").pause();
+		                     document.getElementById("sound3").currentTime=0;}
+						     
+		function playFour(){document.getElementById("sound4").play();}
+	    function stopFour(){document.getElementById("sound4").pause();
+		                    document.getElementById("sound4").currentTime=0;}
+											   
+		function playFive(){document.getElementById("sound5").play();}
+	    function stopFive(){document.getElementById("sound5").pause();
+		                    document.getElementById("sound5").currentTime=0;}	
+							
+		function playSix(){document.getElementById("sound6").play();}
+	    function stopSix(){document.getElementById("sound6").pause();
+		                    document.getElementById("sound6").currentTime=0;}	
+							
+		function playSeven(){document.getElementById("sound7").play();}
+	    function stopSeven(){document.getElementById("sound7").pause();
+		                    document.getElementById("sound7").currentTime=0;}		
+								
+							
+				 
+/*audio----------------------------------------------------------------------*/
+	 
+var jarallax = new Jarallax();
+	
+jarallax.addAnimation('#sound1', [
+ 	    {progress:'1%', event:{reverse:stopOne}},
+	    {progress:'2%', event:{start:playOne}},
+	    {progress:'94%',event:{start:stopOne}}, 
+	    {progress:'95%', event:{reverse:stopOne}}]);
+		
+jarallax.addAnimation('#sound2', [
+ 	    {progress:'10%', event:{reverse:stopTwo}},
+	    {progress:'11%', event:{start:playTwo}},
+	    {progress:'94%', event:{start:stopTwo}}, 
+	    {progress:'95%', event:{reverse:stopTwo}}]);
+		
+jarallax.addAnimation('#sound3', [
+ 	    {progress:'75%', event:{reverse:stopThree}},
+	    {progress:'76%', event:{start:playThree}},
+	    {progress:'85%', event:{start:stopThree}}, 
+	    {progress:'86%', event:{reverse:stopThree}}]);
+				
+	
+jarallax.addAnimation('#sound4', [
+ 	    {progress:'67%', event:{reverse:stopFour}},
+	    {progress:'68%', event:{start:playFour}},
+	    {progress:'75%', event:{start:stopFour}}, 
+	    {progress:'76%', event:{reverse:stopFour}}]);
+				
+jarallax.addAnimation('#sound5', [
+ 	    {progress:'93%', event:{reverse:stopFive}},
+	    {progress:'94%', event:{start:playFive}},
+	    {progress:'99%', event:{start:stopFive}}, 
+	    {progress:'100%', event:{reverse:stopFive}}]);
+	
+jarallax.addAnimation('#sound6', [
+ 	    {progress:'85%', event:{reverse:stopSix}},
+	    {progress:'86%', event:{start:playSix}},
+	    {progress:'92%', event:{start:stopSix}}, 
+	    {progress:'93%', event:{reverse:stopSix}}]);
+		
+jarallax.addAnimation('#sound7', [
+ 	    {progress:'0%', event:{reverse:stopSeven}},
+	    {progress:'1%', event:{start:playSeven}},
+	    {progress:'3%', event:{start:stopSeven}}, 
+	    {progress:'4%', event:{reverse:stopSeven}}]);
+		
+	/*pictures---------------------------------------------------------------------------------*/
+
+		jarallax.setDefault('#s0-vidpic,#s0-vidpic2,#s1-cabin,#s1-doors,#s1-Ldoor,#s1-Rdoor,#s1-Sdoor,#s2-plane,#s2-ticket,#s3-couple',{opacity:'0'});
+		
+		jarallax.setDefault
+		('#s4-pl,#s4-p2,#s4-p3,#s4-p4,#s4-p5,#s4-p6,#s5-doors,#s5-Sdoor,#s5-Ldoor,#s5-Rdoor',{opacity:'0'});
+		
+		jarallax.setDefault
+		('#bg1,#bg2-hill,#bg3-house,#bg4-train',{opacity:'0'});
+		
+		jarallax.setDefault
+		('#w1,#w2,#w3,#w4,#w5,#w6,#w7,#w8,#w9,#w10,#w11,#w12,#w13,#w14,#w15,#w16',{opacity:'0'});
+
+/*S1 opening---------------------------------------------------------------*/
+
+	    jarallax.addAnimation('#s0-vidpic', [
+		{progress:'0%',opacity:'0'}, 
+		{progress:'1%',opacity:'1'},
+		{progress:'2%',opacity:'1'},
+		{progress:'3%',opacity:'0'}])
+		
+		jarallax.addAnimation('#s0-vidpic2', [
+		{progress:'0%',opacity:'0'}, 
+		{progress:'7%',opacity:'0'},
+		{progress:'8%',opacity:'1'},
+		{progress:'9%',opacity:'1'},
+		{progress:'10%',opacity:'0'}])
+
+		jarallax.addAnimation('#s1-doors', [
+		{progress:'0%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'11%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'12%', left:'-10px', top:'0px',opacity:'1'},
+		{progress:'13%', left:'-10px', top:'0px',opacity:'1'}]);
+		
+		jarallax.addAnimation('#s1-Sdoor', [
+		{progress:'0%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'12%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'13%', left:'-10px', top:'0px',opacity:'1'},
+		{progress:'17%', left:'-10px', top:'0px',opacity:'1'}]);
+		
+		jarallax.addAnimation('#s1-Ldoor', [
+		{progress:'0%', left:'60px', top:'-15px',opacity:'0'},
+		{progress:'12%', left:'60px', top:'-15px',opacity:'0'},
+		{progress:'13%', left:'60px', top:'-15px',opacity:'1'},
+		{progress:'15%', left:'-300px', top:'-15px',opacity:'1'},
+		{progress:'17%', left:'-300px', top:'-15px',opacity:'1'},
+		{progress:'18%', left:'-300px', top:'-15px',opacity:'0'}]);
+				
+		jarallax.addAnimation('#s1-Rdoor', [
+		{progress:'0%', left:'520px', top:'-15px',opacity:'0'},
+		{progress:'12%', left:'520px', top:'-15px',opacity:'0'},
+		{progress:'13%', left:'520px', top:'-15px',opacity:'1'},
+		{progress:'15%', left:'860px', top:'-15px',opacity:'1'},
+		{progress:'17%', left:'860px', top:'-15px',opacity:'1'},
+		{progress:'18%', left:'860px', top:'-15px',opacity:'0'}]);
+		
+		jarallax.addAnimation('#s1-cabin', [
+		{progress:'0%', left:'-1100px', top:'0px',opacity:'0'},
+		{progress:'13%', left:'-1100px', top:'0px',opacity:'0'},
+		{progress:'14%', left:'-1100px', top:'0px',opacity:'1'},
+		{progress:'17%', left:'-1100px', top:'0px',opacity:'1'},
+		{progress:'18%', left:'-700px', top:'-50px',zoom:'1.1',opacity:'1'},
+		{progress:'19%', left:'-700px', top:'-50px',zoom:'1.1',opacity:'1'},
+		{progress:'20%', left:'-610px', top:'-65px',zoom:'1.6',opacity:'1'},
+		{progress:'50%', left:'-610px', top:'-65px',zoom:'1.6',opacity:'1'},
+		{progress:'53%', left:'-610px', top:'-65px',zoom:'1.6',opacity:'0'}]);
+		
+/*S2(ticket, plane, couple) ------------------------------------------------------*/
+
+		jarallax.addAnimation('#s2-ticket', [
+		{progress:'0%', left:'2000px', top:'10000px',opacity:'0'},
+		{progress:'15%', left:'10000px', top:'5000px',opacity:'0'},
+		{progress:'16%', left:'900px', top:'500px',zoom:'1',opacity:'1'},
+		{progress:'17%', left:'600px', top:'400px',zoom:'0.8',opacity:'1'},
+		{progress:'18%', left:'600px', top:'400px',zoom:'0.6',opacity:'1'},
+		{progress:'19%', left:'600px', top:'400px',zoom:'0.6',opacity:'1'},
+		{progress:'20%', left:'500px', top:'400px',zoom:'0.4',opacity:'1'},
+		{progress:'21%', left:'300px', top:'400px',zoom:'0.3',opacity:'1'},
+		{progress:'22%', left:'300px', top:'400px',zoom:'0.3',opacity:'1'},
+		{progress:'24%', left:'300px', top:'400px', zoom:'0.1',opacity:'0'}]);	
+	
+		jarallax.addAnimation('#s2-plane', [
+		{progress:'0%', left:'600px', top:'-500px',opacity:'0'},
+		{progress:'23%', left:'400px', top:'30px',opacity:'0'},
+		{progress:'24%', left:'-100px', top:'230px',opacity:'1'},
+		{progress:'25%', left:'-200px', top:'200px',opacity:'1'},
+		{progress:'26%', left:'-200px', top:'200px',opacity:'1'},
+		{progress:'28%', left:'-100px', top:'230px',opacity:'1'}, 
+		{progress:'29%', left:'-500px', top:'-100px',opacity:'1'}]);
+		
+		jarallax.addAnimation('#s3-couple', [
+		{progress:'48%', left:'-500px', top:'0px',opacity:'0'},
+		{progress:'49%', left:'0px', top:'0px',opacity:'0'},
+		{progress:'50%', left:'500px', top:'0px',opacity:'1'},
+		{progress:'51%', left:'500px', top:'0px',opacity:'1'},
+		{progress:'52%', left:'500px', top:'0px',opacity:'1'},
+		{progress:'53%', left:'800px', top:'0px',opacity:'1'},
+		{progress:'54%', left:'-500px', top:'0px',opacity:'0'}]);
+			
+/*S4(peolpe) -----------------------------------------*/
+	    jarallax.addAnimation('#s4-pl', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'50px', top:'100px',opacity:'0'},
+		{progress:'58%', left:'50px', top:'100px',opacity:'1'},
+		{progress:'61%', left:'50px', top:'100px',opacity:'1'}, 
+		{progress:'62%', left:'50px', top:'100px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s4-p2', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'200px', top:'100px',opacity:'0'},
+		{progress:'58%', left:'200px', top:'100px',opacity:'1'}, 
+		{progress:'59%', left:'200px', top:'100px',opacity:'1'}, 
+		{progress:'60%', left:'200px', top:'100px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s4-p3', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'350px', top:'100px',opacity:'0'},
+		{progress:'58%', left:'350px', top:'100px',opacity:'1'}, 
+		{progress:'63%', left:'350px', top:'100px',opacity:'1'}, 
+		{progress:'64%', left:'350px', top:'100px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s4-p4', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'510px', top:'100px',opacity:'0'},
+		{progress:'58%', left:'510px', top:'100px',opacity:'1'}, 
+		{progress:'62%', left:'510px', top:'100px',opacity:'1'}, 
+		{progress:'63%', left:'510px', top:'100px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s4-p5', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'670px', top:'100px',opacity:'0'},
+		{progress:'58%', left:'670px', top:'100px',opacity:'1'},
+		{progress:'60%', left:'670px', top:'100px',opacity:'1'}, 
+		{progress:'61%', left:'670px', top:'100px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s4-p6', [
+		{progress:'0%', left:'0px', top:'100px',opacity:'0'},
+		{progress:'57%', left:'830px', top:'100px',opacity:'0'},
+		{progress:'59%', left:'830px', top:'100px',opacity:'1'}, 
+		{progress:'62%', left:'830px', top:'100px',opacity:'0'}])
+		
+/*S5(the end)---------------------------------------------------------------*/
+        jarallax.addAnimation('#s5-doors', [
+		{progress:'0%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'84%', left:'-10px', top:'0px',opacity:'0'},
+		{progress:'85%', left:'-10px', top:'0px',opacity:'1'},
+		{progress:'91%', left:'-10px', top:'0px',opacity:'1'},
+		{progress:'92%', left:'-10px', top:'0px',opacity:'0'}]);
+		
+	    jarallax.addAnimation('#s5-Sdoor', [
+		{progress:'0%', left:'-10px', top:'-5px',opacity:'0'},
+		{progress:'88%', left:'-10px', top:'-5px',opacity:'0'},
+		{progress:'89%', left:'-10px', top:'-5px',opacity:'1'},
+		{progress:'92%', left:'-10px', top:'-5px',opacity:'1'},
+		{progress:'93%', left:'-10px', top:'-5px',opacity:'0'}])
+		
+		jarallax.addAnimation('#s5-Ldoor', [
+		{progress:'0%', left:'-370px', top:'-5px',opacity:'0'},
+		{progress:'88%', left:'-370px', top:'-5px',opacity:'0'},
+		{progress:'89%', left:'-370px', top:'-5px',opacity:'1'},
+		{progress:'90%', left:'30px', top:'-5px',opacity:'1'},
+		{progress:'92%', left:'30px', top:'-5px',opacity:'1'},
+		{progress:'93%', left:'30px', top:'-5px',opacity:'0'}]);
+				
+		jarallax.addAnimation('#s5-Rdoor', [
+		{progress:'0%', left:'860px', top:'-5px',opacity:'0'},
+		{progress:'88%', left:'860px', top:'-5px',opacity:'0'},
+		{progress:'89%', left:'860px', top:'-5px',opacity:'1'},
+		{progress:'90%', left:'510px', top:'-5px',opacity:'1'},
+		{progress:'92%', left:'510px', top:'-5px',opacity:'1'},
+		{progress:'93%', left:'510px', top:'-5px',opacity:'0'}]);
+
+/*word---------------------------------------------------*/
+		/*列車人生--*/
+		jarallax.addAnimation('#w1', [
+		{progress:'0%', left:'350px', top:'-2000px',opacity:'1'}, 
+		{progress:'1%', left:'350px', top:'400px',opacity:'1'}, 
+		{progress:'2%', left:'350px', top:'350px',opacity:'1'}, 
+		{progress:'3%', left:'350px', top:'350px',opacity:'1'}, 
+		{progress:'4%', left:'-10000px', top:'350px',opacity:'0'}])
+		
+		/*人生就像火車之旅--*/
+		jarallax.addAnimation('#w2', [
+		{progress:'0%', left:'170px', top:'500px',opacity:'0'},
+		{progress:'9%', left:'170px', top:'500px',opacity:'0'}, 
+		{progress:'10%', left:'170px', top:'500px',opacity:'1'},
+		{progress:'11%', left:'170px', top:'500px',opacity:'1'},
+ 		{progress:'12%', left:'170px', top:'500px',opacity:'0'}])
+
+		/*一出生父母給了我們車票，帶我們上車---*/
+		jarallax.addAnimation('#w3', [
+		{progress:'0%', left:'500px', top:'280px',opacity:'0'},
+		{progress:'18%', left:'800px', top:'280px',opacity:'0'},
+		{progress:'19%', left:'500px', top:'280px',opacity:'1'}, 
+		{progress:'20%', left:'100px', top:'280px',opacity:'1'}, 
+		{progress:'21%', left:'100px', top:'280px',opacity:'1'},
+		{progress:'22%', left:'100px', top:'280px',opacity:'1'}, 
+		{progress:'23%', left:'100px', top:'280px',opacity:'1'}, 
+		{progress:'24%', left:'-800px', top:'280px',opacity:'0'}])
+		
+		/*生命中最愛----*/
+		jarallax.addAnimation('#w7', [
+		{progress:'0%', left:'200px', top:'300px',opacity:'0'},
+		{progress:'49%', left:'200px', top:'300px',opacity:'0'},
+		{progress:'50%', left:'200px', top:'300px',opacity:'1'}, 
+		{progress:'52%', left:'200px', top:'300px',opacity:'1'}, 
+		{progress:'53%', left:'200px', top:'300px',opacity:'0'}])
+		
+		/*但是，他們會在某一個站下車----*/
+		jarallax.addAnimation('#w8', [
+		{progress:'0%', left:'300px', top:'400px',opacity:'0'},
+		{progress:'53%', left:'1000px', top:'400px',opacity:'0'},
+		{progress:'54%', left:'300px', top:'400px',opacity:'1'}, 
+		{progress:'55%', left:'300px', top:'400px',opacity:'1'}, 
+		{progress:'57%', left:'300px', top:'400px',opacity:'0'}])
+		
+		/*我們甚至沒發現他們何時離開----*/
+		jarallax.addAnimation('#w9', [
+		{progress:'0%', left:'300px', top:'400px',opacity:'0'},
+		{progress:'57%', left:'300px', top:'400px',opacity:'0'},
+		{progress:'58%', left:'300px', top:'400px',opacity:'1'}, 
+		{progress:'60%', left:'300px', top:'400px',opacity:'1'},
+		{progress:'63%', left:'300px', top:'400px',opacity:'1'}, 
+		{progress:'64%', left:'300px', top:'400px',opacity:'0'}])
+		
+		/*這段旅程充滿歡樂-------*/
+		jarallax.addAnimation('#w10', [
+		{progress:'0%', left:'200px', top:'150px',opacity:'0'},
+		{progress:'65%', left:'200px', top:'150px',opacity:'0'},
+		{progress:'66%', left:'200px', top:'150px',opacity:'1'},
+		{progress:'67%', left:'200px', top:'150px',opacity:'1'}, 
+		{progress:'68%', left:'200px', top:'150px',opacity:'0'}])
+		
+		/*痛苦-----------*/
+		jarallax.addAnimation('#w11', [
+		{progress:'0%', left:'200px', top:'115px',opacity:'0'},
+		{progress:'69%', left:'200px', top:'115px',opacity:'0'},
+		{progress:'70%', left:'200px', top:'115px',opacity:'1'},
+		{progress:'73%', left:'200px', top:'115px',opacity:'1'}, 
+		{progress:'74%', left:'200px', top:'115px',opacity:'0'}])
+		
+		/*偶遇-----------*/
+		jarallax.addAnimation('#w12', [
+		{progress:'0%', left:'200px', top:'95px',opacity:'0'},
+		{progress:'74%', left:'200px', top:'95px',opacity:'0'},
+		{progress:'75%', left:'200px', top:'95px',opacity:'1'},
+		{progress:'79%', left:'200px', top:'95px',opacity:'1'}, 
+		{progress:'80%', left:'200px', top:'95px',opacity:'0'}])
+
+		/*辭別-----------*/
+		jarallax.addAnimation('#w13', [
+		{progress:'0%', left:'200px', top:'100px',opacity:'0'},
+		{progress:'80%', left:'200px', top:'100px',opacity:'0'},
+		{progress:'81%', left:'200px', top:'100px',opacity:'1'},
+		{progress:'84%', left:'200px', top:'100px',opacity:'1'}, 
+		{progress:'85%', left:'200px', top:'100px',opacity:'0'}])
+		
+		/*當我們要下車時-----------*/
+		jarallax.addAnimation('#w14', [
+		{progress:'0%', left:'170px', top:'300px',opacity:'0'},
+		{progress:'86%', left:'170px', top:'300px',opacity:'0'}, 
+		{progress:'87%', left:'170px', top:'300px',opacity:'1'},
+		{progress:'88%', left:'170px', top:'300px',opacity:'1'},
+ 		{progress:'89%', left:'170px', top:'300px',opacity:'0'}])
+		
+		/*希望可以給車上乘客留下美好回憶------------*/
+		jarallax.addAnimation('#w15', [
+		{progress:'0%', left:'200px', top:'500px',opacity:'0'},
+		{progress:'90%', left:'200px', top:'500px',opacity:'0'}, 
+		{progress:'91%', left:'200px', top:'500px',opacity:'1'},
+		{progress:'92%', left:'200px', top:'500px',opacity:'1'},
+ 		{progress:'93%', left:'200px', top:'500px',opacity:'0'}])
+		
+		/*生命只有一次，又怎能重來------------------*/
+		jarallax.addAnimation('#w16', [
+		{progress:'0%', left:'270px', top:'-1000px',rotate:'0',opacity:'0'},
+		{progress:'93%', left:'270px', top:'-1000px',rotate:'0',opacity:'0'}, 
+		{progress:'94%', left:'270px', top:'200px',rotate:'0',opacity:'1'},
+		{progress:'95%', left:'270px', top:'200px',rotate:'10',opacity:'1'},
+		{progress:'96%', left:'270px', top:'200px',rotate:'-10',opacity:'1'},
+		{progress:'97%', left:'270px', top:'200px',rotate:'-10',opacity:'1'},
+		{progress:'98%', left:'270px', top:'200px',rotate:'10',opacity:'1'},
+		{progress:'99%', left:'270px', top:'200px',rotate:'0',opacity:'1'},
+ 		{progress:'100%', left:'270px', top:'200px',rotate:'0',opacity:'0'}])
+		
+/*bg1-----------------------------------------------------------*/
+		jarallax.addAnimation('#bg1', [
+		{progress:'0%', left:'-13050px', top:'14px',opacity:'0'},
+		{progress:'13%', left:'-13050px', top:'14px',opacity:'0'},
+		{progress:'14%', left:'-13050px', top:'14px',opacity:'1'},
+		{progress:'20%', left:'-13000px', top:'14px',opacity:'1'},
+	    /*family---------------------------------------------------------*/
+		{progress:'30%', left:'-7400px', top:'14px',opacity:'1'},
+		{progress:'31%', left:'-7500px', top:'14px',opacity:'1'},
+		{progress:'32%', left:'-7400px', top:'14px',opacity:'1'},
+		{progress:'33%', left:'-7400px', top:'14px',opacity:'1'},
+		{progress:'34%', left:'-7500px', top:'14px',opacity:'1'},
+		{progress:'35%', left:'-7200px', top:'14px',opacity:'0.1'},
+		/*friends---------------------------------------------*/
+		{progress:'37%', left:'-3200px', top:'14px',opacity:'1'},
+		{progress:'38%', left:'-3300px', top:'14px',opacity:'1'},
+		{progress:'39%', left:'-3200px', top:'14px',opacity:'1'},
+		{progress:'40%', left:'-3200px', top:'14px',opacity:'1'},
+		{progress:'41%', left:'-3300px', top:'14px',opacity:'1'},
+		{progress:'42%', left:'-3100px', top:'14px',opacity:'0.1'},
+		/*best friends-----------------------------------*/
+		{progress:'44%', left:'-1500px', top:'14px',opacity:'1'},
+		{progress:'45%', left:'-1600px', top:'14px',opacity:'1'},
+		{progress:'46%', left:'-1500px', top:'14px',opacity:'1'},
+		{progress:'47%', left:'-1500px', top:'14px',opacity:'1'},
+		{progress:'48%', left:'-1500px', top:'14px',opacity:'1'},
+		{progress:'49%', left:'-1600px', top:'14px',opacity:'1'},
+		{progress:'50%', left:'-100px', top:'14px',opacity:'1'},
+		{progress:'51%', left:'-100px', top:'14px',opacity:'1'},
+		{progress:'54%', left:'100px', top:'14px',opacity:'0.1'}]);
+		
+/*bg2-hill-------------------------------------------------------------------*/
+		jarallax.addAnimation('#bg2-hill', [
+		{progress:'0%', left:'-4150px',opacity:'0'},
+		{progress:'52%', left:'-6150px',opacity:'0'},
+		{progress:'53%', left:'-6150px',opacity:'1'},
+		{progress:'85%', left:'0px',opacity:'1'}]);
+		
+		jarallax.addAnimation('#bg3-house', [
+		{progress:'0%', left:'-8000px',opacity:'0'},
+		{progress:'52%', left:'-7000px',opacity:'0'},
+		{progress:'53%', left:'-7000px',opacity:'1'},
+		{progress:'85%', left:'600px',opacity:'1'}]);
+		
+		jarallax.addAnimation('#bg4-train', [
+	    {progress:'0%', left:'5100px',opacity:'0'},
+		{progress:'52%', left:'1500px',opacity:'0'},
+		{progress:'54%', left:'300px', opacity:'1'},
+		{progress:'60%', left:'300px', opacity:'1'},
+		{progress:'84%', left:'300px', opacity:'1'},
+		{progress:'85%', left:'-5000px',opacity:'0'}]);
+
+			
+}
+</script>
+  
+</head>
+
+<body onload="init()">
+
+<p>This scrolling site experience is best viewed<br/>at viewport resolution of 1024 x 768 pixels and<br/>by Google Chrome 18 or higher.</p>    
+
+<div id="s0-vidpic"></div>
+<div id="s0-vidpic2"></div>
+
+<div id="s1-cabin"></div>
+<div id="s1-doors"></div>
+<div id="s1-Ldoor"></div>
+<div id="s1-Rdoor"></div>
+<div id="s1-Sdoor"></div>
+<div id="s2-plane"></div>
+<div id="s2-ticket"></div>
+<div id="s3-couple"></div>
+
+<div id="s4-pl"></div>
+<div id="s4-p2"></div>
+<div id="s4-p3"></div>
+<div id="s4-p4"></div>
+<div id="s4-p5"></div>
+<div id="s4-p6"></div>
+
+<div id="s5-doors"></div>
+<div id="s5-Ldoor"></div>
+<div id="s5-Rdoor"></div>
+<div id="s5-Sdoor"></div>
+
+<div id="bg1"></div>
+<div id="bg2-hill"></div>
+<div id="bg3-house"></div>
+<div id="bg4-train"></div>
+
+<div id="w1"></div>
+<div id="w2"></div>
+<div id="w3"></div>
+<div id="w7"></div>
+<div id="w8"></div>
+<div id="w9"></div>
+<div id="w10"></div>
+<div id="w11"></div>
+<div id="w12"></div>
+<div id="w13"></div>
+<div id="w14"></div>
+<div id="w15"></div>
+<div id="w16"></div>
+
+<div id="btn1"></div>
+
+<!--/*video*/---------------------------------------------------------------->
+
+<div id="set-height"></div>
+<video id="v0" tabindex="s0" autobuffer="autobuffer" preload="preload">
+<source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="add/vid0.mp4"></source>
+<source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="add/vid0.webm"></source>
+<source type="video/ogg; codecs=&quot;theora, vorbis&quot;" src="add/vid0.ogv"></source>
+</video>
+<script src="js/index.js"></script>
+
+<!--/*audio*/-------------------------------------------------------------------------->
+
+<div id="bgAudioControls">
+    <a href="#" >
+        <img id="mute" src="add/speaker.png" alt="Sound Off" />
+    </a>
+
+<script type="text/javascript">
+$(function() {
+    $("#mute").click(function(e) {
+        e.preventDefault();
+
+        var song = $('audio')[0]
+        if (song.paused){
+            song.play();
+            document.getElementById("mute").src = "add/speaker.png";
+        }else{
+            song.pause();
+            document.getElementById("mute").src = "add/mute.png";
+        }
+        });
+});
+</script>
+<audio id="sound2" src="add/sound2-happy.mp3"></audio>
+<audio id="sound1" src="add/sound1-train.mp3"></audio>
+<audio id="sound3" src="add/sound3-bird.mp3"></audio>
+<audio id="sound4" src="add/sound4-rain.mp3"></audio>
+<audio id="sound5" src="add/sound5-end.mp3"></audio>
+<audio id="sound6" src="add/sound6-mtr.mp3"></audio>
+<audio id="sound7" src="add/sound7-open.mp3"></audio>
+
+
+
+</div>
+
+</body>
+</html>
