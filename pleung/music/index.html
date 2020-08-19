@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dist/css/green-audio-player.css">
+<title>Pete's Study on Music</title>
+    <style>
+        html, body { height: 100%; }
+
+        body {
+            margin: 20px;
+ /*           display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            background: #F8FFAE;
+            background: -webkit-linear-gradient(-65deg, #43C6AC, #F8FFAE);
+            background: linear-gradient(-65deg, #43C6AC, #F8FFAE);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;*/
+        }
+		body{background:#fff; color:#666; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; margin:20px; border:0; padding:0;}
+
+		h1{
+			font-size: 18px;
+			font-weight:normal;
+			text-transform:uppercase;
+		}
+		
+        .player {
+            margin: 24px 10px;
+			float:left;
+
+        }
+		
+		p {margin-left:20px}
+    </style>
+	</head>
+	
+	<!-- --> 
+<body>
+	
+	<h1>Pete's Study on Music</h1>
+
+	<div class="ready-player-1 player">
+		<p>aspetta</p>
+        <audio crossorigin>
+            <source src="tunes/opening/aspetta-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-2 player">
+		<p>harp</p>
+        <audio crossorigin>
+            <source src="tunes/opening/harp-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-3 player">
+		<p>magic</p>
+        <audio crossorigin>
+            <source src="tunes/opening/magic-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="ready-player-4 player">
+		<p>ndream</p>
+        <audio crossorigin>
+            <source src="tunes/opening/ndream-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+    <div class="ready-player-5 player">
+		<p>neverending</p>
+        <audio crossorigin>
+            <source src="tunes/opening/neverending-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-6 player">
+		<p>underbridges</p>
+        <audio crossorigin>
+            <source src="tunes/opening/underbridges-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-7 player">
+		<p>dark corridor</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/dark-corridor-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-8 player">
+		<p>daybreak</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/daybreak-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-9 player">
+		<p>faint blue</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/faint-blue-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-10 player">
+		<p>nowhere</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/nowhere-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-11 player">
+		<p>reverie</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/reverie-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
+	<div class="ready-player-12 player">
+		<p>sinking</p>
+        <audio crossorigin>
+            <source src="tunes/fourAM/sinking-e.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+	<!-- --> 	
+	    <script src="dist/js/green-audio-player.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            GreenAudioPlayer.init({
+                selector: '.player',
+                stopOthersOnPlay: true
+            });
+
+            GreenAudioPlayer.init({
+                selector: '.player-with-download',
+                stopOthersOnPlay: true,
+                showDownloadButton: true,
+                enableKeystrokes: true
+            });
+
+            GreenAudioPlayer.init({
+                selector: '.player-with-accessibility',
+                stopOthersOnPlay: true,
+                enableKeystrokes: true
+            });
+        });
+    </script>
+	<!-- --> 
+	
+	</body>
+</html>

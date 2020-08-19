@@ -1,138 +1,77 @@
 <!doctype html>
 <html>
+<title>Pete's Study on Drawing</title>
 <head>
-<meta charset="UTF-8">
-<title>portfolio</title>
-	<!-- jQuery -->
-<script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<!-- nanogallery2 -->
-<link    href="dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-<script  type="text/javascript">src="dist/jquery.nanogallery2.min.js"></script>
-	
-</head>
-
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <style type="text/css">
-body{background:#fff; color:#666; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; margin:0; border:0; padding:0;}
+	
+body{background:#fff; color:#666; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; margin:20px; border:0; padding:0;}
 
 h1{
 	font-size: 18px;
 	font-weight:normal;
 	text-transform:uppercase;
 }
-p{
-	font-size: 12px;
-	text-transform:uppercase;	
-}
-p.upmost{
-	margin-bottom: 50px;
-}
-video.vertical{
-	border: 1px #A6A6A6 medium;
-	display:block;
-	width:625px;
-	height:500px;
-	margin:0; border:0; padding:0;
-}
-video.horz{
-	border: 1px #A6A6A6 medium;
-	display:block;
-	width:625px;
-	height:351px;
-	margin:0; border:0; padding:0;
-}
-
-img{
-	margin-top:0px;
-}
-
-#pete{
-	margin-bottom: 50px;
-	margin-left: 100px;
-	margin-top: 50px;
-}
-
-#students{
-	margin-left: 100px;
-	margin-top: 50px;
-}
-video.students-video{
-	margin-bottom: 50px;
-}
-p.c-rights {
-	margin-top: 50px;
-}
-/*.mine{
-	margin-top:-50px;
-}*/
-.mine2{
-	margin-top:-50px;
-}
-.mine2, .mine{
-	margin-bottom:50px;
-}
-</style>
-<body>
-  <div id="nanogallery2" data-nanogallery2= '{
-          "thumbnailHeight":  150,
-          "thumbnailWidth":   150,
-          "itemsBaseURL":     "http://edisonvibe.com/pleung/drawings/"
-        }' >
-    <a  href="img/fig1.jpg" data-ngThumb="tn/tn-fig1.jpg"> Title photo 1 </a>
-    <a href="..../img2.jpg" data-ngThumb="..../thumbnail2.jpg"> Title photo 2 </a>
-    <a href="..../img3.jpg" data-ngThumb="..../thumbnail3.jpg"> Title photo 3 </a>
-  </div>
 	
-<div id="pete">
-<h1>Pete's Art, Design and Digital Works</h1>
-<p class="upmost">exploring the use of different forms and platforms for information delivery (2001 - 2020)</p>
-<a href="http://www.edisonvibe.com/artwork/experiment/corridor/" target="_blank"> 
-<img src="t-one.jpg" width="625" height="500" /></a>
-<br/>
-<img src="t-two.jpg" width="625" height="500"/><br/>
-<img src="t-three.jpg" width="625" height="500"/>
+	#content-main {
+	//margin: 14px 78px 10px 80px;
+	//padding-bottom: 800px;
+	//border-bottom: #ccc 1px solid; 
+}
 
-<p>retrieves data from new york times database</p>
-<video controls class="mine2 horz" poster="t-one.png">
-<source src="t-one.mp4" type="video/mp4" >
-</video>
+#collection-pic a img {
+	margin: 16px 7.5px 0 0;
+}
 
-<p>flash web design</p>
-<video controls  class="mine vertical" poster="t-two.png">
-<source src="t-two.mp4" type="video/mp4" >
-</video>
+#collection-pic a img {
+	border:0;
+}
 
-<p>html web design</p>
-<video controls  class="mine vertical" poster="t-three.png">
-<source src="t-three.mp4" type="video/mp4" >
-</video>
+#collection-pic a {
+	float:left;
+	text-decoration: none;
+}
+		
+</style
+	></head>
+    <body>
+	
+	<h1>Pete's Study on Drawing</h1>
+		
+		<div id="content-main">
 
-<p>my playground</p>
-<video controls class="mine horz" poster="t-playground.png">
-<source src="my-playground.mp4" type="video/mp4" >
-</video>
-<p class="c-rights">copyright © 2020 edison vibe. all rights reserved</p>
-</div>
-<hr/>
+			<div id="collection-pic">
+	
+				<!-- original tag and attributes
+                <a href="pic/fullpic/apron_x/Full_Apron_3-x.jpg" rel="lightbox" title="Aprons : Full_Apron_3"><img src="pic/thumb/apron/Full_Apron_3-a.jpg" alt="thumb" width="94" height="194" /><p class="fotodesc">Full Apron 3</p></a>-->
+				
+				<a href="pic/fig1.jpg" rel="lightbox" title="pose 1"><img src="tn/tn-fig1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fig2.jpg" rel="lightbox" title="pose 2"><img src="tn/tn-fig2.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fig3.jpg" rel="lightbox" title="pose 3"><img src="tn/tn-fig3.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fig4.jpg" rel="lightbox" title="pose 4"><img src="tn/tn-fig4.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fig5.jpg" rel="lightbox" title="pose 5"><img src="tn/tn-fig5.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fig6.jpg" rel="lightbox" title="pose 6"><img src="tn/tn-fig6.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/vec1.jpg" rel="lightbox" title="pose a"><img src="tn/tn-vec1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/vec2.jpg" rel="lightbox" title="pose b"><img src="tn/tn-vec2.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/vec3.jpg" rel="lightbox" title="pose c"><img src="tn/tn-vec3.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/vec4.jpg" rel="lightbox" title="pose d"><img src="tn/tn-vec4.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/vec5.jpg" rel="lightbox" title="pose e"><img src="tn/tn-vec5.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/portrait1.jpg" rel="lightbox" title="portrait 1"><img src="tn/tn-portrait1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/portrait2.jpg" rel="lightbox" title="portrait 2"><img src="tn/tn-portrait2.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fold1.jpg" rel="lightbox" title="movement 1"><img src="tn/tn-fold1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fold2.jpg" rel="lightbox" title="movement 2"><img src="tn/tn-fold2.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/fold3.jpg" rel="lightbox" title="movement 3"><img src="tn/tn-fold3.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/hand1.jpg" rel="lightbox" title="hand 1"><img src="tn/tn-hand1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/hand2.jpg" rel="lightbox" title="hand 2"><img src="tn/tn-hand2.jpg" alt="thumb" /><p class="fotodesc"></p></a>
+				<a href="pic/loc1.jpg" rel="lightbox" title="location 1"><img src="tn/tn-loc1.jpg" alt="thumb" /><p class="fotodesc"></p></a>
 
-<div id="students">
-<h1>Pete's Teaching --- Students' Works</h1>
-<p>delivering information through visual and interactive way</p>
+			
+	
+			</div>
 
-<video controls class="students-video horz" poster="two.png">
-<source src="two.mp4" type="video/mp4">
-</video>
-<video controls class="students-video horz" poster="three.png">
-<source src="three.mp4" type="video/mp4">
-</video>
-<video controls class="students-video horz" poster="four.png">
-<source src="four.mp4" type="video/mp4">
-</video>
-<video controls class="students-video horz" poster="one.png">
-<source src="one.mp4" type="video/mp4">
-</video>
-
-</div>
-
-</body>
+		</div>
+    </body>
 </html>
